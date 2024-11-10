@@ -1,11 +1,39 @@
+:root {
+  --sidebar-width: 8rem;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid rgb(0, 170, 255);
 }
 html {
   font-size: 62.5%;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  background: #222;
   font-size: 1.6rem;
+  color: white;
+  min-height: 100dvh;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100dvh;
+  overflow: auto;
+  border: 2px solid red;
+}
+header,
+main,
+footer {
+  padding: 4rem 4rem 4rem calc(var(--sidebar-width) + 4rem);
+}
+header {
+}
+main {
+  flex-grow: 1;
 }

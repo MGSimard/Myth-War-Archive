@@ -1,5 +1,7 @@
 import { type Metadata } from "next";
+import { Nav } from "@/components/Nav";
 import "@/styles/core.css";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Myth War Archive",
@@ -10,7 +12,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Nav />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
