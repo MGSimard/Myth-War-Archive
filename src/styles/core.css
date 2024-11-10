@@ -54,6 +54,9 @@ nav li a {
   overflow: hidden;
   border-radius: 0.4rem;
 }
+nav li a.activeLink {
+  background: red;
+}
 nav li a svg {
   flex-shrink: 0;
   max-width: calc(var(--sidebar-width) - 2rem);
