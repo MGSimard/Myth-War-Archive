@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { IconMap, IconTools, IconGroup, IconAssets } from "@/components/Icons";
 
 export function Nav() {
   return (
@@ -6,30 +8,27 @@ export function Nav() {
       <img src="#" alt="Logo" />
       <ul>
         <li>
-          <Link href="#">
-            <img src="https://i.imgur.com/EfiueTt.jpeg" alt="O" />
-            <span>Item One</span>
+          <Link href="/world">
+            <IconMap />
+            <span>World</span>
           </Link>
         </li>
         <li>
-          <Link href="#">
-            <img src="https://i.imgur.com/EfiueTt.jpeg" alt="O" />
-            <span>This</span>
+          <Link href="/assets">
+            <IconAssets />
+            <span>Assets</span>
           </Link>
         </li>
         <li>
-          <Link href="#">
-            <img src="https://i.imgur.com/EfiueTt.jpeg" alt="O" />
-            <span>
-              Item Number ThreeItem Number ThreeItem Number ThreeItem Number ThreeItem Number ThreeItem Number ThreeItem
-              Number ThreeItem Number Three
-            </span>
+          <Link href="/tools">
+            <IconTools />
+            <span>Tools</span>
           </Link>
         </li>
         <li>
-          <Link href="#">
-            <img src="https://i.imgur.com/EfiueTt.jpeg" alt="O" />
-            <span>Fourth Item</span>
+          <Link href="/communities">
+            <IconGroup />
+            <span>Communities</span>
           </Link>
         </li>
       </ul>

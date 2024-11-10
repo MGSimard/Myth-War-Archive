@@ -1,5 +1,9 @@
 :root {
   --sidebar-width: 8rem;
+  --radius: 0.4rem;
+  --clr-bg-popout: hsl(75, 7.41%, 10.59%);
+  --clr-gold: hsl(45, 44%, 46%);
+  --clr-bg: hsl(193, 90%, 4%);
 }
 * {
   box-sizing: border-box;
@@ -13,10 +17,11 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background: #222;
+  min-height: 100dvh;
+  padding: 2rem;
   font-size: 1.6rem;
   color: white;
-  min-height: 100dvh;
+  background: black;
 }
 /**/
 nav {
@@ -27,13 +32,15 @@ nav {
   max-width: 100%;
   height: 100dvh;
   padding: 1rem;
+  background: var(--clr-bg-popout);
   overflow-x: hidden;
   overflow-y: auto;
   white-space: nowrap;
   transition: width 0.2s ease;
+  box-shadow: 0 0 1rem black;
 }
 nav:hover,
-nav:focus-within {
+nav:has(a:focus-visible) {
   width: calc(var(--sidebar-width) * 4);
 }
 nav li:not(:last-child) {
@@ -44,15 +51,14 @@ nav li a {
   align-items: center;
   gap: 1rem;
   height: calc(var(--sidebar-width) - 2rem);
-  background: red;
   overflow: hidden;
   border-radius: 0.4rem;
 }
-nav li a img {
+nav li a svg {
   flex-shrink: 0;
   max-width: calc(var(--sidebar-width) - 2rem);
   object-fit: contain;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 nav li span {
   opacity: 0;
@@ -69,12 +75,17 @@ nav:focus-within span {
 header,
 main,
 footer {
-  padding: 4rem 4rem 4rem calc(var(--sidebar-width) + 4rem);
+  margin-left: var(--sidebar-width);
+  padding: 4rem;
 }
 header {
 }
 main {
   flex-grow: 1;
+  background: var(--clr-bg);
+  box-shadow: inset 0 0 1rem hsl(69, 16%, 15%);
+  border-radius: var(--radius);
+  border: 1px solid hsla(from var(--clr-gold) h s l / 0.3);
 }
 footer {
 }
@@ -85,6 +96,7 @@ img {
 }
 a {
   color: inherit;
+  text-decoration: none;
 }
 ul {
   list-style: none;

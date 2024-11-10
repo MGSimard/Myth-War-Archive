@@ -2,7 +2,7 @@ export default function Page() {
   return (
     <>
       <header>
-        <h1>MYTH WAR ARCHIVE</h1>
+        <h1>MYTH WAR ARCHIVE - ASSETS</h1>
       </header>
       <main>
         <section>
