@@ -1,5 +1,4 @@
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
-import drizzle from "eslint-plugin-drizzle";
 import tsParser from "@typescript-eslint/parser";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
