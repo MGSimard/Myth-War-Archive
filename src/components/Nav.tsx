@@ -6,16 +6,31 @@ export function Nav() {
       <img src="#" alt="Logo" />
       <ul>
         <li>
-          <Link href="#">L1</Link>
+          <Link href="#">
+            <img src="https://i.imgur.com/EfiueTt.jpeg" alt="O" />
+            <span>Item One</span>
+          </Link>
         </li>
         <li>
-          <Link href="#">L2</Link>
+          <Link href="#">
+            <img src="https://i.imgur.com/EfiueTt.jpeg" alt="O" />
+            <span>This</span>
+          </Link>
         </li>
         <li>
-          <Link href="#">L3</Link>
+          <Link href="#">
+            <img src="https://i.imgur.com/EfiueTt.jpeg" alt="O" />
+            <span>
+              Item Number ThreeItem Number ThreeItem Number ThreeItem Number ThreeItem Number ThreeItem Number ThreeItem
+              Number ThreeItem Number Three
+            </span>
+          </Link>
         </li>
         <li>
-          <Link href="#">L4</Link>
+          <Link href="#">
+            <img src="https://i.imgur.com/EfiueTt.jpeg" alt="O" />
+            <span>Fourth Item</span>
+          </Link>
         </li>
       </ul>
     </nav>

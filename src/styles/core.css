@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid rgb(0, 170, 255);
 }
 /* CORE */
 html {
@@ -19,6 +18,7 @@ body {
   color: white;
   min-height: 100dvh;
 }
+/**/
 nav {
   position: fixed;
   top: 0;
@@ -26,13 +26,45 @@ nav {
   width: var(--sidebar-width);
   max-width: 100%;
   height: 100dvh;
-  overflow: auto;
-  border: 2px solid red;
-  transition: all 0.2s ease;
+  padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+  transition: width 0.2s ease;
 }
 nav:hover,
 nav:focus-within {
   width: calc(var(--sidebar-width) * 4);
+}
+nav li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+nav li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: calc(var(--sidebar-width) - 2rem);
+  background: red;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+nav li a img {
+  flex-shrink: 0;
+  max-width: calc(var(--sidebar-width) - 2rem);
+  object-fit: contain;
+  padding: 0.5rem;
+}
+nav li span {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  padding-right: 0.5rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+nav:hover span,
+nav:focus-within span {
+  opacity: 1;
 }
 header,
 main,
@@ -46,6 +78,21 @@ main {
 }
 footer {
 }
+/* UNSET */
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+input {
+  font: inherit;
+}
+
 @media only screen and (max-width: 768px) {
   /* TODO: NAV */
   header,
