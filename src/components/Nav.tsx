@@ -7,7 +7,7 @@ export function Nav() {
   return (
     <nav>
       <Link href="/">
-        <img src="#" alt="Logo" className="nav-logo" />
+        <div className="nav-logo"></div>
       </Link>
       <ul>
         <NavLink path="World" icon={<IconMap />} />

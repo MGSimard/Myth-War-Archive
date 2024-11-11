@@ -64,10 +64,22 @@ nav:has(a:focus-visible) {
   width: calc(var(--sidebar-width) * 4);
 }
 .nav-logo {
-  margin-bottom: 2rem;
-  border: 1px solid red;
-  height: calc(var(--sidebar-width) - 2rem);
   width: calc(var(--sidebar-width) - 2rem);
+  height: 6.8rem;
+  background-image: url("/logo-idle-60x.webp");
+  animation: logo-anim 2.3s steps(25) infinite;
+  margin-bottom: 2rem;
+}
+.nav-logo:hover {
+  background-image: url("/logo-lit-60x.webp");
+}
+@keyframes logo-anim {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -1500px;
+  }
 }
 nav li:not(:last-child) {
   margin-bottom: 1rem;
