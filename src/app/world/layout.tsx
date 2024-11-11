@@ -1,31 +1,22 @@
-import Link from "next/link";
+import { SubNav } from "@/components/SubNav";
 import { ToTopButton } from "@/components/ToTopButton";
 
 export default function WorldLayout({ children }: { children: React.ReactNode }) {
+  const links = [
+    { href: "/world", title: "World" },
+    { href: "/world/storyline", title: "Storyline" },
+    { href: "/world/races", title: "Races" },
+    { href: "/world/regions", title: "Regions" },
+  ];
+
   return (
     <>
       <header className="panel">
         <h1>Myth War Archive - World</h1>
       </header>
       <main className="panel">
+        <SubNav links={links} icon={<img src="https://avatars.githubusercontent.com/u/126427506?v=4" alt="" />} />
         <section>
-          <div className="section-header">
-            <img alt="O" />
-            <ul>
-              <li>
-                <Link href="/world">World</Link>
-              </li>
-              <li>
-                <Link href="/world/storyline">Storyline</Link>
-              </li>
-              <li>
-                <Link href="/world/races">Races</Link>
-              </li>
-              <li>
-                <Link href="/world/regions">Regions</Link>
-              </li>
-            </ul>
-          </div>
           <div className="section-content">{children}</div>
         </section>
         <ToTopButton />

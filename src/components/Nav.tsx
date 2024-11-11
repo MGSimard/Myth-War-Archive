@@ -4,9 +4,9 @@ import { IconMap, IconTools, IconGroup, IconAssets } from "@/components/Icons";
 
 export function Nav() {
   return (
-    <nav>
-      <Link href="/" className="nav-logo-wrapper">
-        <div className="nav-logo"></div>
+    <nav className="sidenav">
+      <Link href="/" className="sidenav-logo-wrapper">
+        <div className="sidenav-logo"></div>
         <span>Myth War Archive</span>
       </Link>
       <ul>

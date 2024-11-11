@@ -2,7 +2,6 @@ export default function Page() {
   return (
     <>
       <h2>Races</h2>
-      <p>Races stuff</p>
       <div className="heading-banner">
         <h3>Humans</h3>
       </div>
