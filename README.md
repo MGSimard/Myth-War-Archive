@@ -3,6 +3,7 @@
 <details>
 <summary><h2>TASK LIST<h2></summary>
 
+- [ ] Decide on page subnav icons - bland svgs vs in-game UI icons
 - [ ] Prettify h3 section headers
 - [ ] Add class icons to races section, or full character images
 - [ ] Prettify h4 section headings
