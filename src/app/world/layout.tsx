@@ -1,5 +1,5 @@
 import { SubNav } from "@/components/SubNav";
-import { ToTopButton } from "@/components/ToTopButton";
+import { BtnScrollToTop } from "@/components/BtnScrollToTop";
 
 export default function WorldLayout({ children }: { children: React.ReactNode }) {
   const links = [
@@ -19,7 +19,7 @@ export default function WorldLayout({ children }: { children: React.ReactNode })
         <section>
           <div className="section-content">{children}</div>
         </section>
-        <ToTopButton />
+        <BtnScrollToTop />
       </main>
     </>
   );
