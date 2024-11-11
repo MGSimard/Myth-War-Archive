@@ -185,7 +185,7 @@ input {
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: var(--clr-gheading);
+  color: hsla(from var(--clr-gheading) h s l / 0.7);
   background: var(--clr-gradient-tab);
   border: 0.2rem solid var(--clr-gold);
   overflow: hidden;
@@ -208,7 +208,7 @@ input {
   text-decoration: underline;
 }
 .activeSubNavLink {
-  color: hsl(20, 100%, 30%);
+  color: var(--clr-gheading);
   font-weight: 700;
 }
 /* PANEL */
