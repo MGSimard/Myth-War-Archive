@@ -77,7 +77,8 @@ nav:has(a:focus-visible) {
   background-image: url("/logo-idle-60x.webp");
   animation: logo-anim 2.3s steps(25) infinite;
 }
-.nav-logo:hover {
+.nav-logo-wrapper:hover .nav-logo,
+.nav-logo-wrapper:focus-visible .nav-logo {
   background-image: url("/logo-lit-60x.webp");
 }
 .nav-logo-wrapper span {
