@@ -1,7 +1,15 @@
 import { type Metadata } from "next";
+import { Geist, Playfair_Display_SC } from "next/font/google";
 import { Nav } from "@/components/Nav";
-import "@/styles/core.css";
 import { Footer } from "@/components/Footer";
+import "@/styles/core.css";
+
+const geist = Geist({ subsets: ["latin"], fallback: ["sans-serif"] });
+const playfairDisplaySC = Playfair_Display_SC({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-playfairSC",
+});
 
 export const metadata: Metadata = {
   title: "Myth War Archive",
@@ -12,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${geist.className} ${playfairDisplaySC.variable}`}>
         <Nav />
         {children}
         <Footer />

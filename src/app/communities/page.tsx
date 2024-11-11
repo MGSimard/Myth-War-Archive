@@ -2,7 +2,7 @@ export default function Page() {
   return (
     <>
       <header>
-        <h1>MYTH WAR ARCHIVE - COMMUNITIES</h1>
+        <h1>Myth War Archive - Communities</h1>
       </header>
       <main>
         <section>
