@@ -10,20 +10,21 @@ export default function WorldLayout({ children }: { children: React.ReactNode })
       <main className="panel">
         <section>
           <div className="section-header">
-            <div className="sh-title">
-              <img alt="O" />
-              <ul>
-                <li>
-                  <Link href="/world/storyline">Storyline</Link>
-                </li>
-                <li>
-                  <Link href="/world/races">Races</Link>
-                </li>
-                <li>
-                  <Link href="/world/regions">Regions</Link>
-                </li>
-              </ul>
-            </div>
+            <img alt="O" />
+            <ul>
+              <li>
+                <Link href="/world">World</Link>
+              </li>
+              <li>
+                <Link href="/world/storyline">Storyline</Link>
+              </li>
+              <li>
+                <Link href="/world/races">Races</Link>
+              </li>
+              <li>
+                <Link href="/world/regions">Regions</Link>
+              </li>
+            </ul>
           </div>
           <div className="section-content">{children}</div>
         </section>

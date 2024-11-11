@@ -184,17 +184,22 @@ input {
   border: 0.2rem solid var(--clr-gold);
 }
 .section-header {
-  background: var(--clr-gradient-tab);
-}
-.sh-title {
   display: flex;
   align-items: center;
   gap: 1rem;
+  background: var(--clr-gradient-tab);
 }
-.sh-title img {
+.section-header img {
   height: 4rem;
   width: 4rem;
   border: 1px solid red;
+}
+.section-header ul {
+  display: flex;
+}
+.section-header ul li:not(:last-child)::after {
+  content: "|";
+  margin: 0 1rem;
 }
 .section-content {
   padding: 2rem;
