@@ -91,9 +91,34 @@ main {
   flex-direction: column;
   gap: 1rem;
 }
-section {
+.panel section {
+  background: url("/papyrus.webp");
   border: 0.2rem solid var(--clr-gold);
 }
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--clr-gradient-tab);
+}
+.sh-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sh-title img {
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid red;
+}
+.sh-topright {
+  padding: 0 1rem;
+}
+.section-content {
+  padding: 2rem;
+  color: black;
+}
+
 header,
 main,
 footer {
