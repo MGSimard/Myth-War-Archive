@@ -207,6 +207,9 @@ input {
   color: black;
   box-shadow: inset 0 0 2rem rgb(54, 39, 4);
 }
+.section-content p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
 
 @media only screen and (max-width: 768px) {
   /* TODO: NAV */

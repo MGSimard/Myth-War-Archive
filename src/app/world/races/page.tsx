@@ -1,8 +1,8 @@
 export default function Page() {
   return (
     <>
-      <h2>World</h2>
-      <p>Add stuff</p>
+      <h2>Races</h2>
+      <p>Races stuff</p>
     </>
   );
 }
