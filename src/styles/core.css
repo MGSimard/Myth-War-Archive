@@ -209,6 +209,12 @@ input {
 .section-content p:not(:last-child) {
   margin-bottom: 1.5em;
 }
+.heading-banner {
+  color: white;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background: hsl(35, 40%, 52%);
+}
 
 @media only screen and (max-width: 768px) {
   /* TODO: NAV */
