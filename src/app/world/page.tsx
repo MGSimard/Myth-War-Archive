@@ -8,7 +8,7 @@ export default function Page() {
         <section>
           <div className="section-header">
             <div className="sh-title">
-              <img src="#" alt="O" />
+              <img alt="O" />
               <h2>Section 1</h2>
             </div>
             <div className="sh-topright">More &gt;&gt;</div>
