@@ -1,10 +1,10 @@
 export default function Page() {
   return (
     <>
-      <header>
+      <header className="panel">
         <h1>Myth War Archive - Assets</h1>
       </header>
-      <main>
+      <main className="panel">
         <section>
           <h2>Section 1</h2>
         </section>
