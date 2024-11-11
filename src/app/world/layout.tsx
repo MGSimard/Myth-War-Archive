@@ -15,12 +15,15 @@ export default function WorldLayout({ children }: { children: React.ReactNode })
               <ul>
                 <li>
                   <Link href="/world/storyline">Storyline</Link>
+                </li>
+                <li>
                   <Link href="/world/races">Races</Link>
+                </li>
+                <li>
                   <Link href="/world/regions">Regions</Link>
                 </li>
               </ul>
             </div>
-            <div className="sh-topright">More &gt;&gt;</div>
           </div>
           <div className="section-content">{children}</div>
         </section>

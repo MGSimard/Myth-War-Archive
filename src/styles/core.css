@@ -184,9 +184,6 @@ input {
   border: 0.2rem solid var(--clr-gold);
 }
 .section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: var(--clr-gradient-tab);
 }
 .sh-title {
@@ -198,9 +195,6 @@ input {
   height: 4rem;
   width: 4rem;
   border: 1px solid red;
-}
-.sh-topright {
-  padding: 0 1rem;
 }
 .section-content {
   padding: 2rem;
