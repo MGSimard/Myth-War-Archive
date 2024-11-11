@@ -1,17 +1,5 @@
 ## THIS APP IS IN ACTIVE DEVELOPMENT
 
-<details>
-<summary><h2>TASK LIST<h2></summary>
-
-- [ ] Task
-- [ ] Task
-- [ ] Task
-- [ ] Task
-- [ ] Task
-- [ ] Task
-
-</details>
-
 <br/>
 <div align="center">
 
