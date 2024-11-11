@@ -45,6 +45,12 @@ nav:hover,
 nav:has(a:focus-visible) {
   width: calc(var(--sidebar-width) * 4);
 }
+.nav-logo {
+  margin-bottom: 2rem;
+  border: 1px solid red;
+  height: calc(var(--sidebar-width) - 2rem);
+  width: calc(var(--sidebar-width) - 2rem);
+}
 nav li:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -57,6 +63,9 @@ nav li a {
   border-radius: 0.4rem;
   border: 0.2rem solid transparent;
   color: rgba(255, 255, 255, 0.4);
+}
+nav li a:not(.activeLink):hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 nav li a.activeLink {
   position: relative;
@@ -82,7 +91,7 @@ nav li span {
   transition: opacity 0.2s ease;
 }
 nav:hover li span,
-nav:focus-within li span {
+nav:has(a:focus-visible) li span {
   opacity: 1;
 }
 main {
