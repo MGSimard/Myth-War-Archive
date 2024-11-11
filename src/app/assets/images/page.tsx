@@ -1,9 +1,9 @@
 export default function Page() {
   return (
     <>
-      <h2>Wallpapers</h2>
+      <h2>Images</h2>
       <hr className="divider" />
-      <p>Wallpapers stuff</p>
+      <p>Images stuff</p>
     </>
   );
 }

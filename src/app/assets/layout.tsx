@@ -4,10 +4,9 @@ import { BtnScrollToTop } from "@/components/BtnScrollToTop";
 export default function AssetsLayout({ children }: { children: React.ReactNode }) {
   const links = [
     { href: "/assets", title: "Assets" },
-    { href: "/assets/images", title: "Assets" },
     { href: "/assets/maps", title: "Maps" },
+    { href: "/assets/images", title: "Images" },
     { href: "/assets/audio", title: "Audio" },
-    { href: "/assets/wallpapers", title: "Wallpapers" },
   ];
 
   return (
