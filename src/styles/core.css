@@ -1,9 +1,10 @@
 :root {
   --sidebar-width: 8rem;
   --radius: 0.4rem;
+  --clr-bg: hsl(193, 90%, 4%);
   --clr-bg-popout: hsl(75, 7.41%, 10.59%);
   --clr-gold: hsl(45, 44%, 46%);
-  --clr-bg: hsl(193, 90%, 4%);
+  --clr-gradient-tab: linear-gradient(hsl(199, 70%, 42%), hsl(191, 92%, 10%));
 }
 * {
   box-sizing: border-box;
@@ -53,26 +54,29 @@ nav li a {
   height: calc(var(--sidebar-width) - 2rem);
   overflow: hidden;
   border-radius: 0.4rem;
+  border: 0.2rem solid transparent;
 }
 nav li a.activeLink {
-  background: red;
+  border: 0.2rem solid var(--clr-gold);
+  background: var(--clr-gradient-tab);
+  box-shadow: inset 0 0 0.3rem black, 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 nav li a svg {
   flex-shrink: 0;
-  max-width: calc(var(--sidebar-width) - 2rem);
   object-fit: contain;
+  max-width: calc(var(--sidebar-width) - 2.4rem);
   padding: 1rem;
 }
 nav li span {
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  padding-right: 0.5rem;
   max-width: 100%;
+  padding-right: 0.5rem;
+  opacity: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: opacity 0.2s ease;
 }
-nav:hover span,
-nav:focus-within span {
+nav:hover li span,
+nav:focus-within li span {
   opacity: 1;
 }
 header,
@@ -88,7 +92,7 @@ main {
   background: var(--clr-bg);
   box-shadow: inset 0 0 1rem hsl(69, 16%, 15%);
   border-radius: var(--radius);
-  border: 1px solid hsla(from var(--clr-gold) h s l / 0.3);
+  border: 0.1rem solid hsla(from var(--clr-gold) h s l / 0.3);
 }
 footer {
 }
