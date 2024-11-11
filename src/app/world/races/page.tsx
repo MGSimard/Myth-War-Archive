@@ -2,6 +2,7 @@ export default function Page() {
   return (
     <>
       <h2>Races</h2>
+      <hr className="divider" />
       <div className="heading-banner">
         <h3>Humans</h3>
       </div>

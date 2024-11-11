@@ -2,6 +2,7 @@ export default function Page() {
   return (
     <>
       <h2>Storyline</h2>
+      <hr className="divider" />
       <p>The war among the Gods had become a pivotal episode in history and left the living world in chaos.</p>
       <p>
         The mystical dimension created by the Great One had granted the Gods infinite powers. Be that as it may, Gods

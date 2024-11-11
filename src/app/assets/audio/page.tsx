@@ -1,9 +1,9 @@
 export default function Page() {
   return (
     <>
-      <h2>Regions</h2>
+      <h2>Audio</h2>
       <hr className="divider" />
-      <p>Regions stuff</p>
+      <p>Audio stuff</p>
     </>
   );
 }
