@@ -1,13 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
 import { NavLink } from "@/components/NavLink";
 import { IconMap, IconTools, IconGroup, IconAssets } from "@/components/Icons";
 
 export function Nav() {
   return (
     <nav>
-      <Link href="/">
+      <Link href="/" className="nav-logo-wrapper">
         <div className="nav-logo"></div>
+        <span>Myth War Archive</span>
       </Link>
       <ul>
         <NavLink path="World" icon={<IconMap />} />

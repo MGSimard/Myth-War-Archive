@@ -63,15 +63,32 @@ nav:hover,
 nav:has(a:focus-visible) {
   width: calc(var(--sidebar-width) * 4);
 }
+.nav-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
 .nav-logo {
+  flex-shrink: 0;
   width: calc(var(--sidebar-width) - 2rem);
   height: 6.8rem;
   background-image: url("/logo-idle-60x.webp");
   animation: logo-anim 2.3s steps(25) infinite;
-  margin-bottom: 2rem;
 }
 .nav-logo:hover {
   background-image: url("/logo-lit-60x.webp");
+}
+.nav-logo-wrapper span {
+  max-width: 100%;
+  padding-right: 1rem;
+  opacity: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: opacity 0.2s ease;
 }
 @keyframes logo-anim {
   from {
@@ -120,12 +137,13 @@ nav li span {
   overflow: hidden;
   transition: opacity 0.2s ease;
 }
-nav:hover li span,
-nav:has(a:focus-visible) li span {
+nav:hover a span,
+nav:has(a:focus-visible) a span {
   opacity: 1;
 }
 h1,
-nav li span {
+nav li span,
+.nav-logo-wrapper span {
   font-family: var(--font-playfairSC);
 }
 h1 {
