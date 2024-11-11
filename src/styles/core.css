@@ -177,9 +177,7 @@ input {
 
 @media only screen and (max-width: 768px) {
   /* TODO: NAV */
-  header,
-  main,
-  footer {
-    padding: 4rem;
+  .content {
+    margin-left: 0;
   }
 }
