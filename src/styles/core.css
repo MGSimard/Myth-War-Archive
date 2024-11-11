@@ -87,6 +87,12 @@ nav:focus-within li span {
 }
 main {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section {
+  border: 0.2rem solid var(--clr-gold);
 }
 header,
 main,
@@ -101,7 +107,12 @@ nav li span {
 h1 {
   font-weight: 400;
 }
-nav li span {
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair);
 }
 /* UNSET */
 img {

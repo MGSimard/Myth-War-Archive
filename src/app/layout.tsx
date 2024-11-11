@@ -1,10 +1,11 @@
 import { type Metadata } from "next";
-import { Geist, Playfair_Display_SC } from "next/font/google";
+import { Geist, Playfair, Playfair_Display_SC } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import "@/styles/core.css";
 
 const geist = Geist({ subsets: ["latin"], fallback: ["sans-serif"] });
+const playfair = Playfair({ subsets: ["latin"], variable: "--font-playfair" });
 const playfairDisplaySC = Playfair_Display_SC({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geist.className} ${playfairDisplaySC.variable}`}>
+      <body className={`${geist.className} ${playfairDisplaySC.variable} ${playfair.variable}`}>
         <Nav />
         {children}
         <Footer />
