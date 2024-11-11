@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 
 export function NavLink({ path, icon }: { path: string; icon: React.ReactNode }) {
   const pathname = usePathname();
-
   const isActive = pathname === `/${path.toLowerCase()}` || pathname.startsWith(`/${path.toLowerCase()}/`);
 
   return (
