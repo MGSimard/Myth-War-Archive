@@ -22,9 +22,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${geist.className} ${playfairDisplaySC.variable} ${playfair.variable}`}>
-        <Nav />
-        {children}
-        <Footer />
+        <div className="content">
+          <Nav />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

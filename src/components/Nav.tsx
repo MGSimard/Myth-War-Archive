@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { NavLink } from "@/components/NavLink";
 import { IconMap, IconTools, IconGroup, IconAssets } from "@/components/Icons";
 
