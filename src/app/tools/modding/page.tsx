@@ -1,9 +1,9 @@
 export default function Page() {
   return (
     <>
-      <h2>Communities</h2>
+      <h2>Modding</h2>
       <hr className="divider" />
-      <p>Communities stuff</p>
+      <p>Modding stuff</p>
     </>
   );
 }

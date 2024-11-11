@@ -1,17 +1,9 @@
 export default function Page() {
   return (
     <>
-      <header className="panel">
-        <h1>Myth War Archive - Tools</h1>
-      </header>
-      <main className="panel">
-        <section>
-          <h2>Section 1</h2>
-        </section>
-        <section>
-          <h2>Section 2</h2>
-        </section>
-      </main>
+      <h2>Tools</h2>
+      <hr className="divider" />
+      <p>Tools stuff</p>
     </>
   );
 }
