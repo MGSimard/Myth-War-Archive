@@ -1,5 +1,20 @@
 ## THIS APP IS IN ACTIVE DEVELOPMENT
 
+<details>
+<summary><h2>TASK LIST<h2></summary>
+
+- [ ] Prettify h3 section headers
+- [ ] Add class icons to races section, or full character images
+- [ ] Prettify h4 section headings
+- [ ] Fill out regions section
+- [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
+- [ ] Figure out if I want header backgrounds in pages
+- [ ] Nested ul submenu in nav links
+- [ ] Decide if I want page footer or nav footer (icons etc)
+- [ ] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
+
+</details>
+
 <br/>
 <div align="center">
 
