@@ -39,7 +39,7 @@ export default function Page() {
             armor they carry and therefore their agility is compromised. A high level paladin is able to advance to a
             magic-swordsman.
           </p>
-        </div>{" "}
+        </div>
         <div className="class-wrapper">
           <ClassBanner
             src="https://utfs.io/f/e0BHXYWYpV1NztGxbghRFQiEB3JMNWaAZtubXjgTY9rePlV2"
@@ -85,7 +85,7 @@ export default function Page() {
             this is that their armor shielding is low and they have low hit points as well. A high-leveled archer is up
             gradable to become a hunter.
           </p>
-        </div>{" "}
+        </div>
         <div className="class-wrapper">
           <ClassBanner
             src="https://utfs.io/f/e0BHXYWYpV1NRQPJm8G6kNEGIpMvogr3hwUHCyK1xqZuejWX"
@@ -113,7 +113,7 @@ export default function Page() {
           However they were clever to forgive to the world and progress in a more positive direction. By using their
           intelligence, they established the largest economic center in the planet and gained trust by helping strong
           races to develop and prosper.
-        </p>{" "}
+        </p>
         <div className="class-wrapper">
           <ClassBanner
             src="https://utfs.io/f/e0BHXYWYpV1NKA9ADLwAgsuMeFrYVICRDO3wf10HiqBSp2ZJ"
@@ -127,7 +127,7 @@ export default function Page() {
             powers, having great advantages over their enemies during melee attacks. However, their weakest links are
             their low armor and low hit points. A priest is able to advance to High Priest.
           </p>
-        </div>{" "}
+        </div>
         <div className="class-wrapper">
           <ClassBanner
             src="https://utfs.io/f/e0BHXYWYpV1NmqqioDCk5xRFvbrqCBOKpekyTMwX3f6I1nji"
@@ -155,7 +155,7 @@ export default function Page() {
           advanced intelligence was put in the robots body to make them move again. Parts of this robot would release
           rays of light as the Silver Driver was operating. Moreover, inspired by technology the mages invented a flight
           propulsion system for the robots which enabled them to fly without using magic.
-        </p>{" "}
+        </p>
         <div className="class-wrapper">
           <ClassBanner
             src="https://utfs.io/f/e0BHXYWYpV1NuytWbJuS8PE9ZMU6W7IBOcw1N5Szpjygbr0X"
@@ -168,7 +168,7 @@ export default function Page() {
             heavy weapons the damage inflicted is massive. They are good at absorbing hit points as well as rebounding
             attacks.
           </p>
-        </div>{" "}
+        </div>
         <div className="class-wrapper">
           <ClassBanner
             src="https://utfs.io/f/e0BHXYWYpV1NR8bV7yDG6kNEGIpMvogr3hwUHCyK1xqZuejW"
