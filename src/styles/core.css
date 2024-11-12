@@ -265,16 +265,17 @@ input {
   align-items: center;
   gap: 1rem;
   max-width: 20rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   padding: 0.5rem 0;
   border-radius: 2rem 0.4rem 0.4rem 2rem;
   background: hsla(226.875, 61.53%, 40.78%, 32.94%);
+  backdrop-filter: blur(1);
 }
 .class-banner img {
   position: absolute;
   width: 5.5rem;
   height: 5.5rem;
-  border: 0.2rem solid var(--clr-gold);
+  border: 0.3rem solid var(--clr-gold);
   border-radius: 999rem;
 }
 .class-banner h4 {
