@@ -281,6 +281,7 @@ input {
 .class-banner h4 {
   margin-left: 6rem;
   line-height: 0.8em;
+  overflow: hidden;
 }
 .class-banner span {
   display: block;

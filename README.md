@@ -3,6 +3,7 @@
 <details>
 <summary><h2>TASK LIST<h2></summary>
 
+- [ ] Decide on a threshold for 3rd party image hosting (100kb+?)
 - [ ] Decide on page subnav icons - bland svgs vs in-game UI icons
 - [ ] Prettify h3 section headers
 - [ ] Add class icons to races section, or full character images
