@@ -111,7 +111,7 @@ export default function Page() {
         believers. What the Gods needed was to form an army with the believers.In the dimensions, nothing could ever
         escape the universal law of returning. But Gods who adapted the circle logic thinking system tempted by the
         desire to live on, started the biggest war ever - the War of Gods. After becoming mad, they no longer had
-        consciousness of the rules of the dimensions ... Vengeances, curses led to their extermination. Wars, cruelties,
+        consciousness of the rules of the dimensions... Vengeances, curses led to their extermination. Wars, cruelties,
         killings, contests, desire and magic...
       </p>
       <p>
