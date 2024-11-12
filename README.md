@@ -4,6 +4,7 @@
 <summary><h2>TASK LIST<h2></summary>
 
 - [ ] Decide on a threshold for 3rd party image hosting (100kb+?)
+- [ ] For map assets, show a compressed webp of fullmap and offer a zipped download of all jpg tiles
 - [ ] Decide on page subnav icons - bland svgs vs in-game UI icons
 - [ ] Prettify h3 section headers
 - [ ] Add class icons to races section, or full character images
