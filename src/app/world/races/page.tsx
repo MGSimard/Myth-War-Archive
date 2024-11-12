@@ -23,34 +23,39 @@ export default function Page() {
           something immoral or illegal. Smart, reckless, wicked and go-getting are the best words to describe the human
           character class in this game.
         </p>
-        <ClassBanner
-          src="https://utfs.io/f/e0BHXYWYpV1NwHxBZhALc4e0XdzQ2rAGltnL751jFMS9isVU"
-          alt="Human Male Avatar"
-          title="Paladin"
-        />
-        <p>
-          Paladins are great warriors who have a heart to save the weak.Their main purpose in life is to pursue
-          Godliness. They spend their lives training themselves up in order to protect their lands and as a result, they
-          have advanced combating skills and possess greater stamina and power than other classes. They are mainly noted
-          for their superior crime and combat skills. Apart from the offensive side of Paladin nature, they are also
-          good at defense. One can term them as moving castles during battles. However one drawback of this class is
-          that the equipment they carry is relatively heavy because of all the heavy-based weapons and armor they carry
-          and therefore their agility is compromised. A high level paladin is able to advance to a magic-swordsman.
-        </p>
-        <ClassBanner
-          src="https://utfs.io/f/e0BHXYWYpV1NztGxbghRFQiEB3JMNWaAZtubXjgTY9rePlV2"
-          alt="Human Female Avatar"
-          title="Thief"
-        />
-        <p>
-          Thieves are known to have a wicked and nasty nature. Their outward appearance takes on the usual shape of a
-          slim body and they dress in a corset and mask mainly. Their main choice of weapons are daggers and knives.
-          Their agility level is the highest amongst all classes. Obviously, they are experts in stealing money and
-          items from their enemies as that is what they do. They gain fame and recognition from this activity. Their
-          fast attacking speeds show no mercy to their enemies and if necessary they are able to evade attacks as well.
-          Thieves can be powerful allies to team up with. A high leveled thief can be advanced to become an
-          assassinator.
-        </p>
+        <div className="class-wrapper">
+          <ClassBanner
+            src="https://utfs.io/f/e0BHXYWYpV1NwHxBZhALc4e0XdzQ2rAGltnL751jFMS9isVU"
+            alt="Human Male Avatar"
+            title="Paladin"
+          />
+          <p>
+            Paladins are great warriors who have a heart to save the weak.Their main purpose in life is to pursue
+            Godliness. They spend their lives training themselves up in order to protect their lands and as a result,
+            they have advanced combating skills and possess greater stamina and power than other classes. They are
+            mainly noted for their superior crime and combat skills. Apart from the offensive side of Paladin nature,
+            they are also good at defense. One can term them as moving castles during battles. However one drawback of
+            this class is that the equipment they carry is relatively heavy because of all the heavy-based weapons and
+            armor they carry and therefore their agility is compromised. A high level paladin is able to advance to a
+            magic-swordsman.
+          </p>
+        </div>{" "}
+        <div className="class-wrapper">
+          <ClassBanner
+            src="https://utfs.io/f/e0BHXYWYpV1NztGxbghRFQiEB3JMNWaAZtubXjgTY9rePlV2"
+            alt="Human Female Avatar"
+            title="Thief"
+          />
+          <p>
+            Thieves are known to have a wicked and nasty nature. Their outward appearance takes on the usual shape of a
+            slim body and they dress in a corset and mask mainly. Their main choice of weapons are daggers and knives.
+            Their agility level is the highest amongst all classes. Obviously, they are experts in stealing money and
+            items from their enemies as that is what they do. They gain fame and recognition from this activity. Their
+            fast attacking speeds show no mercy to their enemies and if necessary they are able to evade attacks as
+            well. Thieves can be powerful allies to team up with. A high leveled thief can be advanced to become an
+            assassinator.
+          </p>
+        </div>
       </div>
       <hr className="divider" />
       <div className="race-wrapper">
@@ -66,31 +71,36 @@ export default function Page() {
           intelligence level compared to humans. Greater knowledge and more magic skills make centaurs a formidable
           entity.
         </p>
-        <ClassBanner
-          src="https://utfs.io/f/e0BHXYWYpV1NUWIbhVfBhVC1bNduT6OStolse3kI7QiMEPKm"
-          alt="Centaur Male Avatar"
-          title="Archer"
-        />
-        <p>
-          Strength, agility and intelligence are never enough to archers who spend their lives to pursue peace and
-          justice. They adopt range weapons, and are masters in using bows and crossbows. They are born with fantastic
-          foresight that give them a great tactical advantage even before battles start. Normally, they dress lightly
-          with light armors or silky clothes to make sure their agilities will not be affected; One disadvantage of this
-          is that their armor shielding is low and they have low hit points as well. A high-leveled archer is up
-          gradable to become a hunter.
-        </p>
-        <ClassBanner
-          src="https://utfs.io/f/e0BHXYWYpV1NRQPJm8G6kNEGIpMvogr3hwUHCyK1xqZuejWX"
-          alt="Centaur Female Avatar"
-          title="Elf"
-        />
-        <p>
-          Elves have a lot of respect for nature and are often one with nature. This enables them to tune in to their
-          natural healing and blessing skills. Elves are very important team platers as they move fast and attack fast
-          as well as have high chances to evade attacks. Elves have great advantages when facing enemies like the undead
-          because they are able to bless teammates with the force of nature. Elves however are very delicate and there
-          is a strong need to protect them in battle. High leveled elves are up gradable to become Knight-elves.
-        </p>
+        <div className="class-wrapper">
+          <ClassBanner
+            src="https://utfs.io/f/e0BHXYWYpV1NUWIbhVfBhVC1bNduT6OStolse3kI7QiMEPKm"
+            alt="Centaur Male Avatar"
+            title="Archer"
+          />
+          <p>
+            Strength, agility and intelligence are never enough to archers who spend their lives to pursue peace and
+            justice. They adopt range weapons, and are masters in using bows and crossbows. They are born with fantastic
+            foresight that give them a great tactical advantage even before battles start. Normally, they dress lightly
+            with light armors or silky clothes to make sure their agilities will not be affected; One disadvantage of
+            this is that their armor shielding is low and they have low hit points as well. A high-leveled archer is up
+            gradable to become a hunter.
+          </p>
+        </div>{" "}
+        <div className="class-wrapper">
+          <ClassBanner
+            src="https://utfs.io/f/e0BHXYWYpV1NRQPJm8G6kNEGIpMvogr3hwUHCyK1xqZuejWX"
+            alt="Centaur Female Avatar"
+            title="Elf"
+          />
+          <p>
+            Elves have a lot of respect for nature and are often one with nature. This enables them to tune in to their
+            natural healing and blessing skills. Elves are very important team platers as they move fast and attack fast
+            as well as have high chances to evade attacks. Elves have great advantages when facing enemies like the
+            undead because they are able to bless teammates with the force of nature. Elves however are very delicate
+            and there is a strong need to protect them in battle. High leveled elves are up gradable to become
+            Knight-elves.
+          </p>
+        </div>
       </div>
       <hr className="divider" />
       <div className="race-wrapper">
@@ -103,30 +113,34 @@ export default function Page() {
           However they were clever to forgive to the world and progress in a more positive direction. By using their
           intelligence, they established the largest economic center in the planet and gained trust by helping strong
           races to develop and prosper.
-        </p>
-        <ClassBanner
-          src="https://utfs.io/f/e0BHXYWYpV1NKA9ADLwAgsuMeFrYVICRDO3wf10HiqBSp2ZJ"
-          alt="Mage Male Avatar"
-          title="Priest"
-        />
-        <p>
-          Priests are capable of casting incredibly powerful spells by utilizing the powers of wind, thunder, water and
-          fire. Their brand of magic is dark in opposition to the holy one. As they are deprived of sunlight, they are
-          weak at closed battle. They compensate for this weakness by having spells which can have unbelievable powers,
-          having great advantages over their enemies during melee attacks. However, their weakest links are their low
-          armor and low hit points. A priest is able to advance to High Priest.
-        </p>
-        <ClassBanner
-          src="https://utfs.io/f/e0BHXYWYpV1NmqqioDCk5xRFvbrqCBOKpekyTMwX3f6I1nji"
-          alt="Mage Female Avatar"
-          title="Witch"
-        />
-        <p>
-          Witches have the power to combine ancient charms to exert influences over substances and matter. They hold the
-          power to announce death and use this power in battle. They have similar attack features as priest such as low
-          hit points, but they have a comparatively higher attack damage. A witch can be advanced to become a
-          high-witch.
-        </p>
+        </p>{" "}
+        <div className="class-wrapper">
+          <ClassBanner
+            src="https://utfs.io/f/e0BHXYWYpV1NKA9ADLwAgsuMeFrYVICRDO3wf10HiqBSp2ZJ"
+            alt="Mage Male Avatar"
+            title="Priest"
+          />
+          <p>
+            Priests are capable of casting incredibly powerful spells by utilizing the powers of wind, thunder, water
+            and fire. Their brand of magic is dark in opposition to the holy one. As they are deprived of sunlight, they
+            are weak at closed battle. They compensate for this weakness by having spells which can have unbelievable
+            powers, having great advantages over their enemies during melee attacks. However, their weakest links are
+            their low armor and low hit points. A priest is able to advance to High Priest.
+          </p>
+        </div>{" "}
+        <div className="class-wrapper">
+          <ClassBanner
+            src="https://utfs.io/f/e0BHXYWYpV1NmqqioDCk5xRFvbrqCBOKpekyTMwX3f6I1nji"
+            alt="Mage Female Avatar"
+            title="Witch"
+          />
+          <p>
+            Witches have the power to combine ancient charms to exert influences over substances and matter. They hold
+            the power to announce death and use this power in battle. They have similar attack features as priest such
+            as low hit points, but they have a comparatively higher attack damage. A witch can be advanced to become a
+            high-witch.
+          </p>
+        </div>
       </div>
       <hr className="divider" />
       <div className="race-wrapper">
@@ -141,29 +155,34 @@ export default function Page() {
           advanced intelligence was put in the robots body to make them move again. Parts of this robot would release
           rays of light as the Silver Driver was operating. Moreover, inspired by technology the mages invented a flight
           propulsion system for the robots which enabled them to fly without using magic.
-        </p>
-        <ClassBanner
-          src="https://utfs.io/f/e0BHXYWYpV1NuytWbJuS8PE9ZMU6W7IBOcw1N5Szpjygbr0X"
-          alt="Borg Male Avatar"
-          title="Tyrant"
-        />
-        <p>
-          Tyrants emerge from the ruins so they are more adept to battle, having a super-powerful body. They are great
-          experts in battle and have only one focus on their mind, to attack. Although they can only use slow and heavy
-          weapons the damage inflicted is massive. They are good at absorbing hit points as well as rebounding attacks.
-        </p>
-        <ClassBanner
-          src="https://utfs.io/f/e0BHXYWYpV1NR8bV7yDG6kNEGIpMvogr3hwUHCyK1xqZuejW"
-          alt="Borg Female Avatar"
-          title="Cyborg"
-        />
-        <p>
-          Cyborgs are designed to protect and prolong lives. They have resistance to all spells being machine based and
-          they have a longer life span than their biological enemies. They excel in team battles due to their healing
-          contribution. They are also good at solo fights. Their primary weapons are spears. As a spear is a double
-          armed weapon, they cannot use shields. They have lower attacking rates, weak defense but can absorb a lot of
-          damage.
-        </p>
+        </p>{" "}
+        <div className="class-wrapper">
+          <ClassBanner
+            src="https://utfs.io/f/e0BHXYWYpV1NuytWbJuS8PE9ZMU6W7IBOcw1N5Szpjygbr0X"
+            alt="Borg Male Avatar"
+            title="Tyrant"
+          />
+          <p>
+            Tyrants emerge from the ruins so they are more adept to battle, having a super-powerful body. They are great
+            experts in battle and have only one focus on their mind, to attack. Although they can only use slow and
+            heavy weapons the damage inflicted is massive. They are good at absorbing hit points as well as rebounding
+            attacks.
+          </p>
+        </div>{" "}
+        <div className="class-wrapper">
+          <ClassBanner
+            src="https://utfs.io/f/e0BHXYWYpV1NR8bV7yDG6kNEGIpMvogr3hwUHCyK1xqZuejW"
+            alt="Borg Female Avatar"
+            title="Cyborg"
+          />
+          <p>
+            Cyborgs are designed to protect and prolong lives. They have resistance to all spells being machine based
+            and they have a longer life span than their biological enemies. They excel in team battles due to their
+            healing contribution. They are also good at solo fights. Their primary weapons are spears. As a spear is a
+            double armed weapon, they cannot use shields. They have lower attacking rates, weak defense but can absorb a
+            lot of damage.
+          </p>
+        </div>
       </div>
     </>
   );

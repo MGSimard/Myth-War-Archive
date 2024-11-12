@@ -245,7 +245,7 @@ input {
   height: 0.5rem;
   box-shadow: inset 0 0 0.4rem rgb(77, 56, 7);
   border: none;
-  backdrop-filter: saturate(150%);
+  backdrop-filter: saturate(1.5);
   margin: 2rem 0;
 }
 
@@ -256,13 +256,16 @@ input {
 .race-wrapper h3 {
   margin-bottom: 2rem;
 }
+.class-wrapper:not(:last-child) {
+  margin-bottom: 4rem;
+}
 .class-banner {
   position: relative;
   display: flex;
   align-items: center;
   gap: 1rem;
   max-width: 20rem;
-  margin-bottom: 1%;
+  margin-bottom: 1rem;
   padding: 0.5rem 0;
   border-radius: 2rem 0.4rem 0.4rem 2rem;
   background: hsla(226.875, 61.53%, 40.78%, 32.94%);
@@ -283,6 +286,12 @@ input {
   font-style: italic;
   font-size: 0.8em;
   opacity: 0.5;
+}
+.class-wrapper p {
+  backdrop-filter: brightness(0.95) saturate(1.4);
+  box-shadow: inset 0 0 1rem rgb(54, 39, 4);
+  padding: 1rem;
+  border-radius: 0.4rem;
 }
 
 /* SCROLL TO TOP BUTTON */
