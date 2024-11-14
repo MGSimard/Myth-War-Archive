@@ -45,11 +45,18 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
 
 function LightboxContent({ fullSrc }: { fullSrc: string }) {
   const imgRef = useRef<HTMLImageElement | null>(null);
-  const [isDragging, setIsDragging] = useState();
+  const [isDragging, setIsDragging] = useState<boolean>(false);
 
   const handleImgLMB = (e: MouseEvent | TouchEvent) => {
-    console.log("handleImgLMB Triggered!");
-    console.log(e.target);
+    console.log("handleImgLMB Triggered!", e.target);
+    const eventType = e.type;
+    if (eventType === "mousedown" || eventType === "touchstart") {
+      console.log("MOUSEDOWN/TOUCHSTART");
+      setIsDragging(true);
+    } else if (eventType === "mouseup" || eventType === "touchend") {
+      console.log("MOUSEUP/TOUCHEND");
+      setIsDragging(false);
+    }
   };
   const handleImgDrag = () => {
     console.log("handleImgDrag Triggered!");
@@ -69,18 +76,24 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     // Probably doesn't matter, but currently this all mounts on page render.
     // Since Dialog and img do render in DOM, even if image isn't fetched (Lazy, loads on viewport visibility)
     if (image) {
-      console.log("Image ref present");
       image.addEventListener("mouseup", handleImgLMB, { signal });
       image.addEventListener("touchend", handleImgLMB, { signal });
       image.addEventListener("mousedown", handleImgLMB, { signal });
       image.addEventListener("touchstart", handleImgLMB, { signal });
+      console.log("Event listeners Mounted.");
     }
 
     return () => {
       console.log("LightboxContent Unmounted.");
       controller.abort();
+      console.log("Event listeners Unmounted");
     };
   }, [imgRef]);
+
+  useEffect(() => {
+    if (isDragging) console.log("DRAGGING!");
+    else console.log("NOT DRAGGING!");
+  }, [isDragging]);
 
   return (
     <div className="lightbox-content">
