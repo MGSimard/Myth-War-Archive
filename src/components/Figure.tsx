@@ -47,17 +47,19 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
   const imgRef = useRef<HTMLImageElement | null>(null);
   const [isDragging, setIsDragging] = useState<boolean>(false);
 
-  const handleImgLMB = (e: MouseEvent | TouchEvent) => {
-    console.log("handleImgLMB Triggered!", e.target);
-    const eventType = e.type;
-    if (eventType === "mousedown" || eventType === "touchstart") {
-      console.log("MOUSEDOWN/TOUCHSTART");
-      setIsDragging(true);
-    } else if (eventType === "mouseup" || eventType === "touchend") {
-      console.log("MOUSEUP/TOUCHEND");
-      setIsDragging(false);
-    }
+  const handlePointerDown = (e: PointerEvent) => {
+    console.log("POINTER DOWN!");
+    if (!imgRef.current) return;
+    imgRef.current.setPointerCapture(e.pointerId);
+    setIsDragging(true);
   };
+  const handlePointerUp = (e: PointerEvent) => {
+    console.log("POINTER UP!");
+    if (!imgRef.current) return;
+    imgRef.current.setPointerCapture(e.pointerId);
+    setIsDragging(false);
+  };
+
   const handleImgDrag = () => {
     console.log("handleImgDrag Triggered!");
   };
@@ -66,8 +68,6 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
   };
 
   useEffect(() => {
-    console.log("LightboxContent Mounted.");
-    console.log("imgRef:", imgRef);
     const controller = new AbortController();
     const signal = controller.signal;
     const image = imgRef.current;
@@ -76,17 +76,12 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     // Probably doesn't matter, but currently this all mounts on page render.
     // Since Dialog and img do render in DOM, even if image isn't fetched (Lazy, loads on viewport visibility)
     if (image) {
-      image.addEventListener("mouseup", handleImgLMB, { signal });
-      image.addEventListener("touchend", handleImgLMB, { signal });
-      image.addEventListener("mousedown", handleImgLMB, { signal });
-      image.addEventListener("touchstart", handleImgLMB, { signal });
-      console.log("Event listeners Mounted.");
+      image.addEventListener("pointerdown", handlePointerDown, { signal });
+      image.addEventListener("pointerup", handlePointerUp, { signal });
     }
 
     return () => {
-      console.log("LightboxContent Unmounted.");
       controller.abort();
-      console.log("Event listeners Unmounted");
     };
   }, [imgRef]);
 
@@ -95,9 +90,10 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     else console.log("NOT DRAGGING!");
   }, [isDragging]);
 
+  /* TODO: Consider disabling touchActions in css */
   return (
     <div className="lightbox-content">
-      <img ref={imgRef} src={fullSrc} alt="" loading="lazy" />
+      <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" />
     </div>
   );
 }
