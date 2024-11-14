@@ -14,18 +14,18 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
   const openDialog = () => {
     if (dialogRef.current) dialogRef.current.showModal();
   };
+  const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      openDialog();
+    }
+  };
   const closeDialog = () => {
     if (dialogRef.current) dialogRef.current.close();
   };
   const handleOutsideClick = (e: React.MouseEvent<HTMLDialogElement>) => {
     if (dialogRef.current && e.target === dialogRef.current) {
       closeDialog();
-    }
-  };
-  const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      openDialog();
     }
   };
 
