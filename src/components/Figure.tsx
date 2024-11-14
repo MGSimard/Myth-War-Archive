@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface FigureTypes {
   src: string;
@@ -33,15 +33,58 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
         </figcaption>
       </figure>
       <dialog ref={dialogRef} onClick={handleOutsideClick} className="lightbox">
-        {/* Image container TODO: Drag & Zoom image within container, overflow: hidden image from container*/}
-        <div className="lightbox-content">
-          <img src={fullSrc} alt="" loading="lazy" />
-        </div>
+        <LightboxContent fullSrc={fullSrc} />
         <button type="button" onClick={closeDialog} aria-label="Close Dialog" className="btn-close-lightbox">
           {/* TODO: ICON */}
           Close
         </button>
       </dialog>
     </>
+  );
+}
+
+function LightboxContent({ fullSrc }: { fullSrc: string }) {
+  const imgRef = useRef<HTMLImageElement | null>(null);
+  const [isDragging, setIsDragging] = useState();
+
+  const handleImgLMB = (e: MouseEvent | TouchEvent) => {
+    console.log("handleImgLMB Triggered!");
+    console.log(e.target);
+  };
+  const handleImgDrag = () => {
+    console.log("handleImgDrag Triggered!");
+  };
+  const handleImgZoom = () => {
+    console.log("handleImgZoom Triggered!");
+  };
+
+  useEffect(() => {
+    console.log("LightboxContent Mounted.");
+    console.log("imgRef:", imgRef);
+    const controller = new AbortController();
+    const signal = controller.signal;
+    const image = imgRef.current;
+
+    // Add a onLoad from img constraint for adding event listeners?
+    // Probably doesn't matter, but currently this all mounts on page render.
+    // Since Dialog and img do render in DOM, even if image isn't fetched (Lazy, loads on viewport visibility)
+    if (image) {
+      console.log("Image ref present");
+      image.addEventListener("mouseup", handleImgLMB, { signal });
+      image.addEventListener("touchend", handleImgLMB, { signal });
+      image.addEventListener("mousedown", handleImgLMB, { signal });
+      image.addEventListener("touchstart", handleImgLMB, { signal });
+    }
+
+    return () => {
+      console.log("LightboxContent Unmounted.");
+      controller.abort();
+    };
+  }, [imgRef]);
+
+  return (
+    <div className="lightbox-content">
+      <img ref={imgRef} src={fullSrc} alt="" loading="lazy" />
+    </div>
   );
 }
