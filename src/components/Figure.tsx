@@ -57,6 +57,7 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
 
 function LightboxContent({ fullSrc }: { fullSrc: string }) {
   const imgRef = useRef<HTMLImageElement | null>(null);
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [isDragging, setIsDragging] = useState<boolean>(false);
 
   const handlePointerDown = (e: PointerEvent) => {
@@ -80,6 +81,9 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
   const handleImgZoom = () => {
     console.log("handleImgZoom Triggered!");
   };
+  const handleLoad = () => {
+    console.log("IMAGE LOADED");
+  };
 
   useEffect(() => {
     const controller = new AbortController();
@@ -90,7 +94,7 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     // Could just trigger state onLoad and add it to dependency with check
     // Probably doesn't matter, but currently this all mounts on page render.
     // Since Dialog and img do render in DOM, even if image isn't fetched (Lazy, loads on viewport visibility)
-    if (image) {
+    if (image && isLoaded) {
       image.addEventListener("pointerdown", handlePointerDown, { signal });
       image.addEventListener("pointerup", handlePointerUp, { signal });
       image.addEventListener("pointercancel", handlePointerUp, { signal });
@@ -100,17 +104,16 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     return () => {
       controller.abort();
     };
-  }, [imgRef, isDragging]);
+  }, [imgRef, isDragging, isLoaded]);
 
   // useEffect(() => {
   //   if (isDragging) console.log("DRAGGING!");
   //   else console.log("NOT DRAGGING!");
   // }, [isDragging]);
 
-  /* TODO: Consider disabling touchActions in css */
   return (
     <div className="lightbox-content">
-      <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" />
+      <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" onLoad={() => setIsLoaded(true)} />
     </div>
   );
 }
