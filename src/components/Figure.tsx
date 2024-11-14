@@ -56,7 +56,7 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
   const handlePointerUp = (e: PointerEvent) => {
     console.log("POINTER UP!");
     if (!imgRef.current) return;
-    imgRef.current.setPointerCapture(e.pointerId);
+    imgRef.current.releasePointerCapture(e.pointerId);
     setIsDragging(false);
   };
 
