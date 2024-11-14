@@ -357,6 +357,9 @@ figcaption span {
 .btn-scroll-to-top:hover svg {
   color: var(--clr-gold);
 }
+details img {
+  max-width: 20rem;
+}
 
 @media only screen and (max-width: 768px) {
   /* TODO: NAV */
