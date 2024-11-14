@@ -311,13 +311,13 @@ figure {
   overflow: hidden;
   cursor: pointer;
 }
+.grid-maps:has(figure:hover) figure:not(:hover) img,
+.grid-maps:has(figure:focus-visible) figure:not(:focus-visible) img {
+  filter: blur(0.2rem) saturate(0);
+}
 figure img {
   aspect-ratio: 1/1;
   object-fit: cover;
-}
-.section-content:has(figure:hover) figure:not(:hover) img,
-.section-content:has(figure:focus-visible) figure:not(:focus-visible) img {
-  filter: blur(0.2rem) saturate(0.2);
 }
 figcaption {
   padding: 1rem;
