@@ -311,15 +311,14 @@ figure {
   overflow: hidden;
   cursor: pointer;
 }
-figure:hover img,
-figure:focus-visible img {
-  filter: blur(0.2rem) saturate(0.5);
-}
 figure img {
   aspect-ratio: 1/1;
   object-fit: cover;
 }
-
+.section-content:has(figure:hover) figure:not(:hover) img,
+.section-content:has(figure:focus-visible) figure:not(:focus-visible) img {
+  filter: blur(0.2rem) saturate(0.2);
+}
 figcaption {
   padding: 1rem;
   text-align: center;
@@ -340,7 +339,7 @@ figcaption span {
   -moz-user-select: none;
   -webkit-user-select: none;
 }
-/* Flex dialog forcerenders, relative dialog breaks native position, so use fixed content*/
+/* Flex dialog forcerenders, relative dialog breaks native position, so use fixed content */
 .lightbox-content {
   position: fixed;
   display: flex;
