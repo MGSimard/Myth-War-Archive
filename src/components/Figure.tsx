@@ -78,6 +78,7 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     if (image) {
       image.addEventListener("pointerdown", handlePointerDown, { signal });
       image.addEventListener("pointerup", handlePointerUp, { signal });
+      image.addEventListener("pointercancel", handlePointerUp, { signal });
     }
 
     return () => {
