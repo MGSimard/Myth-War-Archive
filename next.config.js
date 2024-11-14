@@ -6,9 +6,6 @@ import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
 const config = {
-  // devIndicators: {
-  //   appIsrStatus: false,
-  // },
   images: {
     remotePatterns: [
       {
