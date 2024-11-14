@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, type KeyboardEvent } from "react";
 
 interface FigureTypes {
   src: string;
@@ -22,10 +22,22 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
       closeDialog();
     }
   };
+  const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      openDialog();
+    }
+  };
 
   return (
     <>
-      <figure onClick={openDialog} aria-haspopup="dialog" role="button" tabIndex={0} aria-label="Open Dialog">
+      <figure
+        onClick={openDialog}
+        onKeyDown={handleKeyDown}
+        aria-haspopup="dialog"
+        role="button"
+        tabIndex={0}
+        aria-label="Open Dialog">
         <img src={`${src}`} alt="" />
         <figcaption>
           {caption}
@@ -60,9 +72,11 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     setIsDragging(false);
   };
 
-  const handleImgDrag = () => {
-    console.log("handleImgDrag Triggered!");
+  const handleImgDrag = (e: PointerEvent) => {
+    if (!isDragging) return;
+    console.log("handleImgDrag Triggered!", e);
   };
+
   const handleImgZoom = () => {
     console.log("handleImgZoom Triggered!");
   };
@@ -73,23 +87,25 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     const image = imgRef.current;
 
     // Add a onLoad from img constraint for adding event listeners?
+    // Could just trigger state onLoad and add it to dependency with check
     // Probably doesn't matter, but currently this all mounts on page render.
     // Since Dialog and img do render in DOM, even if image isn't fetched (Lazy, loads on viewport visibility)
     if (image) {
       image.addEventListener("pointerdown", handlePointerDown, { signal });
       image.addEventListener("pointerup", handlePointerUp, { signal });
       image.addEventListener("pointercancel", handlePointerUp, { signal });
+      image.addEventListener("pointermove", handleImgDrag, { signal });
     }
 
     return () => {
       controller.abort();
     };
-  }, [imgRef]);
+  }, [imgRef, isDragging]);
 
-  useEffect(() => {
-    if (isDragging) console.log("DRAGGING!");
-    else console.log("NOT DRAGGING!");
-  }, [isDragging]);
+  // useEffect(() => {
+  //   if (isDragging) console.log("DRAGGING!");
+  //   else console.log("NOT DRAGGING!");
+  // }, [isDragging]);
 
   /* TODO: Consider disabling touchActions in css */
   return (
