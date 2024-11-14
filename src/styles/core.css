@@ -248,13 +248,13 @@ input {
   backdrop-filter: saturate(1.5);
   margin: 2rem 0;
 }
+.section-content h3 {
+  margin-bottom: 1rem;
+}
 
 /* RACE/CLASSES */
 .race-wrapper {
   padding-bottom: 4rem;
-}
-.race-wrapper h3 {
-  margin-bottom: 2rem;
 }
 .class-wrapper:not(:last-child) {
   margin-bottom: 4rem;
@@ -294,6 +294,35 @@ input {
   box-shadow: inset 0 0 1rem rgb(54, 39, 4);
   padding: 1rem;
   border-radius: 0.4rem;
+}
+
+/* REGIONS SECTION */
+.grid-maps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+figure {
+  border-radius: 0.4rem;
+  box-shadow: inset 0 0 1rem rgb(54, 39, 4);
+  backdrop-filter: brightness(0.95) saturate(1.4);
+  overflow: hidden;
+}
+figure img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+figure:hover img {
+  filter: blur(0.2rem) saturate(0.5);
+}
+figcaption {
+  padding: 1rem;
+  text-align: center;
+}
+figcaption span {
+  display: block;
+  font-style: italic;
+  opacity: 0.5;
 }
 
 /* SCROLL TO TOP BUTTON */
