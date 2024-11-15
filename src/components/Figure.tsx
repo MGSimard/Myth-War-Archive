@@ -89,14 +89,21 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
 
     // Boundary constraints (Keep image from being dragged too far INWARDS of container)
     const containerRect = container.getBoundingClientRect();
-    const imageRect = imgRef.current.getBoundingClientRect();
-    const minX = containerRect.width - imageRect.width;
-    const minY = containerRect.height - imageRect.height;
+    const imgRect = imgRef.current.getBoundingClientRect();
+    const minX = containerRect.width - imgRect.width;
+    const minY = containerRect.height - imgRect.height;
     const constrainedX = Math.max(minX, Math.min(0, imgTargetPos.x));
     const constrainedY = Math.max(minY, Math.min(0, imgTargetPos.y));
 
-    imgRef.current.style.left = `${constrainedX}px`;
-    imgRef.current.style.top = `${constrainedY}px`;
+    console.log("CONTAINER DIMENSIONS:", { w: containerRect.width, h: containerRect.height });
+    console.log("IMAGE DIMENSIONS:", { w: imgRect.width, h: imgRect.height });
+
+    if (imgRect.width > containerRect.width) {
+      imgRef.current.style.left = `${constrainedX}px`;
+    }
+    if (imgRect.height > containerRect.height) {
+      imgRef.current.style.top = `${constrainedY}px`;
+    }
   };
 
   const handleImgZoom = () => {
