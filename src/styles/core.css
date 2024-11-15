@@ -364,6 +364,12 @@ figcaption span {
   touch-action: none;
   max-width: unset;
 }
+.lb-btns-zoom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
 .btn-close-lightbox {
   position: fixed;
   top: 1rem;

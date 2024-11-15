@@ -110,10 +110,37 @@ function LightboxContent({
     }
   };
 
-  const handleImgZoom = () => {
-    console.log("handleImgZoom Triggered!");
+  const handleZoomIn = () => {
+    const container = imgRef?.current?.parentElement;
+    if (!imgRef.current || !container) return;
+
+    const imgRect = imgRef.current.getBoundingClientRect();
+
+    imgRef.current.style.width = `${imgRect.width + 800}px`;
+    if (imgRect.width <= container.clientWidth) {
+      imgRef.current.style.removeProperty("left");
+    }
+    if (imgRect.width <= container.clientHeight) {
+      imgRef.current.style.removeProperty("top");
+    }
+  };
+  const handleZoomOut = () => {
+    const container = imgRef?.current?.parentElement;
+    if (!imgRef.current || !container) return;
+
+    const imgRect = imgRef.current.getBoundingClientRect();
+
+    imgRef.current.style.width = `${Math.max(800, imgRect.width - 800)}px`;
+    if (imgRect.width <= container.clientWidth) {
+      imgRef.current.style.removeProperty("left");
+    }
+
+    if (imgRect.height <= container.clientHeight) {
+      imgRef.current.style.removeProperty("top");
+    }
   };
 
+  // SET POINTER EVENTS
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
@@ -137,6 +164,7 @@ function LightboxContent({
       if (imgRef.current) {
         imgRef.current.style.removeProperty("left");
         imgRef.current.style.removeProperty("top");
+        imgRef.current.style.removeProperty("width");
       }
     };
 
@@ -151,6 +179,14 @@ function LightboxContent({
   return (
     <div className="lightbox-content">
       <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" onLoad={() => setIsLoaded(true)} />
+      <div className="lb-btns-zoom">
+        <button type="button" onClick={handleZoomIn}>
+          Zoom In
+        </button>
+        <button type="button" onClick={handleZoomOut}>
+          Zoom Out
+        </button>
+      </div>
     </div>
   );
 }
