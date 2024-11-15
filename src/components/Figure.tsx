@@ -114,23 +114,6 @@ function LightboxContent({
     console.log("handleImgZoom Triggered!");
   };
 
-  // RESET STYLES TO DEFAULT ON DIALOG CLOSE
-  useEffect(() => {
-    const handleResetStyles = () => {
-      if (imgRef.current) {
-        imgRef.current.style.removeProperty("left");
-        imgRef.current.style.removeProperty("top");
-      }
-    };
-
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-    dialog.addEventListener("close", handleResetStyles);
-    return () => {
-      dialog.removeEventListener("close", handleResetStyles);
-    };
-  }, [dialogRef]);
-
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
@@ -147,6 +130,23 @@ function LightboxContent({
       controller.abort();
     };
   }, [imgRef, isDragging, isLoaded]);
+
+  // RESET STYLES TO DEFAULT ON DIALOG CLOSE
+  useEffect(() => {
+    const handleResetStyles = () => {
+      if (imgRef.current) {
+        imgRef.current.style.removeProperty("left");
+        imgRef.current.style.removeProperty("top");
+      }
+    };
+
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+    dialog.addEventListener("close", handleResetStyles);
+    return () => {
+      dialog.removeEventListener("close", handleResetStyles);
+    };
+  }, [dialogRef]);
 
   return (
     <div className="lightbox-content">
