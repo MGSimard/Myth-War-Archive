@@ -259,7 +259,7 @@ input {
   padding-bottom: 4rem;
 }
 .class-wrapper:not(:last-child) {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .class-banner {
   position: relative;
