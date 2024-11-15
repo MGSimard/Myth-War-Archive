@@ -81,7 +81,6 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     // CURRENT POINTER > IMAGE Offset:      { x: e.offsetX, y: e.offsetY }
     // CURRENT IMAGE > CONTAINER Offset:    { x: imgRef.current.offsetLeft, y: imgRef.current.offsetTop }
     // CURRENT POINTER > CONTAINER Offset:  { x: e.offsetX + imgRef.current.offsetLeft, y: e.offsetY + imgRef.current.offsetTop}
-
     const ptc = { x: e.offsetX + imgRef.current.offsetLeft, y: e.offsetY + imgRef.current.offsetTop };
     const imgTargetPos = { x: ptc.x - dragOffset.current.x, y: ptc.y - dragOffset.current.y };
 
