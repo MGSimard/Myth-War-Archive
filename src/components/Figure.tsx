@@ -68,7 +68,6 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     setIsDragging(true);
   };
   const handlePointerUp = (e: PointerEvent) => {
-    console.log("POINTER UP!");
     if (!imgRef.current) return;
     dragOffset.current = null;
     imgRef.current.releasePointerCapture(e.pointerId);
@@ -76,16 +75,28 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
   };
 
   const handleImgDrag = (e: PointerEvent) => {
-    if (!isDragging || !imgRef.current || !dragOffset.current) return;
+    const container = imgRef?.current?.parentElement;
+    if (!isDragging || !imgRef.current || !dragOffset.current || !container) return;
+    if (!container) return;
     // INITIAL POINTER > IMAGE Offset:      dragOffset.current
     // CURRENT POINTER > IMAGE Offset:      { x: e.offsetX, y: e.offsetY }
     // CURRENT IMAGE > CONTAINER Offset:    { x: imgRef.current.offsetLeft, y: imgRef.current.offsetTop }
     // CURRENT POINTER > CONTAINER Offset:  { x: e.offsetX + imgRef.current.offsetLeft, y: e.offsetY + imgRef.current.offsetTop}
+
+    // Get offset from pointer to container then get img pos result.
     const ptc = { x: e.offsetX + imgRef.current.offsetLeft, y: e.offsetY + imgRef.current.offsetTop };
     const imgTargetPos = { x: ptc.x - dragOffset.current.x, y: ptc.y - dragOffset.current.y };
 
-    imgRef.current.style.left = `${imgTargetPos.x}px`;
-    imgRef.current.style.top = `${imgTargetPos.y}px`;
+    // Boundary constraints (Keep image from being dragged too far INWARDS of container)
+    const containerRect = container.getBoundingClientRect();
+    const imageRect = imgRef.current.getBoundingClientRect();
+    const minX = containerRect.width - imageRect.width;
+    const minY = containerRect.height - imageRect.height;
+    const constrainedX = Math.max(minX, Math.min(0, imgTargetPos.x));
+    const constrainedY = Math.max(minY, Math.min(0, imgTargetPos.y));
+
+    imgRef.current.style.left = `${constrainedX}px`;
+    imgRef.current.style.top = `${constrainedY}px`;
   };
 
   const handleImgZoom = () => {
