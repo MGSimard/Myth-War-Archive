@@ -81,6 +81,7 @@ function LightboxContent({
     setIsDragging(false);
   };
 
+  // I want to try a version with transforms instead. This would also make zoom calcs easier for side snapping and mouse center.
   const handleImgDrag = (e: PointerEvent) => {
     const container = imgRef?.current?.parentElement;
     if (!isDragging || !imgRef.current || !dragOffset.current || !container) return;
