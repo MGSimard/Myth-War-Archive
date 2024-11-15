@@ -77,25 +77,16 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
 
   const handleImgDrag = (e: PointerEvent) => {
     if (!isDragging || !imgRef.current || !dragOffset.current) return;
-    // INITIAL POINTER > IMAGE Offset:
-    // dragOffset.current
+    // INITIAL POINTER > IMAGE Offset:      dragOffset.current
+    // CURRENT POINTER > IMAGE Offset:      { x: e.offsetX, y: e.offsetY }
+    // CURRENT IMAGE > CONTAINER Offset:    { x: imgRef.current.offsetLeft, y: imgRef.current.offsetTop }
+    // CURRENT POINTER > CONTAINER Offset:  { x: e.offsetX + imgRef.current.offsetLeft, y: e.offsetY + imgRef.current.offsetTop}
 
-    // CURRENT POINTER > IMAGE Offset:
-    // { x: e.offsetX, y: e.offsetY }
+    const ptc = { x: e.offsetX + imgRef.current.offsetLeft, y: e.offsetY + imgRef.current.offsetTop };
+    const imgTargetPos = { x: ptc.x - dragOffset.current.x, y: ptc.y - dragOffset.current.y };
 
-    // CURRENT IMAGE > CONTAINER Offset:
-    // {x: imgRef.current.offsetLeft, y: imgRef.current.offsetTop}
-
-    // CURRENT POINTER > CONTAINER Offset:
-    // { x: e.offsetX + imgRef.current.offsetLeft, y: e.offsetY + imgRef.current.offsetTop}
-
-    console.log("Pointer offset to container:", {
-      x: e.offsetX + imgRef.current.offsetLeft,
-      y: e.offsetY + imgRef.current.offsetTop,
-    });
-
-    // imgRef.current.style.left = `${targetDestination.x}px`;
-    // imgRef.current.style.top = `${targetDestination.y}px`;
+    imgRef.current.style.left = `${imgTargetPos.x}px`;
+    imgRef.current.style.top = `${imgTargetPos.y}px`;
   };
 
   const handleImgZoom = () => {
