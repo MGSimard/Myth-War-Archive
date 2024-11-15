@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef, type KeyboardEvent } from "react";
+import { useEffect, useRef, type KeyboardEvent } from "react";
 
 interface FigureTypes {
   src: string;
@@ -64,24 +64,23 @@ function LightboxContent({
   dialogRef: React.RefObject<HTMLDialogElement | null>;
 }) {
   const imgRef = useRef<HTMLImageElement | null>(null);
-  const [isLoaded, setIsLoaded] = useState<boolean>(false);
-  const [isDragging, setIsDragging] = useState<boolean>(false);
+  const isDragging = useRef<boolean>(false);
   const dragOffset = useRef<{ x: number; y: number } | null>(null);
 
   const handlePointerDown = (e: PointerEvent) => {
     if (!imgRef.current) return;
     dragOffset.current = { x: e.offsetX, y: e.offsetY };
     imgRef.current.setPointerCapture(e.pointerId);
-    setIsDragging(true);
+    isDragging.current = true;
   };
   const handlePointerUp = (e: PointerEvent) => {
     if (!imgRef.current) return;
     dragOffset.current = null;
     imgRef.current.releasePointerCapture(e.pointerId);
-    setIsDragging(false);
+    isDragging.current = false;
   };
 
-  // I want to try a version with transforms instead. This would also make zoom calcs easier for side snapping and mouse center.
+  // I want to try a version with transforms instead. This would also make zoom calcs easier (Resnapping on zoom)
   const handleImgDrag = (e: PointerEvent) => {
     const container = imgRef?.current?.parentElement;
     if (!isDragging || !imgRef.current || !dragOffset.current || !container) return;
@@ -147,7 +146,7 @@ function LightboxContent({
     const signal = controller.signal;
     const image = imgRef.current;
 
-    if (image && isLoaded) {
+    if (image) {
       image.addEventListener("pointerdown", handlePointerDown, { signal });
       image.addEventListener("pointerup", handlePointerUp, { signal });
       image.addEventListener("pointercancel", handlePointerUp, { signal });
@@ -157,7 +156,7 @@ function LightboxContent({
     return () => {
       controller.abort();
     };
-  }, [imgRef, isDragging, isLoaded]);
+  }, [imgRef]);
 
   // RESET STYLES TO DEFAULT ON DIALOG CLOSE
   useEffect(() => {
@@ -179,7 +178,7 @@ function LightboxContent({
 
   return (
     <div className="lightbox-content">
-      <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" onLoad={() => setIsLoaded(true)} />
+      <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" />
       <div className="lb-btns-zoom">
         <button type="button" onClick={handleZoomIn}>
           Zoom In
