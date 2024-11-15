@@ -45,7 +45,7 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
         </figcaption>
       </figure>
       <dialog ref={dialogRef} onClick={handleOutsideClick} className="lightbox">
-        <LightboxContent fullSrc={fullSrc} />
+        <LightboxContent fullSrc={fullSrc} dialogRef={dialogRef} />
         <button type="button" onClick={closeDialog} aria-label="Close Dialog" className="btn-close-lightbox">
           {/* TODO: ICON */}
           Close
@@ -55,7 +55,14 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
   );
 }
 
-function LightboxContent({ fullSrc }: { fullSrc: string }) {
+/* TODO REMOVE "ANY" */
+function LightboxContent({
+  fullSrc,
+  dialogRef,
+}: {
+  fullSrc: string;
+  dialogRef: React.RefObject<HTMLDialogElement | null>;
+}) {
   const imgRef = useRef<HTMLImageElement | null>(null);
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [isDragging, setIsDragging] = useState<boolean>(false);
@@ -95,9 +102,6 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     const constrainedX = Math.max(minX, Math.min(0, imgTargetPos.x));
     const constrainedY = Math.max(minY, Math.min(0, imgTargetPos.y));
 
-    console.log("CONTAINER DIMENSIONS:", { w: containerRect.width, h: containerRect.height });
-    console.log("IMAGE DIMENSIONS:", { w: imgRect.width, h: imgRect.height });
-
     if (imgRect.width > containerRect.width) {
       imgRef.current.style.left = `${constrainedX}px`;
     }
@@ -109,6 +113,23 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
   const handleImgZoom = () => {
     console.log("handleImgZoom Triggered!");
   };
+
+  // RESET STYLES TO DEFAULT ON DIALOG CLOSE
+  useEffect(() => {
+    const handleResetStyles = () => {
+      if (imgRef.current) {
+        imgRef.current.style.removeProperty("left");
+        imgRef.current.style.removeProperty("top");
+      }
+    };
+
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+    dialog.addEventListener("close", handleResetStyles);
+    return () => {
+      dialog.removeEventListener("close", handleResetStyles);
+    };
+  }, [dialogRef]);
 
   useEffect(() => {
     const controller = new AbortController();
