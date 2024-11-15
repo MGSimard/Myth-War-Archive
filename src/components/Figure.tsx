@@ -59,26 +59,26 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
   const imgRef = useRef<HTMLImageElement | null>(null);
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [isDragging, setIsDragging] = useState<boolean>(false);
-  const offset = useRef<{ x: number; y: number } | null>(null);
+  const dragOffset = useRef<{ x: number; y: number } | null>(null);
 
   const handlePointerDown = (e: PointerEvent) => {
     if (!imgRef.current) return;
-    offset.current = { x: e.offsetX, y: e.offsetY };
+    dragOffset.current = { x: e.offsetX, y: e.offsetY };
     imgRef.current.setPointerCapture(e.pointerId);
     setIsDragging(true);
   };
   const handlePointerUp = (e: PointerEvent) => {
     console.log("POINTER UP!");
     if (!imgRef.current) return;
-    offset.current = null;
+    dragOffset.current = null;
     imgRef.current.releasePointerCapture(e.pointerId);
     setIsDragging(false);
   };
 
   const handleImgDrag = (e: PointerEvent) => {
-    if (!isDragging || !imgRef.current || !offset.current) return;
+    if (!isDragging || !imgRef.current || !dragOffset.current) return;
     // INITIAL POINTER > IMAGE Offset:
-    // offset.current
+    // dragOffset.current
 
     // CURRENT POINTER > IMAGE Offset:
     // { x: e.offsetX, y: e.offsetY }
