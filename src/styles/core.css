@@ -346,6 +346,7 @@ figcaption span {
   backdrop-filter: blur(1);
 }
 .lightbox-content {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,6 +360,7 @@ figcaption span {
   overflow: hidden;
 }
 .lightbox-content img {
+  position: absolute;
   touch-action: none;
 }
 .btn-close-lightbox {

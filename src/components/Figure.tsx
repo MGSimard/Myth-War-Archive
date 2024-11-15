@@ -59,30 +59,47 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
   const imgRef = useRef<HTMLImageElement | null>(null);
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [isDragging, setIsDragging] = useState<boolean>(false);
+  const offset = useRef<{ x: number; y: number } | null>(null);
 
   const handlePointerDown = (e: PointerEvent) => {
-    console.log("POINTER DOWN!");
     if (!imgRef.current) return;
+    offset.current = { x: e.offsetX, y: e.offsetY };
     imgRef.current.setPointerCapture(e.pointerId);
     setIsDragging(true);
   };
   const handlePointerUp = (e: PointerEvent) => {
     console.log("POINTER UP!");
     if (!imgRef.current) return;
+    offset.current = null;
     imgRef.current.releasePointerCapture(e.pointerId);
     setIsDragging(false);
   };
 
   const handleImgDrag = (e: PointerEvent) => {
-    if (!isDragging) return;
-    console.log("handleImgDrag Triggered!", e);
+    if (!isDragging || !imgRef.current || !offset.current) return;
+    // INITIAL POINTER > IMAGE Offset:
+    // offset.current
+
+    // CURRENT POINTER > IMAGE Offset:
+    // { x: e.offsetX, y: e.offsetY }
+
+    // CURRENT IMAGE > CONTAINER Offset:
+    // {x: imgRef.current.offsetLeft, y: imgRef.current.offsetTop}
+
+    // CURRENT POINTER > CONTAINER Offset:
+    // { x: e.offsetX + imgRef.current.offsetLeft, y: e.offsetY + imgRef.current.offsetTop}
+
+    console.log("Pointer offset to container:", {
+      x: e.offsetX + imgRef.current.offsetLeft,
+      y: e.offsetY + imgRef.current.offsetTop,
+    });
+
+    // imgRef.current.style.left = `${targetDestination.x}px`;
+    // imgRef.current.style.top = `${targetDestination.y}px`;
   };
 
   const handleImgZoom = () => {
     console.log("handleImgZoom Triggered!");
-  };
-  const handleLoad = () => {
-    console.log("IMAGE LOADED");
   };
 
   useEffect(() => {
@@ -90,10 +107,6 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
     const signal = controller.signal;
     const image = imgRef.current;
 
-    // Add a onLoad from img constraint for adding event listeners?
-    // Could just trigger state onLoad and add it to dependency with check
-    // Probably doesn't matter, but currently this all mounts on page render.
-    // Since Dialog and img do render in DOM, even if image isn't fetched (Lazy, loads on viewport visibility)
     if (image && isLoaded) {
       image.addEventListener("pointerdown", handlePointerDown, { signal });
       image.addEventListener("pointerup", handlePointerUp, { signal });
@@ -105,11 +118,6 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
       controller.abort();
     };
   }, [imgRef, isDragging, isLoaded]);
-
-  // useEffect(() => {
-  //   if (isDragging) console.log("DRAGGING!");
-  //   else console.log("NOT DRAGGING!");
-  // }, [isDragging]);
 
   return (
     <div className="lightbox-content">
