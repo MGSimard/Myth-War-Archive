@@ -1,6 +1,7 @@
 "use client";
 import { useRef, type KeyboardEvent } from "react";
 import { TransformWrapper, TransformComponent, useControls } from "react-zoom-pan-pinch";
+import { IconClose, IconReset, IconZoomIn, IconZoomout } from "@/components/Icons";
 
 interface FigureTypes {
   src: string;
@@ -24,11 +25,6 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
   const closeDialog = () => {
     if (dialogRef.current) dialogRef.current.close();
   };
-  // const handleOutsideClick = (e: React.MouseEvent<HTMLDialogElement>) => {
-  //   if (dialogRef.current && e.target === dialogRef.current) {
-  //     closeDialog();
-  //   }
-  // };
 
   const imgRef = useRef<HTMLImageElement | null>(null);
 
@@ -37,9 +33,15 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
 
     return (
       <div className="tools">
-        <button onClick={() => zoomIn()}>+</button>
-        <button onClick={() => zoomOut()}>-</button>
-        <button onClick={() => resetTransform()}>Reset</button>
+        <button onClick={() => zoomIn()} aria-label="Zoom In" title="Zoom In">
+          <IconZoomIn />
+        </button>
+        <button onClick={() => zoomOut()} aria-label="Zoom Out" title="Zoom Out">
+          <IconZoomout />
+        </button>
+        <button onClick={() => resetTransform()} aria-label="Reset View" title="Reset View">
+          <IconReset />
+        </button>
       </div>
     );
   };
@@ -59,6 +61,7 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
           <span>{version}</span>
         </figcaption>
       </figure>
+
       <dialog ref={dialogRef} className="lightbox">
         <TransformWrapper>
           {({ zoomIn, zoomOut, resetTransform }) => (
@@ -70,10 +73,13 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
             </>
           )}
         </TransformWrapper>
-
-        <button type="button" onClick={closeDialog} aria-label="Close Dialog" className="btn-close-lightbox">
-          {/* TODO: ICON */}
-          Close
+        <button
+          type="button"
+          onClick={closeDialog}
+          aria-label="Close Dialog"
+          className="btn-close-lightbox"
+          title="Close">
+          <IconClose />
         </button>
       </dialog>
     </>
