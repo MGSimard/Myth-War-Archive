@@ -352,24 +352,18 @@ figcaption span {
   align-items: center;
   width: 100%;
   height: 100%;
-  object-fit: contain;
   border: 1px solid red;
   /* border: 0.2rem solid var(--clr-gold); */
   background: url("/papyrus.webp");
   box-shadow: inset 0 0 1rem rgb(54, 39, 4);
   overflow: hidden;
 }
-.lightbox-content img {
+/* .lightbox-content img {
   position: absolute;
   touch-action: none;
   max-width: unset;
-}
-.lb-btns-zoom {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
+} */
+
 .btn-close-lightbox {
   position: fixed;
   top: 1rem;
