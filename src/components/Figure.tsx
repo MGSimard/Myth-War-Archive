@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, type KeyboardEvent } from "react";
 import { TransformWrapper, TransformComponent, useControls } from "react-zoom-pan-pinch";
-import { IconClose, IconReset, IconZoomIn, IconZoomout } from "@/components/Icons";
+import { IconClose, IconFullScreen, IconReset, IconZoomIn, IconZoomout } from "@/components/Icons";
 
 interface FigureTypes {
   src: string;
@@ -61,6 +61,7 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
           {caption}
           <span>{version}</span>
         </figcaption>
+        <IconFullScreen />
       </figure>
 
       <dialog ref={dialogRef} className="lightbox">

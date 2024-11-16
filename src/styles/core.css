@@ -305,6 +305,7 @@ input {
   gap: 2rem;
 }
 figure {
+  position: relative;
   border-radius: 0.4rem;
   box-shadow: inset 0 0 1rem rgb(54, 39, 4);
   backdrop-filter: brightness(0.95) saturate(1.4);
@@ -314,6 +315,21 @@ figure {
 .grid-maps:has(figure:hover) figure:not(:hover) img,
 .grid-maps:has(figure:focus-visible) figure:not(:focus-visible) img {
   filter: blur(0.2rem) saturate(0);
+}
+figure svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  color: transparent;
+  pointer-events: none;
+  transition: color ease 0.2s;
+  filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
+}
+figure:hover svg,
+figure:focus-visible svg {
+  color: rgba(255, 255, 255, 0.7);
 }
 figure img {
   aspect-ratio: 1/1;
