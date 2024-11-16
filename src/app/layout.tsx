@@ -4,7 +4,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import "@/styles/core.css";
 
-const geist = Geist({ subsets: ["latin"], fallback: ["sans-serif"] });
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist", fallback: ["sans-serif"] });
 const playfair = Playfair({ subsets: ["latin"], variable: "--font-playfair" });
 const playfairDisplaySC = Playfair_Display_SC({
   subsets: ["latin"],
