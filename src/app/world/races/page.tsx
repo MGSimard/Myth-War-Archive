@@ -131,10 +131,10 @@ export default function Page() {
           power to maintain themselves. Most of them were shutdown having a long winter sleep under ground. Some of them
           decayed and disappeared along the way and some managed to preserve themselves. When the Myth War arrived,
           mages stumbled across them and it ignited the mages interests, since mages had been trying to develop
-          something that could overcome their physical shortcomings. "Silver Driver" - an embodiment of the mages
-          advanced intelligence was put in the robots body to make them move again. Parts of this robot would release
-          rays of light as the Silver Driver was operating. Moreover, inspired by technology the mages invented a flight
-          propulsion system for the robots which enabled them to fly without using magic.
+          something that could overcome their physical shortcomings. &quot;Silver Driver&quot; - an embodiment of the
+          mages advanced intelligence was put in the robots body to make them move again. Parts of this robot would
+          release rays of light as the Silver Driver was operating. Moreover, inspired by technology the mages invented
+          a flight propulsion system for the robots which enabled them to fly without using magic.
         </p>
         <div className="class-wrapper">
           <ClassBanner src="/assets/characters/frames/borg-male-mw1.webp" alt="Borg Male Avatar" title="Tyrant" />

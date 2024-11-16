@@ -48,8 +48,8 @@ export default function Page() {
       <p>
         When Great One was tired of thinking and dreaming, he let his body as well as his spirits split up to spawn six
         main gods: the God of Power, the God of Justice, the God of Fire, the God of Evil, the God of Intelligence, and
-        the God of Darkness. As the previous ruler's reign had ended, these gods inherited his spirit and will rule the
-        system and resourses of the new dimension. The rules of the new dimension restricted the different powers of
+        the God of Darkness. As the previous ruler&apos;s reign had ended, these gods inherited his spirit and will rule
+        the system and resourses of the new dimension. The rules of the new dimension restricted the different powers of
         gods to ensure a balance for the purpose of stabilizing the current situation.
       </p>
       <p>
@@ -69,7 +69,7 @@ export default function Page() {
         who ruled this place is far away from the World of Gods, had more freedom to use his power. As a result, he had
         created five magical beasts. In the eyes of the living creatures, their world seems to be complicated but yet in
         order. However, the World of Gods as peaceful as one may think it should be is full of crisis.The God of evil
-        who was spawned by the Great One's evil wills, could not bear the restrictions of the balanced power
+        who was spawned by the Great One&apos;s evil wills, could not bear the restrictions of the balanced power
         distribution, He is willing to challenge the utmost ranking gods...But he knew, to a God, selfishness is
         sometimes needed to be the foundation of an independent evil will. Thus, he chose to work together with The God
         of Hell. He did not know that desire to Gods, once spawned, there is no way to control it. So The God of Hell
