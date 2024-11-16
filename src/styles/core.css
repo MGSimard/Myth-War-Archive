@@ -457,6 +457,8 @@ figcaption span {
   color: var(--clr-gold);
 }
 
+/* ASSET PAGE */
+
 @media only screen and (max-width: 768px) {
   /* TODO: NAV */
   .content {

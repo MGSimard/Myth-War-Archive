@@ -14,7 +14,7 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
         <h1>Myth War Archive - Tools</h1>
       </header>
       <main className="panel">
-        <SubNav links={links} icon={<img src="https://avatars.githubusercontent.com/u/126427506?v=4" alt="" />} />
+        <SubNav links={links} icon={<img src="/assets/icon-tools.webp" alt="" />} />
         <section>
           <div className="section-content">{children}</div>
         </section>
