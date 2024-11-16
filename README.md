@@ -6,11 +6,11 @@
 - [ ] Fit dialog button styles to map buttons in game UI, check disc
 - [x] Decide on a threshold for 3rd party image hosting (50kb)
 - [ ] For map assets, show a compressed webp of fullmap and offer a zipped download of all jpg tiles
-- [ ] Decide on page subnav icons - bland svgs vs in-game UI icons
-- [ ] Prettify h3 section headers
-- [ ] Add class icons to races section, or full character images
-- [ ] Prettify h4 section headings
-- [ ] Fill out regions section
+- [x] Decide on page subnav icons - bland svgs vs in-game UI icons
+- [x] Prettify h3 section headers
+- [x] Add class icons to races section, or full character images
+- [x] Prettify h4 section headings
+- [x] Fill out regions section
 - [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
 - [ ] Figure out if I want header backgrounds in pages
 - [ ] Nested ul submenu in nav links
