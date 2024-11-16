@@ -1,5 +1,5 @@
 "use client";
-import { useRef, type KeyboardEvent } from "react";
+import { useState, useRef, type KeyboardEvent } from "react";
 import { TransformWrapper, TransformComponent, useControls } from "react-zoom-pan-pinch";
 import { IconClose, IconReset, IconZoomIn, IconZoomout } from "@/components/Icons";
 
@@ -11,6 +11,7 @@ interface FigureTypes {
 }
 
 export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
+  const [isLoading, setIsLoading] = useState(true);
   const dialogRef = useRef<HTMLDialogElement | null>(null);
 
   const openDialog = () => {
@@ -63,12 +64,24 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
       </figure>
 
       <dialog ref={dialogRef} className="lightbox">
+        {isLoading && (
+          <div className="loader">
+            <div className="sidenav-logo lol"></div>
+          </div>
+        )}
         <TransformWrapper>
           {({ zoomIn, zoomOut, resetTransform }) => (
             <>
               <Controls />
               <TransformComponent>
-                <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" />
+                <img
+                  ref={imgRef}
+                  src={fullSrc}
+                  alt=""
+                  loading="lazy"
+                  draggable="false"
+                  onLoad={() => setIsLoading(false)}
+                />
               </TransformComponent>
             </>
           )}

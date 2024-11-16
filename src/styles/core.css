@@ -337,7 +337,7 @@ figcaption span {
   margin: auto;
   border: none;
   background: url("/papyrus.webp");
-  box-shadow: inset 0 0 1rem rgb(54, 39, 4);
+  box-shadow: inset 0 0 10rem rgb(54, 39, 4);
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -346,6 +346,13 @@ figcaption span {
 .lightbox::backdrop {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(1);
+}
+.lightbox .loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .transform-component-module_wrapper__SPB86 {
   width: 100% !important;
@@ -429,25 +436,6 @@ figcaption span {
 .btn-scroll-to-top:hover svg,
 .btn-scroll-to-top:focus-visible svg {
   color: var(--clr-gold);
-}
-
-/* LOADING SPINNER */
-.spinner {
-  width: 12rem;
-  height: 12rem;
-  border: 1.5rem solid rgba(0, 0, 0, 0.2);
-  border-top-color: hsl(199, 70%, 42%);
-  border-radius: 999rem;
-  animation: spin 3s linear infinite;
-  z-index: 1;
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @media only screen and (max-width: 768px) {

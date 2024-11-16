@@ -1,12 +1,9 @@
 import { Figure } from "@/components/Figure";
-import { Spinner } from "@/components/Spinner";
 
 export default function Page() {
   return (
     <>
       <h2>Regions</h2>
-
-      <Spinner />
 
       <hr className="divider" />
 
