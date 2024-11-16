@@ -24,10 +24,24 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
   const closeDialog = () => {
     if (dialogRef.current) dialogRef.current.close();
   };
-  const handleOutsideClick = (e: React.MouseEvent<HTMLDialogElement>) => {
-    if (dialogRef.current && e.target === dialogRef.current) {
-      closeDialog();
-    }
+  // const handleOutsideClick = (e: React.MouseEvent<HTMLDialogElement>) => {
+  //   if (dialogRef.current && e.target === dialogRef.current) {
+  //     closeDialog();
+  //   }
+  // };
+
+  const imgRef = useRef<HTMLImageElement | null>(null);
+
+  const Controls = () => {
+    const { zoomIn, zoomOut, resetTransform } = useControls();
+
+    return (
+      <div className="tools">
+        <button onClick={() => zoomIn()}>+</button>
+        <button onClick={() => zoomOut()}>-</button>
+        <button onClick={() => resetTransform()}>Reset</button>
+      </div>
+    );
   };
 
   return (
@@ -45,44 +59,23 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
           <span>{version}</span>
         </figcaption>
       </figure>
-      <dialog ref={dialogRef} onClick={handleOutsideClick} className="lightbox">
-        <LightboxContent fullSrc={fullSrc} />
+      <dialog ref={dialogRef} className="lightbox">
+        <TransformWrapper>
+          {({ zoomIn, zoomOut, resetTransform }) => (
+            <>
+              <Controls />
+              <TransformComponent>
+                <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" />
+              </TransformComponent>
+            </>
+          )}
+        </TransformWrapper>
+
         <button type="button" onClick={closeDialog} aria-label="Close Dialog" className="btn-close-lightbox">
           {/* TODO: ICON */}
           Close
         </button>
       </dialog>
     </>
-  );
-}
-
-function LightboxContent({ fullSrc }: { fullSrc: string }) {
-  const imgRef = useRef<HTMLImageElement | null>(null);
-
-  const Controls = () => {
-    const { zoomIn, zoomOut, resetTransform } = useControls();
-
-    return (
-      <div className="tools">
-        <button onClick={() => zoomIn()}>+</button>
-        <button onClick={() => zoomOut()}>-</button>
-        <button onClick={() => resetTransform()}>Reset</button>
-      </div>
-    );
-  };
-
-  return (
-    <div className="lightbox-content">
-      <TransformWrapper initialScale={1}>
-        {({ zoomIn, zoomOut, resetTransform }) => (
-          <>
-            <Controls />
-            <TransformComponent>
-              <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" />
-            </TransformComponent>
-          </>
-        )}
-      </TransformWrapper>
-    </div>
   );
 }
