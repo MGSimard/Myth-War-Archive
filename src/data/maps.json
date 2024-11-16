@@ -480,168 +480,238 @@
     "link": "https://utfs.io/f/e0BHXYWYpV1N3vzSBJMlUFwZMA5WCQsqkR9GvNYm6JoTBXOy"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map101",
+    "zones": ["?"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N1OlV0zaSu6v4jFat7iy8OXsLVpgdqoRBb0ZE"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map102",
+    "zones": ["Blython Winter (MW1)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N1sQoyMaSu6v4jFat7iy8OXsLVpgdqoRBb0ZE"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map103",
+    "zones": ["Woodlingor Winter (MW1)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NegqmY3WYpV1NBWkFjoUeicuC7vEbRTlytzdh"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map104",
+    "zones": ["?"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NPVpBXdqbGOEhSDu0vrVRQKYyIdxLNzqWo169"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map108",
+    "zones": ["?"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NeQefwgWYpV1NBWkFjoUeicuC7vEbRTlytzdh"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map109",
+    "zones": ["Sky Garden (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NfOxoSQ7pwrQ4LcYKyOzxFSbUkVe0gBtJZ3CA"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map111",
+    "zones": ["?"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NrzHHRS5jLdKugA7JVYOcxl8wTPoX0bBkUGH1"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map112",
+    "zones": ["Revive Arena (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NolE179Ae5gS8zQOR0bHhKlr2FUjv3Esd4ZxG"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map113",
+    "zones": ["Snow Ridge (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1Nj5MyjTnWneVuDksJxqZKEiz0RdYtMNbmgQL7"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map114",
+    "zones": ["Sunset Plain (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NWIhLhsbWAFCPxQiv7YOXs6Tug2VtZyIdnwH1"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map115",
+    "zones": ["Dragon Cave (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N0yUjr0c4Nr1SRmCcBkKZOGVf8bzMYFp0Eq7s"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map116",
+    "zones": ["Sky Passage (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NNBqC5rHHsxL91qtndi6rFTWwJpZv3ymcDAEu"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map118",
+    "zones": ["Blython (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NDifbY2Zr1CIGPRij4EN9Ls5He7gwT8VuWQqb"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map119",
+    "zones": ["Woodlingor (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1Nt74BVH8S8wNOfl5XRFMU4KgqmZjYvLQBAIop"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map120",
+    "zones": ["Desert City (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NJl5r6Xw5pfSNvYFIuKtAGyW9604HZOz3PUo7"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map121",
+    "zones": ["Demon Square (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NeCxqAGWYpV1NBWkFjoUeicuC7vEbRTlytzdh"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map122",
+    "zones": ["Bone Desert (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NhQpnzx2TYWG5dOH29ylbCtKzFLvwM37xiRP6"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map123",
+    "zones": ["Badlands (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NnVhp9WODkbvZEfp5DhPAH9sajM0N2tYQw3ro"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map125",
+    "zones": ["Flamingor (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NtebqFne8S8wNOfl5XRFMU4KgqmZjYvLQBAIo"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map126",
+    "zones": ["Southern Rivage (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1Nv3OjQcKwjQM0IfTDPJYum2ihyFXEaCKqn7xN"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map127",
+    "zones": ["Cursed Abyss (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1Nna74EjDkbvZEfp5DhPAH9sajM0N2tYQw3roJ"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map128",
+    "zones": ["Fog Jungle (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NglJdjf4xGMfIyqoH5R2PXCVwv1SWmBx3tnlF"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map129",
+    "zones": ["Tumulus 1 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NDYtgciZr1CIGPRij4EN9Ls5He7gwT8VuWQqb"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map130",
+    "zones": ["Tumulus 3 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NIYE4gYvXPJ3CktFqy9AHai6V2jzSrf7h5L8p"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map131",
+    "zones": ["Tumulus 2 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N2wrZMOCCIxXwNcF1QZpJgVWKvo9ERUGAetrk"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map132",
+    "zones": ["Tumulus 4 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N6qtvzUh4ymgjrv7sFtEowNVO9hGUdulx3R2W"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map133",
+    "zones": ["Tumulus 5 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NzkpOcNRFQiEB3JMNWaAZtubXjgTY9rePlV28"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map134",
+    "zones": ["?"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NcciZBBm4P0hJ2ERyDWqe9dvOoN5SbMzHniAp"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map135",
+    "zones": ["Evil Lair 1 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NnVC0thZDkbvZEfp5DhPAH9sajM0N2tYQw3ro"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map136",
+    "zones": ["Evil Lair 2 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NjZZjm1hnWneVuDksJxqZKEiz0RdYtMNbmgQL"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map137",
+    "zones": ["Evil Lair 3 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NHgkG2pp3Hz8daoBx7sqZNvfWYUMDPwghmGn4"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map138",
+    "zones": ["Evil Lair 4 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NtZpZ3h8S8wNOfl5XRFMU4KgqmZjYvLQBAIop"
   },
   {
-    "file": "",
-    "zones": [""],
-    "link": ""
+    "file": "Map139",
+    "zones": ["Ashes Pit 1 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N9Pxx0meLJKf8YNVx0pdBSilFb2grkye1hR5Z"
+  },
+  {
+    "file": "Map140",
+    "zones": ["Ashes Pit 2 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NaOyQjmdIbSFE0wqshLjmQ8PlTVea1BCzfA5v"
+  },
+  {
+    "file": "Map141",
+    "zones": ["Ashes Pit 3 (M2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NL3EWtOzNaMvPpbQkw6NRiolr3gGhIseOJ0Y5"
+  },
+  {
+    "file": "Map142",
+    "zones": ["Ashes Pit 4 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N97Bab7eLJKf8YNVx0pdBSilFb2grkye1hR5Z"
+  },
+  {
+    "file": "Map143",
+    "zones": ["?"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NdG3oHXXzJHT9ox4VtUMZX7Bazbr538mg2SCw"
+  },
+  {
+    "file": "Map144",
+    "zones": ["Withered Forest (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N2UdX404CCIxXwNcF1QZpJgVWKvo9ERUGAetr"
+  },
+  {
+    "file": "Map145",
+    "zones": ["?"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NR8NIa0AG6kNEGIpMvogr3hwUHCyK1xqZuejW"
+  },
+  {
+    "file": "Map200",
+    "zones": ["Guild HQ 1 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NY5d5wrIU41I3SWdTpuwmvQcPXi8Aj7fFz90t"
+  },
+  {
+    "file": "Map210",
+    "zones": ["Guild HQ 2 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N5WpIo0O8LrpiDMFEkI274nlVdz9mHN5gvG3u"
+  },
+  {
+    "file": "Map220",
+    "zones": ["Guild HQ 3 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NRrWhtsG6kNEGIpMvogr3hwUHCyK1xqZuejWX"
+  },
+  {
+    "file": "Map230",
+    "zones": ["Guild HQ 4 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1Nhtc7kk2TYWG5dOH29ylbCtKzFLvwM37xiRP6"
+  },
+  {
+    "file": "Map240",
+    "zones": ["Guild HQ 5 (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NwYUKVOLc4e0XdzQ2rAGltnL751jFMS9isVUP"
+  },
+  {
+    "file": "Map250",
+    "zones": ["Battleground (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1N9TfmnseLJKf8YNVx0pdBSilFb2grkye1hR5Z"
+  },
+  {
+    "file": "Map251",
+    "zones": ["Warm Hut (MW2)"],
+    "link": "https://utfs.io/f/e0BHXYWYpV1NcP6jXGem4P0hJ2ERyDWqe9dvOoN5SbMzHniA"
+  },
+  {
+    "file": "Map252",
+    "zones": ["Noble House (MW2)"],
+    "link": "Noble House (MW2)"
   }
 ]
