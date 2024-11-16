@@ -3,9 +3,6 @@
 <details>
 <summary><h2>TASK LIST<h2></summary>
 
-- [ ] Add top/left style reset on closing dialog (using dialog api instead of react render, so no useEffect unmount possible)
-- [x] Add boundary constraints to prevent image from being dragged away from its constraints (snap right to right, left to left etc)
-- [ ] Disable dragging in axes in which the image may be smaller than the container within that axis
 - [ ] Decide on a threshold for 3rd party image hosting (100kb+?)
 - [ ] For map assets, show a compressed webp of fullmap and offer a zipped download of all jpg tiles
 - [ ] Decide on page subnav icons - bland svgs vs in-game UI icons
