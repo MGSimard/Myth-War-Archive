@@ -53,7 +53,6 @@ Description
 
 ### Built With
 
-- [Based on T3 Stack (Barely at this point lol)](https://create.t3.gg/)
 - [Next.js 15](https://nextjs.org/)
 - [React 19.0.0-rc-5c56b873-20241107](https://react.dev/)
 - [TypeScript 5.6.3](https://www.typescriptlang.org/)
