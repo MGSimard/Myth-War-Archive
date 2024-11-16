@@ -1,5 +1,5 @@
 import maps from "@/data/maps.json";
-import { DownloadButton } from "@/components/DownloadButton";
+import { IconDownload } from "@/components/Icons";
 
 export default function Page() {
   return (
@@ -24,7 +24,16 @@ export default function Page() {
                 <img alt="img" />
               </td>
               <td>
-                <DownloadButton entry={map} />
+                <a
+                  href={map.link}
+                  download={map.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-download"
+                  aria-label={`Download ${map.file} - ${map.map}`}
+                  title={`Download ${map.file} - ${map.map}`}>
+                  <IconDownload />
+                </a>
               </td>
             </tr>
           ))}
