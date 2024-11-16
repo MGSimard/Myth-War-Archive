@@ -1,11 +1,12 @@
-const maps = [{ file: "Map001", map: "Sky Passage (MW1)", link: "https://google.com" }];
+import maps from "@/data/maps.json";
+import { DownloadButton } from "@/components/DownloadButton";
 
 export default function Page() {
   return (
     <>
       <h2>Maps</h2>
       <hr className="divider" />
-      <table>
+      <table className="table-assets">
         <thead>
           <tr>
             <th>File</th>
@@ -23,9 +24,7 @@ export default function Page() {
                 <img alt="img" />
               </td>
               <td>
-                <a href={map.link} download={`${map.file} - ${map.map}`}>
-                  <button type="button">Download</button>
-                </a>
+                <DownloadButton entry={map} />
               </td>
             </tr>
           ))}

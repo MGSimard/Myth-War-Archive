@@ -458,6 +458,24 @@ figcaption span {
 }
 
 /* ASSET PAGE */
+.table-assets {
+  border-collapse: collapse;
+}
+.table-assets td {
+  padding: 1rem;
+}
+.table-assets * {
+  border: 1px solid red;
+}
+.btn-download {
+  display: flex;
+  place-content: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid green;
+}
+.btn-download svg {
+  height: 1em;
+}
 
 @media only screen and (max-width: 768px) {
   /* TODO: NAV */
