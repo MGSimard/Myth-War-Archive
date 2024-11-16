@@ -15,7 +15,10 @@ export default function WorldLayout({ children }: { children: React.ReactNode })
         <h1>Myth War Archive - World</h1>
       </header>
       <main className="panel">
-        <SubNav links={links} icon={<img src="https://avatars.githubusercontent.com/u/126427506?v=4" alt="" />} />
+        <SubNav
+          links={links}
+          icon={<img src="https://utfs.io/f/e0BHXYWYpV1NcGykJnm4P0hJ2ERyDWqe9dvOoN5SbMzHniAp" alt="" />}
+        />
         <section>
           <div className="section-content">{children}</div>
         </section>

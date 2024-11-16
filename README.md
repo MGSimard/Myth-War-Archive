@@ -3,6 +3,7 @@
 <details>
 <summary><h2>TASK LIST<h2></summary>
 
+- [ ] Fit dialog button styles to map buttons in game UI, check disc
 - [ ] Decide on a threshold for 3rd party image hosting (100kb+?)
 - [ ] For map assets, show a compressed webp of fullmap and offer a zipped download of all jpg tiles
 - [ ] Decide on page subnav icons - bland svgs vs in-game UI icons
