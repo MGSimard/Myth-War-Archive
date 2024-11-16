@@ -191,27 +191,27 @@
   },
   {
     "file": "Map039",
-    "zones": ["Bar (Blython, MW1&2)"],
+    "zones": ["Bar (Blython, MW1)", "Bar (Blython, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1N2Uz2IbxCCIxXwNcF1QZpJgVWKvo9ERUGAetr"
   },
   {
     "file": "Map040",
-    "zones": ["Herbal Shop (Blython, MW1&2)"],
+    "zones": ["Herbal Shop (Blython, MW1)", "Herbal Shop (Blython, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NhH8vcc2TYWG5dOH29ylbCtKzFLvwM37xiRP6"
   },
   {
     "file": "Map041",
-    "zones": ["Grocery (Blython, MW1&2)"],
+    "zones": ["Grocery (Blython, MW1)", "Grocery (Blython, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1ND64i0XtZr1CIGPRij4EN9Ls5He7gwT8VuWQq"
   },
   {
     "file": "Map042",
-    "zones": ["Weaponry (Blython, MW1&2)"],
+    "zones": ["Weaponry (Blython, MW1)", "Weaponry (Blython, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NXvunCpjmqjSac4VHkzMpGNl8JyY3F6nLWQDX"
   },
   {
     "file": "Map043",
-    "zones": ["Stuff Shop (Blython, MW1&2)"],
+    "zones": ["Stuff Shop (Blython, MW1)", "Stuff Shop (Blython, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NkyG6hwPqMBg5XUDSJtsO7HKZNbFp8vYiaczu"
   },
   {
@@ -221,7 +221,7 @@
   },
   {
     "file": "Map046",
-    "zones": ["Trading Zone (Blython, MW1&2)"],
+    "zones": ["Trading Zone (Blython, MW1)", "Trading Zone (Blython, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NJn7hrQCXw5pfSNvYFIuKtAGyW9604HZOz3PU"
   },
   {
@@ -241,12 +241,12 @@
   },
   {
     "file": "Map051",
-    "zones": ["City Hall 1 (Desert City, MW1&2)"],
+    "zones": ["City Hall 1 (Desert City, MW1)", "City Hall 1 (Desert City, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NiQpVVHo5ANnjDKXlz0qo1O4VFgQS3uTHrvsa"
   },
   {
     "file": "Map052",
-    "zones": ["City Hall 2 (Desert City, MW1&2)"],
+    "zones": ["City Hall 2 (Desert City, MW1)", "City Hall 2 (Desert City, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NJn69OTSXw5pfSNvYFIuKtAGyW9604HZOz3PU"
   },
   {
@@ -261,12 +261,12 @@
   },
   {
     "file": "Map055",
-    "zones": ["Elders Zone (Woodlingor, MW1&2)", "Luna's Palace (Woodlingor, MW2)"],
+    "zones": ["Elders Zone (Woodlingor, MW1)", "Elders Zone (Woodlingor, MW2)", "Luna's Palace (Woodlingor, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NdWXOVgzJHT9ox4VtUMZX7Bazbr538mg2SCwl"
   },
   {
     "file": "Map056",
-    "zones": ["Bar (Woodlingor, MW1&2)"],
+    "zones": ["Bar (Woodlingor, MW1)", "Bar (Woodlingor, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NqSYYZ3sBR8dA1iSaY5mf7etKOQrws0LvJoqH"
   },
   {
@@ -281,7 +281,7 @@
   },
   {
     "file": "Map059",
-    "zones": ["Weaponry (Woodlingor, MW1&2)"],
+    "zones": ["Weaponry (Woodlingor, MW1)", "Weaponry (Woodlingor, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NnV5BHlpDkbvZEfp5DhPAH9sajM0N2tYQw3ro"
   },
   {
@@ -296,7 +296,7 @@
   },
   {
     "file": "Map062",
-    "zones": ["Trading Zone (Woodlingor, MW1&2)"],
+    "zones": ["Trading Zone (Woodlingor, MW1)", "Trading Zone (Woodlingor, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NIVmMffvXPJ3CktFqy9AHai6V2jzSrf7h5L8p"
   },
   {
@@ -306,22 +306,22 @@
   },
   {
     "file": "Map065",
-    "zones": ["Armory (Woodlingor, MW1&2)"],
+    "zones": ["Armory (Woodlingor, MW1)", "Armory (Woodlingor, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1N1qe4PBaSu6v4jFat7iy8OXsLVpgdqoRBb0ZE"
   },
   {
     "file": "Map066",
-    "zones": ["City Hall 1 (Demon Square, MW1&2)"],
+    "zones": ["City Hall 1 (Demon Square, MW1)", "City Hall 1 (Demon Square, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1NztKwrIIRFQiEB3JMNWaAZtubXjgTY9rePlV2"
   },
   {
     "file": "Map067",
-    "zones": ["City Hall 2 (Demon Square, MW1&2)"],
+    "zones": ["City Hall 2 (Demon Square, MW1)", "City Hall 2 (Demon Square, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1N18OWVLaSu6v4jFat7iy8OXsLVpgdqoRBb0ZE"
   },
   {
     "file": "Map068",
-    "zones": ["Prison (Demon Square, MW1&2)"],
+    "zones": ["Prison (Demon Square, MW1)", "Prison (Demon Square, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1Ni8m76zo5ANnjDKXlz0qo1O4VFgQS3uTHrvsa"
   },
   {
@@ -346,7 +346,7 @@
   },
   {
     "file": "Map074",
-    "zones": ["Prison (Desert City, MW1&2)"],
+    "zones": ["Prison (Desert City, MW1)", "Prison (Desert City, MW2)"],
     "link": "https://utfs.io/f/e0BHXYWYpV1N86r7xE9oewsIDHVUhQKjSNmG0tLCflBW61FO"
   },
   {
