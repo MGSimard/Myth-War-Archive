@@ -66,7 +66,7 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
       <div className="tools">
         <button onClick={() => zoomIn()}>+</button>
         <button onClick={() => zoomOut()}>-</button>
-        <button onClick={() => resetTransform()}>x</button>
+        <button onClick={() => resetTransform()}>Reset</button>
       </div>
     );
   };
@@ -74,9 +74,14 @@ function LightboxContent({ fullSrc }: { fullSrc: string }) {
   return (
     <div className="lightbox-content">
       <TransformWrapper initialScale={1}>
-        <TransformComponent>
-          <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" />
-        </TransformComponent>
+        {({ zoomIn, zoomOut, resetTransform }) => (
+          <>
+            <Controls />
+            <TransformComponent>
+              <img ref={imgRef} src={fullSrc} alt="" loading="lazy" draggable="false" />
+            </TransformComponent>
+          </>
+        )}
       </TransformWrapper>
     </div>
   );
