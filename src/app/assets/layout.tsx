@@ -15,10 +15,7 @@ export default function AssetsLayout({ children }: { children: React.ReactNode }
         <h1>Myth War Archive - Assets</h1>
       </header>
       <main className="panel">
-        <SubNav
-          links={links}
-          icon={<img src="https://utfs.io/f/e0BHXYWYpV1NAmX3Ed90XuTt4523ZFNHh6mPeloYqg1VsOkR" alt="" />}
-        />
+        <SubNav links={links} icon={<img src="/assets/icon-assets.webp" alt="" />} />
         <section>
           <div className="section-content">{children}</div>
         </section>

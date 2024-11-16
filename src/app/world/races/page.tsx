@@ -24,11 +24,7 @@ export default function Page() {
           character class in this game.
         </p>
         <div className="class-wrapper">
-          <ClassBanner
-            src="https://utfs.io/f/e0BHXYWYpV1NwHxBZhALc4e0XdzQ2rAGltnL751jFMS9isVU"
-            alt="Human Male Avatar"
-            title="Paladin"
-          />
+          <ClassBanner src="/assets/characters/frames/human-male-mw1.webp" alt="Human Male Avatar" title="Paladin" />
           <p>
             Paladins are great warriors who have a heart to save the weak.Their main purpose in life is to pursue
             Godliness. They spend their lives training themselves up in order to protect their lands and as a result,
@@ -41,11 +37,7 @@ export default function Page() {
           </p>
         </div>
         <div className="class-wrapper">
-          <ClassBanner
-            src="https://utfs.io/f/e0BHXYWYpV1NztGxbghRFQiEB3JMNWaAZtubXjgTY9rePlV2"
-            alt="Human Female Avatar"
-            title="Thief"
-          />
+          <ClassBanner src="/assets/characters/frames/human-female-mw1.webp" alt="Human Female Avatar" title="Thief" />
           <p>
             Thieves are known to have a wicked and nasty nature. Their outward appearance takes on the usual shape of a
             slim body and they dress in a corset and mask mainly. Their main choice of weapons are daggers and knives.
@@ -72,11 +64,7 @@ export default function Page() {
           entity.
         </p>
         <div className="class-wrapper">
-          <ClassBanner
-            src="https://utfs.io/f/e0BHXYWYpV1NUWIbhVfBhVC1bNduT6OStolse3kI7QiMEPKm"
-            alt="Centaur Male Avatar"
-            title="Archer"
-          />
+          <ClassBanner src="/assets/characters/frames/centaur-male-mw1.webp" alt="Centaur Male Avatar" title="Archer" />
           <p>
             Strength, agility and intelligence are never enough to archers who spend their lives to pursue peace and
             justice. They adopt range weapons, and are masters in using bows and crossbows. They are born with fantastic
@@ -88,7 +76,7 @@ export default function Page() {
         </div>
         <div className="class-wrapper">
           <ClassBanner
-            src="https://utfs.io/f/e0BHXYWYpV1NRQPJm8G6kNEGIpMvogr3hwUHCyK1xqZuejWX"
+            src="/assets/characters/frames/centaur-female-mw1.webp"
             alt="Centaur Female Avatar"
             title="Elf"
           />
@@ -115,11 +103,7 @@ export default function Page() {
           races to develop and prosper.
         </p>
         <div className="class-wrapper">
-          <ClassBanner
-            src="https://utfs.io/f/e0BHXYWYpV1NKA9ADLwAgsuMeFrYVICRDO3wf10HiqBSp2ZJ"
-            alt="Mage Male Avatar"
-            title="Priest"
-          />
+          <ClassBanner src="/assets/characters/frames/mage-male-mw1.webp" alt="Mage Male Avatar" title="Priest" />
           <p>
             Priests are capable of casting incredibly powerful spells by utilizing the powers of wind, thunder, water
             and fire. Their brand of magic is dark in opposition to the holy one. As they are deprived of sunlight, they
@@ -129,11 +113,7 @@ export default function Page() {
           </p>
         </div>
         <div className="class-wrapper">
-          <ClassBanner
-            src="https://utfs.io/f/e0BHXYWYpV1NmqqioDCk5xRFvbrqCBOKpekyTMwX3f6I1nji"
-            alt="Mage Female Avatar"
-            title="Witch"
-          />
+          <ClassBanner src="/assets/characters/frames/mage-female-mw1.webp" alt="Mage Female Avatar" title="Witch" />
           <p>
             Witches have the power to combine ancient charms to exert influences over substances and matter. They hold
             the power to announce death and use this power in battle. They have similar attack features as priest such
@@ -157,11 +137,7 @@ export default function Page() {
           propulsion system for the robots which enabled them to fly without using magic.
         </p>
         <div className="class-wrapper">
-          <ClassBanner
-            src="https://utfs.io/f/e0BHXYWYpV1NuytWbJuS8PE9ZMU6W7IBOcw1N5Szpjygbr0X"
-            alt="Borg Male Avatar"
-            title="Tyrant"
-          />
+          <ClassBanner src="/assets/characters/frames/borg-male-mw1.webp" alt="Borg Male Avatar" title="Tyrant" />
           <p>
             Tyrants emerge from the ruins so they are more adept to battle, having a super-powerful body. They are great
             experts in battle and have only one focus on their mind, to attack. Although they can only use slow and
@@ -170,11 +146,7 @@ export default function Page() {
           </p>
         </div>
         <div className="class-wrapper">
-          <ClassBanner
-            src="https://utfs.io/f/e0BHXYWYpV1NR8bV7yDG6kNEGIpMvogr3hwUHCyK1xqZuejW"
-            alt="Borg Female Avatar"
-            title="Cyborg"
-          />
+          <ClassBanner src="/assets/characters/frames/borg-female-mw1.webp" alt="Borg Female Avatar" title="Cyborg" />
           <p>
             Cyborgs are designed to protect and prolong lives. They have resistance to all spells being machine based
             and they have a longer life span than their biological enemies. They excel in team battles due to their
