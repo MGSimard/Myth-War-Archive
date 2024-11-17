@@ -1,5 +1,11 @@
 [
   {
+    "file": "X-Ripper",
+    "authors": ["Zeus Software"],
+    "desc": "X-Ripper is a file ripper, which means it can find and extract hidden files stored in a big file libraries/archives, mainly used in games. Program can detect and rip various file formats e.g. Audio formats (WAV, OGG, WMA, MID, VOC, AU, AIF), Graphics formats (BMP, JPG, PCX, PNG, DDS, GIF, TGA, TIF) and movie formats (AVI, WMV, SMK, BIK). If the program detects any recognizable file format, it automatically saves a file to the selected folder. The user can choose which file formats are to be searched.",
+    "link": "https://www.zeus-software.com/downloads/xripper"
+  },
+  {
     "file": "MDAExtractor",
     "authors": ["Nazaroff", "MGSimard"],
     "desc": "Extracts assets from RAYS MEDIA FILE '*.mda' file containers. Batch & singular.",
@@ -8,8 +14,8 @@
   {
     "file": "GetMapTiles",
     "authors": ["MGSimard"],
-    "desc": "Extracts 800x600 JPEG map tiles from '*.map' files. Batch & singular.",
-    "link": "https://utfs.io/f/e0BHXYWYpV1NdM0mv1zJHT9ox4VtUMZX7Bazbr538mg2SCwl"
+    "desc": "Extracts 800x600 JPEG map tiles from '*.map' files. This tool was developed due to X-Ripper missing some map tiles upon extraction.",
+    "link": "https://utfs.io/f/e0BHXYWYpV1NzlQNHDRFQiEB3JMNWaAZtubXjgTY9rePlV28"
   },
   {
     "file": "GetLinkedFiles",

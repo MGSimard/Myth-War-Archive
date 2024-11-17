@@ -27,7 +27,7 @@
 Next.js App (FE)
 <br/>
 <br/>
-<a href="#">View Live Project</a>
+<a href="https://mwarchive.vercel.app/">View Live Project</a>
 </p>
 </div>
 
@@ -60,7 +60,7 @@ Description
 
 ## Usage
 
-- Go to #
+- Go to [https://mwarchive.vercel.app/](https://mwarchive.vercel.app/)
 
 ## Contact
 

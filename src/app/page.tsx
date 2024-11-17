@@ -9,7 +9,7 @@ export default function Page() {
       <main className="panel">
         <section>
           <div className="section-content">
-            <h2>Section</h2>
+            <h2>WORK IN PROGRESS</h2>
             <hr className="divider" />
             <p>Section stuff</p>
           </div>
