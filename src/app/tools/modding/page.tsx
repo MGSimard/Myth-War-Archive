@@ -6,7 +6,7 @@ export default function Page() {
     <>
       <h2>Modding</h2>
       <hr className="divider" />
-      <table className="table-assets">
+      <table className="table">
         <thead>
           <tr>
             <th>Tool</th>
