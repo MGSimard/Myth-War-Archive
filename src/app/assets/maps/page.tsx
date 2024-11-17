@@ -27,7 +27,7 @@ export default function Page() {
                 </ul>
               </td>
               <td>
-                <img alt="img" />
+                <img alt="img" className="table-prev" />
               </td>
               <td>
                 <a

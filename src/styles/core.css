@@ -477,6 +477,9 @@ figcaption span {
 .table td {
   padding: 1rem;
 }
+.table-prev {
+  margin: 0 auto;
+}
 .btn-download {
   display: flex;
   justify-content: center;
@@ -485,10 +488,6 @@ figcaption span {
   padding: 1rem;
   width: 5rem;
   height: 5rem;
-  /* border: 0.2rem ridge var(--clr-gold);
-  border-radius: 0.2rem;
-  background: rgba(64, 20, 8, 1);
-  color: var(--clr-gold); */
 }
 .btn-download svg {
   height: 100%;
