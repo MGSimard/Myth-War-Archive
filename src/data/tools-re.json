@@ -8,7 +8,7 @@
   {
     "file": "GetMapTiles",
     "authors": ["MGSimard"],
-    "desc": "Extract 800x600 map tiles from '*.map' files. Batch & singular.",
+    "desc": "Extract 800x600 JPEG map tiles from '*.map' files. Batch & singular.",
     "link": "https://utfs.io/f/e0BHXYWYpV1NdM0mv1zJHT9ox4VtUMZX7Bazbr538mg2SCwl"
   },
   {
