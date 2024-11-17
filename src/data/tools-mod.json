@@ -1,7 +1,7 @@
 [
   {
     "file": "BugWar Patch",
-    "authors": ["Icestorm"],
+    "authors": ["IceStorm"],
     "desc": "The BugWar patch aims to improve player experience. From corrected translations to better clarity in UI & tooltip information. Quick spell animation toggle, show target HP, raise currency transfers to up to 1 billion gold, and more quality of life improvements.",
     "link": "http://bugwarlabs.somee.com/"
   }
