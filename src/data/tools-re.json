@@ -2,13 +2,19 @@
   {
     "file": "MDAExtractor",
     "authors": ["Nazaroff", "MGSimard"],
-    "desc": "Extract assets from RAYS MEDIA FILE .mda file containers.",
+    "desc": "Extract assets from RAYS MEDIA FILE '*.mda' file containers. Batch & singular.",
     "link": "https://utfs.io/f/e0BHXYWYpV1NW4BoX2bWAFCPxQiv7YOXs6Tug2VtZyIdnwH1"
+  },
+  {
+    "file": "GetMapTiles",
+    "authors": ["MGSimard"],
+    "desc": "Extract 800x600 map tiles from '*.map' files. Batch & singular.",
+    "link": "https://utfs.io/f/e0BHXYWYpV1NdM0mv1zJHT9ox4VtUMZX7Bazbr538mg2SCwl"
   },
   {
     "file": "GetLinkedFiles",
     "authors": ["MGSimard"],
-    "desc": "Extract filename reference strings to view linked files. Primary intended used is viewing connected maps for .map files.",
-    "link": "https://utfs.io/f/e0BHXYWYpV1NJtFaywXw5pfSNvYFIuKtAGyW9604HZOz3PUo"
+    "desc": "Extract filename reference strings to view linked files - primarily used for viewing connected maps in '*.map' files. Batch & singular.",
+    "link": "https://utfs.io/f/e0BHXYWYpV1NvUIn1FKwjQM0IfTDPJYum2ihyFXEaCKqn7xN"
   }
 ]
