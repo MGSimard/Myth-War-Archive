@@ -460,6 +460,7 @@ figcaption span {
 /* ASSET PAGE */
 .table-assets {
   border-collapse: collapse;
+  width: 100%;
 }
 .table-assets th {
   padding: 1rem;
