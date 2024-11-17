@@ -15,6 +15,7 @@
 - [ ] Figure out if I want header backgrounds in pages
 - [ ] Nested ul submenu in nav links
 - [ ] Decide if I want page footer or nav footer (icons etc)
+- [ ] Do mobile nav shift at threshold
 - [ ] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
 
 </details>
