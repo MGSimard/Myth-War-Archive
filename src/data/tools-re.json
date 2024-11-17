@@ -1,7 +1,7 @@
 [
   {
     "file": "GetLinkedFiles.py",
-    "author": "MGSimard",
+    "authors": ["MGSimard"],
     "desc": "Extract filename reference strings to view linked files. Primary intended used is viewing connected maps for .map files.",
     "link": "https://utfs.io/f/e0BHXYWYpV1NwgCM5BLc4e0XdzQ2rAGltnL751jFMS9isVUP"
   }

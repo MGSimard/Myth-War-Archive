@@ -19,7 +19,13 @@ export default function Page() {
           {toolsRE.map((tool) => (
             <tr key={tool.file}>
               <td>{tool.file}</td>
-              <td>{tool.author}</td>
+              <td>
+                <ul>
+                  {tool.authors.map((author) => (
+                    <li key={author}>{author}</li>
+                  ))}
+                </ul>
+              </td>
               <td>{tool.desc}</td>
               <td>
                 <a
