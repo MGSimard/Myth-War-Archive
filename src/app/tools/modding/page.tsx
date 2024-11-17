@@ -1,3 +1,4 @@
+import toolsMod from "@/data/tools-mod.json";
 import { IconDownload } from "@/components/Icons";
 
 export default function Page() {
@@ -9,27 +10,37 @@ export default function Page() {
         <thead>
           <tr>
             <th>Tool</th>
+            <th>Author</th>
             <th>Description</th>
             <th>Download</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Tool</td>
-            <td>Desc</td>
-            <td>
-              <a
-                href="#"
-                download=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-download"
-                aria-label={`Download ${"TOOLHERE"}`}
-                title={`Download ${"TOOLHERE"}`}>
-                <IconDownload />
-              </a>
-            </td>
-          </tr>
+          {toolsMod.map((tool) => (
+            <tr key={tool.file}>
+              <td>{tool.file}</td>
+              <td>
+                <ul>
+                  {tool.authors.map((author) => (
+                    <li key={author}>{author}</li>
+                  ))}
+                </ul>
+              </td>
+              <td>{tool.desc}</td>
+              <td>
+                <a
+                  href={tool.link}
+                  download={tool.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-download"
+                  aria-label={`Download ${tool.file}`}
+                  title={`Download ${tool.file}`}>
+                  <IconDownload />
+                </a>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </>
