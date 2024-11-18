@@ -33,7 +33,7 @@ export function TableRows({ tableData }: { tableData: TableDataTypes }) {
 
   return (
     <>
-      {filteredData.map((map) => (
+      {filteredData.map((map, index) => (
         <tr key={map.file}>
           <td className="static">
             <a
@@ -55,7 +55,11 @@ export function TableRows({ tableData }: { tableData: TableDataTypes }) {
               ))}
             </ul>
           </td>
-          <td className="preview">{map.preview && <img src={map.preview} alt={`${map.file} Preview`} />}</td>
+          <td className="preview">
+            {map.preview && (
+              <img src={map.preview} alt={`${map.file} Preview`} loading={index > 9 ? "lazy" : "eager"} />
+            )}
+          </td>
         </tr>
       ))}
     </>
