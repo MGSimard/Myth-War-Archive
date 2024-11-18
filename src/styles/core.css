@@ -547,6 +547,9 @@ figcaption span {
     mask-image: unset;
     -webkit-mask-image: unset;
   }
+  .table td.preview img {
+    pointer-events: none;
+  }
 }
 
 .table thead tr {
