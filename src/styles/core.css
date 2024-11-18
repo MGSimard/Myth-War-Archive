@@ -230,6 +230,7 @@ input {
   box-shadow: inset 0 0 1rem hsl(69, 16%, 15%);
   border-radius: 0.4rem;
   border: 0.2rem solid hsla(from var(--clr-gold) h s l / 0.3);
+  overflow: hidden;
 }
 /* PAPYRUS SECTION */
 .panel section {
