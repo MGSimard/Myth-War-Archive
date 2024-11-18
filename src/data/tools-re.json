@@ -8,7 +8,7 @@
   {
     "file": "MDAExtractor",
     "authors": ["Nazaroff", "MGSimard"],
-    "desc": "Extracts assets from RAYS MEDIA FILE '*.mda' file containers. Batch & singular.",
+    "desc": "Extracts assets from RAYS MEDIA FILE '*.mda' file containers.",
     "link": "https://utfs.io/f/e0BHXYWYpV1NW4BoX2bWAFCPxQiv7YOXs6Tug2VtZyIdnwH1"
   },
   {
@@ -20,7 +20,7 @@
   {
     "file": "GetLinkedFiles",
     "authors": ["MGSimard"],
-    "desc": "Extracts filename reference strings to view linked files - primarily used for viewing connected maps in '*.map' files. Batch & singular.",
+    "desc": "Extracts filename reference strings to view linked files - primarily used for viewing connected maps in '*.map' files.",
     "link": "https://utfs.io/f/e0BHXYWYpV1NvUIn1FKwjQM0IfTDPJYum2ihyFXEaCKqn7xN"
   }
 ]
