@@ -15,7 +15,7 @@
     "file": "GetMapTiles",
     "authors": ["MGSimard"],
     "desc": "Extracts 800x600 JPEG map tiles from '*.map' files. This tool was developed due to X-Ripper missing some map tiles upon extraction.",
-    "link": "https://utfs.io/f/e0BHXYWYpV1NzlQNHDRFQiEB3JMNWaAZtubXjgTY9rePlV28"
+    "link": "https://utfs.io/f/e0BHXYWYpV1NWIwEIzqbWAFCPxQiv7YOXs6Tug2VtZyIdnwH"
   },
   {
     "file": "GetLinkedFiles",

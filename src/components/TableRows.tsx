@@ -6,6 +6,7 @@ type TableDataTypes = {
   file: string;
   zones: string[];
   link: string;
+  preview: string;
 }[];
 
 export function TableRows({ tableData }: { tableData: TableDataTypes }) {
@@ -54,12 +55,7 @@ export function TableRows({ tableData }: { tableData: TableDataTypes }) {
               ))}
             </ul>
           </td>
-          <td className="preview">
-            <img
-              src="https://vaultmedia.ign.com/rpgvault/image/article/751/751438/mythwar06121701a_1166419323.jpg"
-              alt={`${map.file} Preview`}
-            />
-          </td>
+          <td className="preview">{map.preview && <img src={map.preview} alt={`${map.file} Preview`} />}</td>
         </tr>
       ))}
     </>
