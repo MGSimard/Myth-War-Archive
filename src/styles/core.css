@@ -464,6 +464,7 @@ figcaption span {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 2rem;
 }
 .table-search {
   position: relative;
@@ -474,6 +475,16 @@ figcaption span {
   box-shadow: inset 0 0 0.4rem rgb(77, 56, 7);
   backdrop-filter: saturate(1.5);
   font-family: inherit;
+  min-width: 0;
+}
+@media only screen and (max-width: 500px) {
+  .maps-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .table-search {
+    width: 100%;
+  }
 }
 .table-search::placeholder {
   color: var(--clr-brown);
