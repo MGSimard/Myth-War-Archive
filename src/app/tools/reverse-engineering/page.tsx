@@ -12,21 +12,11 @@ export default function Page() {
             <th>Tool</th>
             <th>Author</th>
             <th>Description</th>
-            <th>Download</th>
           </tr>
         </thead>
         <tbody>
           {toolsRE.map((tool) => (
             <tr key={tool.file}>
-              <td>{tool.file}</td>
-              <td>
-                <ul>
-                  {tool.authors.map((author) => (
-                    <li key={author}>{author}</li>
-                  ))}
-                </ul>
-              </td>
-              <td>{tool.desc}</td>
               <td>
                 <a
                   href={tool.link}
@@ -36,9 +26,18 @@ export default function Page() {
                   className="btn-download"
                   aria-label={`Download ${tool.file}`}
                   title={`Download ${tool.file}`}>
+                  {tool.file}
                   <IconDownload />
                 </a>
               </td>
+              <td>
+                <ul>
+                  {tool.authors.map((author) => (
+                    <li key={author}>{author}</li>
+                  ))}
+                </ul>
+              </td>
+              <td>{tool.desc}</td>
             </tr>
           ))}
         </tbody>

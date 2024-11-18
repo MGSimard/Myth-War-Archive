@@ -12,23 +12,11 @@ export default function Page() {
             <th>File</th>
             <th>Zone</th>
             <th>Preview</th>
-            <th>Download</th>
           </tr>
         </thead>
         <tbody>
           {maps.map((map) => (
             <tr key={map.file}>
-              <td>{map.file}</td>
-              <td>
-                <ul>
-                  {map.zones.map((zone) => (
-                    <li key={`${map.file}-${zone}`}>{zone}</li>
-                  ))}
-                </ul>
-              </td>
-              <td>
-                <img alt="img" className="table-prev" />
-              </td>
               <td>
                 <a
                   href={map.link}
@@ -38,8 +26,19 @@ export default function Page() {
                   className="btn-download"
                   aria-label={`Download ${map.file}`}
                   title={`Download ${map.file}`}>
+                  {map.file}
                   <IconDownload />
                 </a>
+              </td>
+              <td>
+                <ul>
+                  {map.zones.map((zone) => (
+                    <li key={`${map.file}-${zone}`}>{zone}</li>
+                  ))}
+                </ul>
+              </td>
+              <td>
+                <img alt="img" className="table-prev" />
               </td>
             </tr>
           ))}
