@@ -9,15 +9,15 @@ export default function Page() {
       <table className="table">
         <thead>
           <tr>
-            <th>Tool</th>
-            <th>Author</th>
+            <th className="static">Tool</th>
+            <th className="static">Author</th>
             <th>Description</th>
           </tr>
         </thead>
         <tbody>
           {toolsRE.map((tool) => (
             <tr key={tool.file}>
-              <td>
+              <td className="static">
                 <a
                   href={tool.link}
                   download={tool.file}
@@ -26,11 +26,11 @@ export default function Page() {
                   className="btn-download"
                   aria-label={`Download ${tool.file}`}
                   title={`Download ${tool.file}`}>
-                  {tool.file}
                   <IconDownload />
+                  {tool.file}
                 </a>
               </td>
-              <td>
+              <td className="static">
                 <ul>
                   {tool.authors.map((author) => (
                     <li key={author}>{author}</li>

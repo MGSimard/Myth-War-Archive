@@ -458,15 +458,29 @@ figcaption span {
 }
 
 /* ASSET PAGE */
+.table * {
+  border: 1px solid red;
+}
 .table {
   width: 100%;
   box-shadow: inset 0 0 1rem rgb(54, 39, 4);
 }
+.table th,
+.table td {
+  padding: 1rem;
+}
+.table th.static {
+  width: 1rem;
+}
+.table th.preview {
+  width: 20rem;
+}
+.table td.preview img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 .table thead tr {
   backdrop-filter: brightness(0.95) saturate(1.6);
-}
-.table th {
-  padding: 1rem;
 }
 .table tbody tr {
   backdrop-filter: brightness(0.95) saturate(1.4);
@@ -474,18 +488,26 @@ figcaption span {
 .table tbody tr:nth-child(even) {
   backdrop-filter: brightness(0.9) saturate(1.6);
 }
-.table td {
-  padding: 1rem;
+.table td.static {
+  white-space: nowrap;
 }
-.table-prev {
-  margin: 0 auto;
+.table td.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-download {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
+  width: fit-content;
+}
+.btn-download:hover {
+  text-decoration: underline;
 }
 .btn-download svg {
-  height: 0.8em;
+  flex-shrink: 0;
+  height: 1em;
 }
 
 /* NOT FOUND PAGE */
