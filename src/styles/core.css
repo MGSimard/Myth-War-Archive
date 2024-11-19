@@ -333,9 +333,6 @@ figure {
   overflow: hidden;
   cursor: pointer;
 }
-figure img {
-  transition: filter ease 0.2s;
-}
 .grid-maps:has(figure:hover) figure:not(:hover) img,
 .grid-maps:has(figure:focus-visible) figure:not(:focus-visible) img {
   filter: blur(0.2rem) saturate(0);
@@ -358,6 +355,8 @@ figure:focus-visible svg {
 figure img {
   aspect-ratio: 1/1;
   object-fit: cover;
+  transition: filter ease 0.2s;
+  width: 100%;
 }
 figcaption {
   padding: 1rem;
