@@ -61,7 +61,7 @@ button {
   max-width: 100%;
   height: 100dvh;
   padding: 1rem;
-  background: var(--clr-bg-popout);
+  background: var(--clr-bg);
   overflow-x: hidden;
   overflow-y: auto;
   white-space: nowrap;
@@ -71,6 +71,7 @@ button {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
+  box-shadow: inset 0 0 1rem hsl(69, 16%, 15%);
 }
 .sidenav:hover,
 .sidenav:has(a:focus-visible) {

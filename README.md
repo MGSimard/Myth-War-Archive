@@ -11,9 +11,9 @@
 - [x] Add class icons to races section, or full character images
 - [x] Prettify h4 section headings
 - [x] Fill out regions section
-- [ ] Do something about maps table under 450px
+- [x] Do something about maps table under 450px
+- [ ] Fix table in tools RE, width of long words
 - [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
-- [ ] Figure out if I want header backgrounds in pages
 - [ ] Decide if I want page footer or nav footer (icons etc)
 - [ ] Do mobile nav shift at threshold
 - [ ] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
