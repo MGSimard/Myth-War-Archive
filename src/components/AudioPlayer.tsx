@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 // Wanna do this without state for fun
-export function AudioPlayer({ src }: { src: string }) {
+export function AudioPlayer({ src, loop }: { src: string; loop: boolean }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const seekerRef = useRef<HTMLInputElement | null>(null);
   const volumeRef = useRef<HTMLInputElement | null>(null);
@@ -107,7 +107,7 @@ export function AudioPlayer({ src }: { src: string }) {
 
   return (
     <div className="audio-player">
-      <audio ref={audioRef} src={src} preload="metadata" loop />
+      <audio ref={audioRef} src={src} preload="metadata" loop={loop} />
       <div className="time-displays">
         <span ref={currTimeRef}>0:00</span>/<span ref={durationRef}>0:00</span>
       </div>
