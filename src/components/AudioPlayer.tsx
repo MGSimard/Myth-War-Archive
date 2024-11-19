@@ -84,18 +84,20 @@ export function AudioPlayer({ src }: { src: string }) {
     const audioEle = audioRef.current;
     const muteSvg = muteSvgRef.current;
     const unmuteSvg = unmuteSvgRef.current;
-    if (!audioEle || !muteSvg || !unmuteSvg) return;
+    const volumeEle = volumeRef.current;
+    if (!audioEle || !muteSvg || !unmuteSvg || !volumeEle) return;
 
     if (audioEle.muted) {
       audioEle.muted = false;
       unmuteSvg.classList.add("hidden");
       muteSvg.classList.remove("hidden");
+      volumeEle.classList.remove("muted");
     } else {
       audioEle.muted = true;
       muteSvg.classList.add("hidden");
       unmuteSvg.classList.remove("hidden");
+      volumeEle.classList.add("muted");
     }
-    // TODO: Make volume slider gray if muted
   };
   const handleVolume = (e: React.ChangeEvent<HTMLInputElement>) => {
     const audioEle = audioRef.current;

@@ -636,9 +636,8 @@ input[type="range"]:hover {
   display: flex;
 }
 .seek-slider {
-  width: 5rem;
+  width: 8rem;
   flex-grow: 1;
-  transition: flex-grow ease 1s;
 }
 .volume-wrapper {
   display: flex;
@@ -660,16 +659,6 @@ input[type="range"]:hover {
     width: 100%;
   }
 }
-/* .volume-wrapper:hover,
-.volume-wrapper:has(:focus-visible) {
-  flex-grow: 2;
-}
-
-.volume-wrapper:hover .volume-slider,
-.volume-wrapper:has(:focus-visible) .volume-slider {
-  opacity: 1;
-  width: 100%;
-} */
 .mute-button {
   flex-shrink: 0;
   position: relative;
@@ -679,7 +668,6 @@ input[type="range"]:hover {
   inset: 0 0 0 -0.2rem;
   content: "";
 }
-
 /* NOT FOUND PAGE */
 .notfound {
   display: flex;
