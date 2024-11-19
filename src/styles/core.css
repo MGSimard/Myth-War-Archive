@@ -642,16 +642,16 @@ input[type="range"]:hover {
   justify-content: flex-end;
   transition: flex-grow ease 0.2s;
 }
-.volume-wrapper:hover,
-.volume-wrapper:has(:focus-visible) {
+.volume-wrapper:hover
+/*.volume-wrapper:has(:focus-visible)*/ {
   flex-grow: 2;
 }
 .volume-slider {
   width: 0;
   opacity: 0;
 }
-.volume-wrapper:hover .volume-slider,
-.volume-wrapper:has(:focus-visible) .volume-slider {
+.volume-wrapper:hover .volume-slider
+/*.volume-wrapper:has(:focus-visible) .volume-slider*/ {
   opacity: 1;
   width: 100%;
 }
@@ -660,10 +660,9 @@ input[type="range"]:hover {
   position: relative;
 }
 .mute-button::after {
-  /* position: absolute;
-  inset: 0 -5rem;
+  position: absolute;
+  inset: 0 0 0 -0.2rem;
   content: "";
-  background: orange; */
 }
 
 /* NOT FOUND PAGE */
