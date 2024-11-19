@@ -33,7 +33,7 @@ export default function Page() {
                   </a>
                   <AudioPlayer src={music.link} />
                 </td>
-                <td>{music.description}</td>
+                <td className="tddesc">{music.description}</td>
               </tr>
             ))}
           </tbody>

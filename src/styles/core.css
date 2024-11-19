@@ -585,6 +585,9 @@ figcaption span {
   word-break: break-word;
   overflow-wrap: break-word;
 }
+.tddesc {
+  vertical-align: top;
+}
 .btn-download {
   display: flex;
   align-items: center;
@@ -642,16 +645,16 @@ input[type="range"]:hover {
   justify-content: flex-end;
   transition: flex-grow ease 0.2s;
 }
-.volume-wrapper:hover
-/*.volume-wrapper:has(:focus-visible)*/ {
+/* .volume-wrapper:hover, */
+.volume-wrapper:has(:focus-visible) {
   flex-grow: 2;
 }
 .volume-slider {
   width: 0;
   opacity: 0;
 }
-.volume-wrapper:hover .volume-slider
-/*.volume-wrapper:has(:focus-visible) .volume-slider*/ {
+/* .volume-wrapper:hover .volume-slider, */
+.volume-wrapper:has(:focus-visible) .volume-slider {
   opacity: 1;
   width: 100%;
 }
