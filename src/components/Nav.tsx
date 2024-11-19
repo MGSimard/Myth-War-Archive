@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { NavLink } from "@/components/NavLink";
-import { IconMap, IconTools, IconGroup, IconAssets } from "@/components/Icons";
+import { IconMap, IconTools, IconCommunities, IconAssets } from "@/components/Icons";
+
+const Links = [
+  { path: "World", icon: <IconMap /> },
+  { path: "Assets", icon: <IconAssets /> },
+  { path: "Tools", icon: <IconTools /> },
+  { path: "Communities", icon: <IconCommunities /> },
+];
+// Opted against sublinks, action count ended up being the same anyways
 
 export function Nav() {
   return (
@@ -10,10 +18,9 @@ export function Nav() {
         <span>Myth War Archive</span>
       </Link>
       <ul>
-        <NavLink path="World" icon={<IconMap />} />
-        <NavLink path="Assets" icon={<IconAssets />} />
-        <NavLink path="Tools" icon={<IconTools />} />
-        <NavLink path="Communities" icon={<IconGroup />} />
+        {Links.map((link) => (
+          <NavLink key={link.path} path={link.path} icon={link.icon} />
+        ))}
       </ul>
     </nav>
   );

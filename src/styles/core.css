@@ -68,6 +68,9 @@ button {
   transition: width 0.2s ease;
   box-shadow: 0 0 1rem black;
   z-index: 9999;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 .sidenav:hover,
 .sidenav:has(a:focus-visible) {
@@ -109,37 +112,34 @@ button {
     background-position: -1500px;
   }
 }
-.sidenav li:not(:last-child) {
-  margin-bottom: 1rem;
-}
-.sidenav li a {
+
+/* SIDENAV LINKS */
+.sidenav .mainLink {
   display: flex;
   align-items: center;
   gap: 1rem;
   height: calc(var(--sidebar-width) - 2rem);
-  overflow: hidden;
+  color: rgba(255, 255, 255, 0.4);
   border-radius: 0.4rem;
   border: 0.2rem solid transparent;
-  color: rgba(255, 255, 255, 0.4);
+  overflow: hidden;
 }
-.sidenav li a:not(.activeLink):hover,
-.sidenav li a:not(.activeLink):focus-visible {
-  background: rgba(0, 0, 0, 0.3);
-}
-.sidenav li a.activeLink {
-  position: relative;
+.sidenav .mainLink.activeLink {
+  color: white;
   border: 0.2rem solid var(--clr-gold);
   background: var(--clr-gradient-tab);
   box-shadow: inset 0 0 0.3rem black, 0 0 1rem rgba(0, 0, 0, 0.4);
-  color: white;
 }
-.sidenav li a svg {
+.sidenav .mainLink svg {
   flex-shrink: 0;
+  padding: 1rem;
   object-fit: contain;
   max-width: calc(var(--sidebar-width) - 2.4rem);
-  padding: 1rem;
 }
-.sidenav li span {
+.sidenav li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.sidenav .mainLink span {
   max-width: 100%;
   padding-right: 1rem;
   opacity: 0;
@@ -149,9 +149,13 @@ button {
   overflow: hidden;
   transition: opacity 0.2s ease;
 }
-.sidenav:hover a span,
-.sidenav:has(a:focus-visible) a span {
+.sidenav:hover .mainLink span,
+.sidenav:has(a:focus-visible) .mainLink span {
   opacity: 1;
+}
+.sidenav li a:not(.activeLink):hover,
+.sidenav li a:not(.activeLink):focus-visible {
+  background: rgba(0, 0, 0, 0.3);
 }
 h1,
 .sidenav li span,
