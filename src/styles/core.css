@@ -605,12 +605,6 @@ figcaption span {
 th.audio-file {
   width: 20rem;
 }
-.audio-player * {
-  border: 1px solid red;
-}
-.audio-player {
-  border: 1px solid blue;
-}
 .play-button,
 .mute-button {
   display: flex;
@@ -634,6 +628,7 @@ input[type="range"]:hover {
 }
 .controls {
   display: flex;
+  align-items: center;
 }
 .seek-slider {
   width: 8rem;
