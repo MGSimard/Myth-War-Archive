@@ -692,6 +692,13 @@ figcaption span {
   .table td.preview {
     display: none;
   }
+  header,
+  main,
+  footer {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 328px) {
   .section-content {
     padding: 1rem;
   }
