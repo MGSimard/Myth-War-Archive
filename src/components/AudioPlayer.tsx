@@ -60,9 +60,10 @@ export function AudioPlayer({ src }: { src: string }) {
     if (!audioEle || !playSvg || !pauseSvg) return;
 
     if (audioEle.paused) {
-      audioEle.play();
-      pauseSvg.classList.remove("hidden");
-      playSvg.classList.add("hidden");
+      audioEle.play().then(() => {
+        pauseSvg.classList.remove("hidden");
+        playSvg.classList.add("hidden");
+      });
     } else {
       audioEle.pause();
       playSvg.classList.remove("hidden");
