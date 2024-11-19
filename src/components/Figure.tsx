@@ -67,7 +67,7 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
       <dialog ref={dialogRef} className="lightbox">
         {isLoading && (
           <div className="loader">
-            <div className="sidenav-logo lol"></div>
+            <div className="loader-logo lol"></div>
           </div>
         )}
         <TransformWrapper>

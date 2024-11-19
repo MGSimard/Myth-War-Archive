@@ -18,7 +18,6 @@ html {
   font-size: 62.5%;
 }
 body {
-  padding: 0 2rem;
   font-size: 1.6rem;
   color: white;
   background: black;
@@ -27,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 4rem 2rem 0 4rem;
   min-height: 100dvh;
   padding-top: 4rem;
   margin-left: var(--sidebar-width);
@@ -84,6 +84,13 @@ button {
   overflow: hidden;
 }
 .sidenav-logo {
+  flex-shrink: 0;
+  width: calc(var(--sidebar-width) - 2rem);
+  height: 6.8rem;
+  background-image: url("/logo-idle-60x.webp");
+  animation: logo-anim 2.3s steps(25) infinite;
+}
+.loader-logo {
   flex-shrink: 0;
   width: calc(var(--sidebar-width) - 2rem);
   height: 6.8rem;
@@ -207,14 +214,14 @@ input {
   overflow: hidden;
 }
 .subnav img {
-  height: 4rem;
   width: 4rem;
-  align-self: flex-start;
+  align-self: stretch;
+  object-fit: cover;
 }
 .subnav ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 0;
+  padding: 1rem 1rem 1rem 0;
 }
 .subnav ul li:not(:last-child)::after {
   content: "|";
@@ -356,8 +363,8 @@ figcaption span {
 }
 /* LIGHTBOX (DIALOG) */
 .lightbox {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 85%;
+  max-height: 85%;
   width: 100%;
   height: 100%;
   margin: auto;
@@ -537,7 +544,7 @@ figcaption span {
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 769px) {
   .table tr:has(.preview:hover) {
     position: relative;
     z-index: 1;
@@ -605,10 +612,87 @@ figcaption span {
   font-size: 5rem;
   font-weight: 700;
 }
-
 @media only screen and (max-width: 768px) {
-  /* TODO: NAV */
+  /* CONTENT SHIFT */
+  body {
+    padding: 0;
+  }
   .content {
+    padding: 0;
     margin-left: 0;
+  }
+  header,
+  main,
+  footer {
+    width: calc(100% - 2rem);
+  }
+  .sidenav {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    right: 0;
+    height: 7rem;
+    transition: none;
+    overflow: hidden;
+  }
+  .sidenav:hover,
+  .sidenav:has(a:focus-visible) {
+    width: 100%;
+  }
+  .sidenav-logo-wrapper {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 3vw;
+  }
+  .sidenav-logo {
+    height: 100%;
+  }
+  .sidenav-logo-wrapper span {
+    display: none;
+  }
+  .sidenav ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .sidenav li:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .sidenav .mainLink {
+    justify-content: center;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+  .sidenav .mainLink svg {
+    padding: 1rem;
+  }
+  .sidenav .mainLink span {
+    display: none;
+  }
+  /* MAP TABLE */
+  .table th.preview {
+    width: 20rem;
+  }
+}
+@media only screen and (max-width: 670px) {
+  /* REGIONS GRID */
+  .grid-maps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media only screen and (max-width: 428px) {
+  /* REGIONS GRID */
+  .grid-maps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .table th.preview {
+    display: none;
+  }
+  .table td.preview {
+    display: none;
+  }
+  .section-content {
+    padding: 1rem;
   }
 }
