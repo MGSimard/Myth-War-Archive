@@ -567,7 +567,6 @@ figcaption span {
     pointer-events: none;
   }
 }
-
 .table thead tr {
   backdrop-filter: brightness(0.95) saturate(1.6);
 }
@@ -663,6 +662,7 @@ input[type="range"]:hover {
   inset: 0 0 0 -0.2rem;
   content: "";
 }
+
 /* NOT FOUND PAGE */
 .notfound {
   display: flex;
