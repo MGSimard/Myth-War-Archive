@@ -12,15 +12,14 @@ export default function Page() {
         <table className="table">
           <thead>
             <tr>
-              <th className="static">File</th>
-              <th>Description</th>
-              <th className="preview">Preview</th>
+              <th className="audio-file">File</th>
+              <th className="audio-desc">Description</th>
             </tr>
           </thead>
           <tbody>
             {audio.music.map((music) => (
               <tr key={music.file}>
-                <td className="static">
+                <td>
                   <a
                     href={music.link}
                     download={music.file}
@@ -32,11 +31,9 @@ export default function Page() {
                     <IconDownload />
                     {music.file}
                   </a>
-                </td>
-                <td>{music.description}</td>
-                <td>
                   <AudioPlayer src={music.link} />
                 </td>
+                <td>{music.description}</td>
               </tr>
             ))}
           </tbody>

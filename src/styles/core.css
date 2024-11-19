@@ -599,12 +599,60 @@ figcaption span {
   height: 1em;
 }
 /* CUSTOM AUDIO PLAYER */
+th.audio-file {
+  width: 20rem;
+}
+.audio-player * {
+  border: 1px solid red;
+}
+.audio-player {
+  border: 1px solid blue;
+}
 .play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
   width: 2rem;
   height: 2rem;
 }
 .play-button svg {
-  width: 1rem;
+  width: 2rem;
+}
+.time-displays {
+  font-size: 1.2rem;
+}
+input[type="range"]:hover {
+  cursor: pointer;
+}
+.controls {
+  display: flex;
+}
+.seek-slider {
+  width: 5rem;
+  flex-grow: 1;
+  transition: flex-grow ease 1s;
+}
+.volume-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  transition: flex-grow ease 0.2s;
+}
+.volume-wrapper:hover,
+.volume-wrapper:has(:focus-visible) {
+  flex-grow: 2;
+}
+.volume-slider {
+  width: 0;
+  opacity: 0;
+}
+.volume-wrapper:hover .volume-slider,
+.volume-wrapper:has(:focus-visible) .volume-slider {
+  opacity: 1;
+  width: 100%;
+}
+.mute-button {
+  flex-shrink: 0;
 }
 
 /* NOT FOUND PAGE */

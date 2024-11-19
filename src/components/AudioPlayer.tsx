@@ -76,6 +76,7 @@ export function AudioPlayer({ src }: { src: string }) {
   const handleMute = () => {
     const audioEle = audioRef.current;
     if (audioEle) audioEle.muted = !audioEle.muted;
+    // TODO: Make volume slider gray if muted
   };
   const handleVolume = (e: React.ChangeEvent<HTMLInputElement>) => {
     const audioEle = audioRef.current;
@@ -83,45 +84,41 @@ export function AudioPlayer({ src }: { src: string }) {
   };
 
   return (
-    <div>
-      <div>Audio Player</div>
+    <div className="audio-player">
       <audio ref={audioRef} src={src} preload="metadata" loop />
-      <button type="button" onClick={handlePlay} className="play-button">
-        <svg ref={playSvgRef} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            fillRule="evenodd"
-            d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
-            clipRule="evenodd"
-          />
-        </svg>
-        <svg
-          ref={pauseSvgRef}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="hidden">
-          <path
-            fillRule="evenodd"
-            d="M6.75 5.25a.75.75 0 0 1 .75-.75H9a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1-.75-.75V5.25Zm7.5 0A.75.75 0 0 1 15 4.5h1.5a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H15a.75.75 0 0 1-.75-.75V5.25Z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
-      <div>
+      <div className="time-displays">
         <span ref={currTimeRef}>0:00</span>/<span ref={durationRef}>0:00</span>
       </div>
-      <input ref={seekerRef} className="seek-slider" type="range" defaultValue={0} max={100} onChange={handleSeek} />
-      <button type="button" onClick={handleMute}>
-        Mute
-      </button>
-      <input
-        ref={volumeRef}
-        className="volume-slider"
-        type="range"
-        defaultValue={50}
-        max={100}
-        onChange={handleVolume}
-      />
+      <div className="controls">
+        <button type="button" onClick={handlePlay} className="play-button">
+          <svg ref={playSvgRef} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              fillRule="evenodd"
+              d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+              clipRule="evenodd"
+            />
+          </svg>
+          <svg
+            ref={pauseSvgRef}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="hidden">
+            <path
+              fillRule="evenodd"
+              d="M6.75 5.25a.75.75 0 0 1 .75-.75H9a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1-.75-.75V5.25Zm7.5 0A.75.75 0 0 1 15 4.5h1.5a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H15a.75.75 0 0 1-.75-.75V5.25Z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+        <input ref={seekerRef} className="seek-slider" type="range" defaultValue={0} onChange={handleSeek} />
+        <div className="volume-wrapper">
+          <input ref={volumeRef} className="volume-slider" type="range" defaultValue={50} onChange={handleVolume} />
+          <button type="button" onClick={handleMute} className="mute-button">
+            Mute
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
