@@ -608,16 +608,20 @@ th.audio-file {
 .audio-player {
   border: 1px solid blue;
 }
-.play-button {
+.play-button,
+.mute-button {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   width: 2rem;
   height: 2rem;
+  background: none;
+  border: none;
 }
-.play-button svg {
-  width: 2rem;
+.play-button svg,
+.mute-button {
+  object-fit: contain;
 }
 .time-displays {
   font-size: 1.2rem;
@@ -653,7 +657,14 @@ input[type="range"]:hover {
 }
 .mute-button {
   flex-shrink: 0;
+  position: relative;
 }
+/* .mute-button::after {
+  position: absolute;
+  inset: 0 -5rem;
+  content: "";
+  background: orange;
+} */
 
 /* NOT FOUND PAGE */
 .notfound {

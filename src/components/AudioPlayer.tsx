@@ -21,13 +21,14 @@ export function AudioPlayer({ src }: { src: string }) {
 
     if (!audioEle || !currTimeEle || !durationEle || !seekerEle || !volumeEle) return;
 
-    audioEle.volume = Number(volumeEle.value) / 100;
-
     const formatTime = (timeInSeconds: number) => {
       const minutes = Math.floor(timeInSeconds / 60);
       const seconds = Math.floor(timeInSeconds % 60);
       return `${minutes}:${seconds.toString().padStart(2, "0")}`;
     };
+
+    // Set initial volume to match defaultValue of slider
+    audioEle.volume = Number(volumeEle.value) / 100;
 
     // Set initial track duration display
     const setDuration = () => {
@@ -117,7 +118,7 @@ export function AudioPlayer({ src }: { src: string }) {
         </button>
         <input ref={seekerRef} className="seek-slider" type="range" defaultValue={0} onChange={handleSeek} />
         <div className="volume-wrapper">
-          <input ref={volumeRef} className="volume-slider" type="range" defaultValue={50} onChange={handleVolume} />
+          <input ref={volumeRef} className="volume-slider" type="range" defaultValue={100} onChange={handleVolume} />
           <button type="button" onClick={handleMute} className="mute-button">
             Mute
           </button>
