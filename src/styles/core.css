@@ -52,6 +52,9 @@ footer {
 button {
   cursor: pointer;
 }
+.hidden {
+  display: none;
+}
 /**/
 .sidenav {
   position: fixed;
@@ -594,6 +597,14 @@ figcaption span {
 .btn-download svg {
   flex-shrink: 0;
   height: 1em;
+}
+/* CUSTOM AUDIO PLAYER */
+.play-button {
+  width: 2rem;
+  height: 2rem;
+}
+.play-button svg {
+  width: 1rem;
 }
 
 /* NOT FOUND PAGE */
