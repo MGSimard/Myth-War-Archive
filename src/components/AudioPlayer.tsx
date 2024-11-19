@@ -61,7 +61,6 @@ export function AudioPlayer({ src }: { src: string }) {
     const playSvg = playSvgRef.current;
     const pauseSvg = pauseSvgRef.current;
     if (!audioEle || !playSvg || !pauseSvg) return;
-
     if (audioEle.paused) {
       audioEle
         .play()
@@ -76,17 +75,18 @@ export function AudioPlayer({ src }: { src: string }) {
       playSvg.classList.remove("hidden");
     }
   };
+
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
     const audioEle = audioRef.current;
     if (audioEle) audioEle.currentTime = (Number(e.target.value) / 100) * audioEle.duration;
   };
+
   const handleMute = () => {
     const audioEle = audioRef.current;
     const muteSvg = muteSvgRef.current;
     const unmuteSvg = unmuteSvgRef.current;
     const volumeEle = volumeRef.current;
     if (!audioEle || !muteSvg || !unmuteSvg || !volumeEle) return;
-
     if (audioEle.muted) {
       audioEle.muted = false;
       unmuteSvg.classList.add("hidden");
@@ -99,6 +99,7 @@ export function AudioPlayer({ src }: { src: string }) {
       volumeEle.classList.add("muted");
     }
   };
+
   const handleVolume = (e: React.ChangeEvent<HTMLInputElement>) => {
     const audioEle = audioRef.current;
     if (audioEle) audioEle.volume = Number(e.target.value) / 100;

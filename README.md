@@ -12,6 +12,7 @@
 - [x] Fill out regions section
 - [x] Do something about maps table under 450px
 - [ ] Come up with some input range design that works on all browsers lol
+- [ ] Make a header style for the details "accordion" in assets
 - [ ] Fix table in tools RE, width of long words
 - [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
 - [ ] Decide if I want page footer or nav footer (icons etc)
