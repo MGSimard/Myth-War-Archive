@@ -49,6 +49,9 @@ footer {
   font-size: 1.2rem;
   text-align: center;
 }
+footer a:hover {
+  text-decoration: underline;
+}
 button {
   cursor: pointer;
 }

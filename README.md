@@ -3,7 +3,6 @@
 <details>
 <summary><h2>TASK LIST<h2></summary>
 
-- [ ] Fit dialog button styles to map buttons in game UI, check disc
 - [x] Decide on a threshold for 3rd party image hosting (50kb)
 - [x] For map assets, show a compressed webp of fullmap and offer a zipped download of all jpg tiles
 - [x] Decide on page subnav icons - bland svgs vs in-game UI icons
@@ -12,10 +11,11 @@
 - [x] Prettify h4 section headings
 - [x] Fill out regions section
 - [x] Do something about maps table under 450px
+- [ ] Come up with some input range design that works on all browsers lol
 - [ ] Fix table in tools RE, width of long words
 - [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
 - [ ] Decide if I want page footer or nav footer (icons etc)
-- [ ] Do mobile nav shift at threshold
+- [x] Do mobile nav shift at threshold
 - [ ] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
 - [ ] Change scrollbar style in nav
 
