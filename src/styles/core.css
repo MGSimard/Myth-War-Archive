@@ -645,19 +645,31 @@ input[type="range"]:hover {
   justify-content: flex-end;
   transition: flex-grow ease 0.2s;
 }
-/* .volume-wrapper:hover, */
-.volume-wrapper:has(:focus-visible) {
-  flex-grow: 2;
-}
 .volume-slider {
   width: 0;
   opacity: 0;
 }
-/* .volume-wrapper:hover .volume-slider, */
+@media (hover: hover) and (pointer: fine) {
+  .volume-wrapper:hover,
+  .volume-wrapper:has(:focus-visible) {
+    flex-grow: 2;
+  }
+  .volume-wrapper:hover .volume-slider,
+  .volume-wrapper:has(:focus-visible) .volume-slider {
+    opacity: 1;
+    width: 100%;
+  }
+}
+/* .volume-wrapper:hover,
+.volume-wrapper:has(:focus-visible) {
+  flex-grow: 2;
+}
+
+.volume-wrapper:hover .volume-slider,
 .volume-wrapper:has(:focus-visible) .volume-slider {
   opacity: 1;
   width: 100%;
-}
+} */
 .mute-button {
   flex-shrink: 0;
   position: relative;
