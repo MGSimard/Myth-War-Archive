@@ -2,32 +2,32 @@
   "music": [
     {
       "file": "Menu01.mp3",
-      "description": "Main menu music that plays after the intro animation finishes.",
+      "description": "Main menu music, plays after the intro animation.",
       "link": "https://utfs.io/f/e0BHXYWYpV1NtwC3wB8S8wNOfl5XRFMU4KgqmZjYvLQBAIop"
     },
     {
       "file": "Menu02.mp3",
-      "description": "",
+      "description": "Character select screen.",
       "link": "https://utfs.io/f/e0BHXYWYpV1Nz6KbrYRFQiEB3JMNWaAZtubXjgTY9rePlV28"
     },
     {
       "file": "Mus002.mp3",
-      "description": "",
+      "description": "Blython music.",
       "link": "https://utfs.io/f/e0BHXYWYpV1Nrijj7w5jLdKugA7JVYOcxl8wTPoX0bBkUGH1"
     },
     {
       "file": "Mus003.mp3",
-      "description": "",
+      "description": "Woodlingor Music.",
       "link": "https://utfs.io/f/e0BHXYWYpV1NJ0LctMXw5pfSNvYFIuKtAGyW9604HZOz3PUo"
     },
     {
       "file": "Mus006.mp3",
-      "description": "",
+      "description": "Music for desert themed maps.",
       "link": "https://utfs.io/f/e0BHXYWYpV1NCGceaXQ2L54wM9JEedqtZCKgUIHXibQ7RNoh"
     },
     {
       "file": "Mus007.mp3",
-      "description": "",
+      "description": "Music for Demon Square and some combative areas.",
       "link": "https://utfs.io/f/e0BHXYWYpV1N5xp7k6O8LrpiDMFEkI274nlVdz9mHN5gvG3u"
     },
     {
@@ -67,37 +67,37 @@
     },
     {
       "file": "Mus018.mp3",
-      "description": "",
+      "description": "Guild HQ music.",
       "link": "https://utfs.io/f/e0BHXYWYpV1NL6V3z8NaMvPpbQkw6NRiolr3gGhIseOJ0Y5S"
     },
     {
       "file": "Mus019.mp3",
-      "description": "",
+      "description": "Fight music.",
       "link": "https://utfs.io/f/e0BHXYWYpV1NG9vu5CPtVMSeU9APjy0dhz15CJim4gnBvalT"
     },
     {
       "file": "Mus020.mp3",
-      "description": "",
+      "description": "Fight music.",
       "link": "https://utfs.io/f/e0BHXYWYpV1NKYudSOwAgsuMeFrYVICRDO3wf10HiqBSp2ZJ"
     },
     {
       "file": "Mus021.mp3",
-      "description": "",
+      "description": "Fight music.",
       "link": "https://utfs.io/f/e0BHXYWYpV1NzHlNq3RFQiEB3JMNWaAZtubXjgTY9rePlV28"
     },
     {
       "file": "Mus022.mp3",
-      "description": "",
+      "description": "Fight music.",
       "link": "https://utfs.io/f/e0BHXYWYpV1Nr2aNJT5jLdKugA7JVYOcxl8wTPoX0bBkUGH1"
     },
     {
       "file": "Mus023.mp3",
-      "description": "",
+      "description": "Fight music.",
       "link": "https://utfs.io/f/e0BHXYWYpV1N9bLrrjAeLJKf8YNVx0pdBSilFb2grkye1hR5"
     },
     {
       "file": "Mus024.mp3",
-      "description": "",
+      "description": "Fight music.",
       "link": "https://utfs.io/f/e0BHXYWYpV1N6CStlvmh4ymgjrv7sFtEowNVO9hGUdulx3R2"
     },
     {
