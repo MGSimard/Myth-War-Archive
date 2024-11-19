@@ -659,12 +659,12 @@ input[type="range"]:hover {
   flex-shrink: 0;
   position: relative;
 }
-/* .mute-button::after {
-  position: absolute;
+.mute-button::after {
+  /* position: absolute;
   inset: 0 -5rem;
   content: "";
-  background: orange;
-} */
+  background: orange; */
+}
 
 /* NOT FOUND PAGE */
 .notfound {
