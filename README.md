@@ -14,7 +14,7 @@
 - [ ] Fix play button not reverting to paused state (play icon) when sound reaches end on noloop setting
 - [ ] Come up with some input range design that works on all browsers lol
 - [ ] Make a header style for the details "accordion" in assets
-- [ ] Fix table across board for long words, use break that makes sense
+- [x] Fix table across board for long words, use break that makes sense
 - [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
 - [ ] Decide if I want page footer or nav footer (icons etc)
 - [x] Do mobile nav shift at threshold

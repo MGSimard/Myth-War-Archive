@@ -539,7 +539,7 @@ figcaption span {
   box-shadow: inset 0 0 1rem rgb(54, 39, 4);
 }
 .table th,
-.table td {
+.table td:not(.td-preview) {
   padding: 1rem;
   text-align: left;
 }
@@ -569,21 +569,16 @@ figcaption span {
   text-align: center;
 }
 .td-preview {
-  position: relative;
   height: 5rem;
   vertical-align: center;
 }
 .td-preview img {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
-
 .table tr:has(.td-preview:hover) {
   position: relative;
   z-index: 1;
