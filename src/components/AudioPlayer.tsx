@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 // Wanna do this without state for fun
-export function AudioPlayer({ src, loop }: { src: string; loop: boolean }) {
+export function AudioPlayer({ src, loop }: { src: string; loop?: boolean }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const seekerRef = useRef<HTMLInputElement | null>(null);
   const volumeRef = useRef<HTMLInputElement | null>(null);
@@ -23,7 +23,9 @@ export function AudioPlayer({ src, loop }: { src: string; loop: boolean }) {
 
     if (!audioEle || !currTimeEle || !durationEle || !seekerEle || !volumeEle) return;
 
-    const formatTime = (timeInSeconds: number) => {
+    const formatTime = (timeInSeconds: number): string => {
+      if (!isFinite(timeInSeconds) || timeInSeconds < 0) return "0:00";
+
       const minutes = Math.floor(timeInSeconds / 60);
       const seconds = Math.floor(timeInSeconds % 60);
       return `${minutes}:${seconds.toString().padStart(2, "0")}`;
@@ -34,25 +36,45 @@ export function AudioPlayer({ src, loop }: { src: string; loop: boolean }) {
 
     // Set initial track duration display
     const setDuration = () => {
-      durationEle.textContent = formatTime(audioEle.duration);
+      if (isFinite(audioEle.duration)) {
+        durationEle.textContent = formatTime(audioEle.duration);
+      }
     };
 
     // Update current time & seeker position on audio timeupdate event
-    const updateTimeSeeker = (e: Event) => {
-      const audioEle = e.target as HTMLAudioElement;
-      const currentTime = Math.floor(audioEle.currentTime);
-      const duration = Math.floor(audioEle.duration);
-      const percentage = (currentTime / duration) * 100;
-      seekerEle.value = percentage.toString();
-      currTimeEle.textContent = formatTime(currentTime);
+    const updateTimeSeeker = () => {
+      const currentTime = audioEle.currentTime;
+      const duration = audioEle.duration;
+
+      if (isFinite(currentTime) && isFinite(duration)) {
+        if (duration < 0.1) {
+          seekerEle.value = audioEle.ended ? "100" : "50";
+        } else {
+          const percentage = (currentTime / duration) * 100;
+          seekerEle.value = percentage.toFixed(2);
+        }
+        currTimeEle.textContent = formatTime(currentTime);
+      }
+    };
+
+    const handleEnd = () => {
+      const playSvg = playSvgRef.current;
+      const pauseSvg = pauseSvgRef.current;
+      if (playSvg && pauseSvg) {
+        pauseSvg.classList.add("hidden");
+        playSvg.classList.remove("hidden");
+      }
+      seekerEle.value = "100";
     };
 
     audioEle.addEventListener("loadedmetadata", setDuration);
     audioEle.addEventListener("timeupdate", updateTimeSeeker);
+    audioEle.addEventListener("ended", handleEnd);
 
     return () => {
       audioEle.removeEventListener("timeupdate", updateTimeSeeker);
       audioEle.removeEventListener("loadedmetadata", setDuration);
+      audioEle.removeEventListener("ended", handleEnd);
     };
   }, [audioRef, seekerRef, currTimeRef, durationRef, volumeRef]);
 
@@ -78,7 +100,12 @@ export function AudioPlayer({ src, loop }: { src: string; loop: boolean }) {
 
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
     const audioEle = audioRef.current;
-    if (audioEle) audioEle.currentTime = (Number(e.target.value) / 100) * audioEle.duration;
+    if (audioEle && isFinite(audioEle.duration)) {
+      const newTime = (Number(e.target.value) / 100) * audioEle.duration;
+      if (isFinite(newTime)) {
+        audioEle.currentTime = newTime;
+      }
+    }
   };
 
   const handleMute = () => {

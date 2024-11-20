@@ -657,6 +657,7 @@ input[type="range"]:hover {
 .controls {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 .seek-slider {
   width: 8rem;
