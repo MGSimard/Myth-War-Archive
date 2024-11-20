@@ -11,6 +11,7 @@
 - [x] Prettify h4 section headings
 - [x] Fill out regions section
 - [x] Do something about maps table under 450px
+- [ ] Don't round audio other than showing timer, causes issues below 1s
 - [ ] Fix play button not reverting to paused state (play icon) when sound reaches end on noloop setting
 - [ ] Come up with some input range design that works on all browsers lol
 - [ ] Make a header style for the details "accordion" in assets
