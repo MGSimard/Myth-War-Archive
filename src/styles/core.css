@@ -163,8 +163,8 @@ button {
   overflow: hidden;
   transition: opacity 0.2s ease;
 }
-.sidenav:hover .mainLink span,
-.sidenav:has(a:focus-visible) .mainLink span {
+.sidenav:hover span,
+.sidenav:has(a:focus-visible) span {
   opacity: 1;
 }
 .sidenav li a:not(.activeLink):hover,
