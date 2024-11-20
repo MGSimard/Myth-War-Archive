@@ -39,16 +39,38 @@ Next.js App (FE)
 
 ![Screenshot](#)
 
-Description
+Preservation & utility project for the Myth War community. Myth War Archive is your go-to resource for everything related to Myth War Online and Myth War II. Whether you're a long-time fan or just discovering the games, this site is dedicated to preserving their legacy and supporting the communities that keep them alive.
 
 ### Features
 
-- Feature
-- Feature
-- Feature
+- Game info & world lore
+- Assets
+- Tools
+- Communities
 
 <details>
-<summary><h2>Application Flow: -</h2></summary>
+<summary><h2>Application Flow: World</h2></summary>
+<p>Desc</p>
+
+1. Stuff
+
+</details>
+<details>
+<summary><h2>Application Flow: Assets</h2></summary>
+<p>Desc</p>
+
+1. Stuff
+
+</details>
+<details>
+<summary><h2>Application Flow: Tools</h2></summary>
+<p>Desc</p>
+
+1. Stuff
+
+</details>
+<details>
+<summary><h2>Application Flow: Communities</h2></summary>
 <p>Desc</p>
 
 1. Stuff

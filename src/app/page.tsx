@@ -87,8 +87,8 @@ export default function Page() {
               In 2009, Myth War Online was closed to pave the way for its sequel, Myth War II. This new iteration
               refined and streamlined gameplay with features like updated character designs, enhanced graphics, new boss
               mechanics, and systems like Second Rebirth, Relationships & Marriage, Power Worship, Holy Sets, Mine War
-              Events and more. Despite these improvements, Myth War II struggled to retain its predecessor's magic and
-              ultimately shut down in 2015.
+              Events and more. Despite these improvements, Myth War II struggled to retain its predecessor&apos;s magic
+              and ultimately shut down in 2015.
             </p>
             <h3>The Legacy of Myth War</h3>
             <p>
