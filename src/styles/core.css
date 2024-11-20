@@ -457,7 +457,7 @@ figcaption span {
 .btn-scroll-to-top {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr; /* Makes the column take up full width */
+  grid-template-columns: 1fr;
   grid-template-areas: "stack";
   place-items: center;
   padding: 1rem;
@@ -784,21 +784,6 @@ input[type="range"]:hover {
     display: flex;
     flex-direction: column;
   }
-  /* .table tbody tr {
-    backdrop-filter: unset;
-  }
-  .table tbody tr:nth-child(even) {
-    backdrop-filter: unset;
-  }
-  .table tbody td {
-    backdrop-filter: brightness(0.95) saturate(1.4);
-  }
-  .table td:first-child {
-    backdrop-filter: brightness(0.9) saturate(1.6);
-  }
-  .table td:last-child {
-    border-bottom: 1rem solid rgba(81, 59, 21, 0.1);
-  } */
   .table td:first-child {
     font-weight: 700;
   }
