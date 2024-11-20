@@ -29,7 +29,7 @@ function Section({ title, data }: { title: string; data: DataTypes[] }) {
       <table className="table">
         <thead>
           <tr>
-            <th className="th-static tborder">Link</th>
+            <th className="th-static2 tborder">Link</th>
             <th>Description</th>
           </tr>
         </thead>
@@ -37,7 +37,7 @@ function Section({ title, data }: { title: string; data: DataTypes[] }) {
           {data.map((entry) => (
             <tr key={entry.link}>
               <td className="td-static tborder">
-                <a href={entry.link} target="_blank">
+                <a href={entry.link} target="_blank" className="link">
                   {entry.name}
                 </a>
               </td>

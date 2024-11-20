@@ -564,6 +564,9 @@ figcaption span {
 .th-static {
   width: 11rem;
 }
+.th-static2 {
+  width: 18rem;
+}
 /* TABLE MAPS IMAGE PREVIEW */
 .table th.th-preview {
   text-align: center;
@@ -608,6 +611,9 @@ figcaption span {
 }
 .td-preview img {
   pointer-events: none;
+}
+.link:hover {
+  text-decoration: underline;
 }
 /* FILE DOWNLOAD BUTTON (SVG & Filename as link "button")*/
 .btn-download {
