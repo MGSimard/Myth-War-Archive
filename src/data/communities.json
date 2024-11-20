@@ -29,5 +29,22 @@
       "link": "https://www.reddit.com/r/MythWar",
       "description": "General subreddit for all things Myth War Online & Myth War II."
     }
+  ],
+  "official": [
+    {
+      "name": "mythwaronline.com",
+      "link": "https://web.archive.org/web/20240000000000*/mythwaronline.com",
+      "description": "Initial Website."
+    },
+    {
+      "name": "mw.igg.com",
+      "link": "https://web.archive.org/web/20240000000000*/mw.igg.com",
+      "description": "Second website iteration under IGG (SkyUnion, Ltd.) publishing."
+    },
+    {
+      "name": "mw2.igg.com",
+      "link": "https://web.archive.org/web/20240000000000*/mw2.igg.com",
+      "description": "Third website iteration during Myth War II."
+    }
   ]
 }

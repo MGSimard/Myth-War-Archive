@@ -8,6 +8,8 @@ export default function Page() {
       <Section title="Servers" data={communities.servers} />
       <hr className="divider" />
       <Section title="Discord" data={communities.discord} />
+      <hr className="divider" />
+      <Section title="Official (Defunct)" data={communities.official} />
     </>
   );
 }
