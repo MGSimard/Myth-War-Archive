@@ -537,9 +537,13 @@ figcaption span {
   width: 40rem;
   text-align: center;
 }
+.table td {
+  vertical-align: top;
+}
 .table td.preview {
   position: relative;
   height: 10rem;
+  vertical-align: center;
 }
 .table td.preview img {
   position: absolute;
@@ -586,9 +590,6 @@ figcaption span {
   word-wrap: break-word;
   word-break: break-word;
   overflow-wrap: break-word;
-}
-.tddesc {
-  vertical-align: top;
 }
 .btn-download {
   display: flex;

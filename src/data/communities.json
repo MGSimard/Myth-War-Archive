@@ -1,0 +1,26 @@
+{
+  "servers": [
+    {
+      "name": "TDT",
+      "link": "https://mw2.tdt.net/",
+      "description": "TDT - Only fully operational private server currently online, running Myth War II. Signing up requires referral from an active player, see https://mw2.tdt.net/article-262.html for instructions."
+    },
+    {
+      "name": "sj.51wgg.com",
+      "link": "https://sj.51wgg.com/",
+      "description": "Defunct Chinese Myth War II server which ran from 2011 to 2018. They claimed to be reopening during 2019 and then later in 2021, which never ended up happening. No news since 2021."
+    }
+  ],
+  "discord": [
+    {
+      "name": "Myth War",
+      "link": "https://discord.gg/aQPK8mU",
+      "description": "General community server for all things Myth War Online & Myth War II."
+    },
+    {
+      "name": "Myth War Server",
+      "link": "https://discord.gg/mceUzvF9zS",
+      "description": "Discord community for an ongoing effort in developing a compatible Myth War Online server from scratch. You can currently run your own local server, or log into a testing instance accessible by following instructions in the server. Very barebones for the time being, and unlikely to see meaningful progress in the near future."
+    }
+  ]
+}

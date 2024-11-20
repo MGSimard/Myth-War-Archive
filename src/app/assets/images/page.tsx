@@ -22,6 +22,25 @@ export default function Page() {
           </tbody>
         </table>
       </details>
+      <details>
+        <summary>Wallpapers</summary>
+        <table className="table">
+          <thead>
+            <tr>
+              <th className="static filecol">File</th>
+              <th>Description</th>
+              <th className="preview">Preview</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="static filecol"></td>
+              <td></td>
+              <td className="preview"></td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </>
   );
 }
