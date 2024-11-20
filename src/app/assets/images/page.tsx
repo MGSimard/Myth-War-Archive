@@ -8,14 +8,14 @@ export default function Page() {
         <table className="table">
           <thead>
             <tr>
-              <th className="static">File</th>
+              <th className="static filecol">File</th>
               <th>Description</th>
               <th className="preview">Preview</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="static"></td>
+              <td className="static filecol"></td>
               <td></td>
               <td className="preview"></td>
             </tr>

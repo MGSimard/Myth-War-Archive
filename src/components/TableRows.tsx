@@ -20,10 +20,10 @@ export function TableRows({ tableData }: { tableData: TableDataTypes }) {
   if (!filteredData.length) {
     return (
       <tr>
-        <td className="static" style={{ textAlign: "center" }}>
+        <td className="static filecol" style={{ textAlign: "center" }}>
           N/A
         </td>
-        <td className="break">No results. ({filter})</td>
+        <td className="break filecol">No results. ({filter})</td>
         <td className="preview" style={{ textAlign: "center" }}>
           N/A
         </td>
@@ -35,7 +35,7 @@ export function TableRows({ tableData }: { tableData: TableDataTypes }) {
     <>
       {filteredData.map((map, index) => (
         <tr key={map.file}>
-          <td className="static">
+          <td className="static filecol">
             <a
               href={map.link}
               download={map.file}

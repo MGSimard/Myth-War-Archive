@@ -525,16 +525,17 @@ figcaption span {
   width: 100%;
   box-shadow: inset 0 0 1rem rgb(54, 39, 4);
 }
-
 .table th,
 .table td {
   padding: 1rem;
+  text-align: left;
 }
 .table th.static {
   width: 11rem;
 }
 .table th.preview {
   width: 40rem;
+  text-align: center;
 }
 .table td.preview {
   position: relative;
@@ -601,6 +602,9 @@ figcaption span {
 .btn-download svg {
   flex-shrink: 0;
   height: 1em;
+}
+.filecol {
+  border-right: 0.5rem solid rgba(81, 59, 21, 0.1);
 }
 /* CUSTOM AUDIO PLAYER */
 th.audio-file {
