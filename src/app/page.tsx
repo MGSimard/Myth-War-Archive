@@ -61,9 +61,9 @@ export default function Page() {
             <p>
               The development of Myth War Online has a compelling backstory. Unigium emerged from the ruins of Xiamen
               Xinrui Lion (新瑞狮), a once-prominent Chinese game studio founded by Zhuang Jinlong (庄锦隆), whose
-              leadership earned him accolades as one of the "Top Ten Chinese IT Leaders of the Year" in 2004. Following
-              the malicious bankruptcy of Xiamen Xinrui Lion in 2003, Zhuang and many of his team members joined
-              Unigium, bringing with them years of expertise.
+              leadership earned him accolades as one of the &quot;Top Ten Chinese IT Leaders of the Year&quot; in 2004.
+              Following the malicious bankruptcy of Xiamen Xinrui Lion in 2003, Zhuang and many of his team members
+              joined Unigium, bringing with them years of expertise.
             </p>
             <p>
               The collaborative effort between Unigium and its Singapore counterpart, Sing Gium International, under the
