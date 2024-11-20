@@ -604,6 +604,7 @@ figcaption span {
   height: auto;
   mask-image: unset;
   -webkit-mask-image: unset;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 .td-preview img {
   pointer-events: none;
