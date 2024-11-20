@@ -118,6 +118,14 @@ button {
   overflow: hidden;
   transition: opacity 0.2s ease;
 }
+.dolist {
+  list-style: disc;
+  list-style-position: inside;
+  text-indent: 1rem;
+}
+.dolist:not(:last-child) {
+  margin-bottom: 2rem;
+}
 @keyframes logo-anim {
   from {
     background-position: 0px;

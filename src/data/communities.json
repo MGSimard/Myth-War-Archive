@@ -8,7 +8,7 @@
     {
       "name": "sj.51wgg.com",
       "link": "https://sj.51wgg.com/",
-      "description": "Defunct Chinese Myth War II server which ran from 2011 to 2018. They claimed to be reopening during 2019 and then later in 2021, which never ended up happening. No news since 2021."
+      "description": "Defunct Chinese Myth War II server which ran until 2018. They claimed to be reopening during 2019 and then later in 2021, which never ended up happening. No news since 2021."
     }
   ],
   "discord": [
@@ -21,6 +21,13 @@
       "name": "Myth War Server",
       "link": "https://discord.gg/mceUzvF9zS",
       "description": "Discord community for an ongoing effort in developing a compatible Myth War Online server from scratch. You can currently run your own local server, or log into a testing instance accessible by following instructions in the server. Very barebones for the time being, and unlikely to see meaningful progress in the near future."
+    }
+  ],
+  "subreddits": [
+    {
+      "name": "r/MythWar",
+      "link": "https://www.reddit.com/r/MythWar",
+      "description": "General subreddit for all things Myth War Online & Myth War II."
     }
   ]
 }
