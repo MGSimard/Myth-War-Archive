@@ -1,7 +1,7 @@
 {
   "servers": [
     {
-      "name": "TDT",
+      "name": "mw2.tdt.net",
       "link": "https://mw2.tdt.net/",
       "description": "TDT - Only fully operational private server currently online, running Myth War II. Signing up requires referral from an active player, see https://mw2.tdt.net/article-262.html for instructions."
     },

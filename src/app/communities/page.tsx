@@ -9,6 +9,8 @@ export default function Page() {
       <hr className="divider" />
       <Section title="Discord" data={communities.discord} />
       <hr className="divider" />
+      <Section title="Subreddits" data={communities.subreddits} />
+      <hr className="divider" />
       <Section title="Official (Defunct)" data={communities.official} />
     </>
   );
