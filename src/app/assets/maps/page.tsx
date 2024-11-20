@@ -15,7 +15,7 @@ export default function Page() {
         <table className="table">
           <thead>
             <tr>
-              <th className="static filecol">File</th>
+              <th className="th-static tborder">File</th>
               <th>Zone</th>
               <th className="preview">Preview</th>
             </tr>

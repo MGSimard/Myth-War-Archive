@@ -27,14 +27,14 @@ function Section({ title, data }: { title: string; data: DataTypes[] }) {
       <table className="table">
         <thead>
           <tr>
-            <th className="audio-file filecol">Link</th>
-            <th className="audio-desc">Description</th>
+            <th className="th-static tborder">Link</th>
+            <th>Description</th>
           </tr>
         </thead>
         <tbody>
           {data.map((entry) => (
             <tr key={entry.link}>
-              <td className="filecol">
+              <td className="td-static tborder">
                 <a href={entry.link} target="_blank">
                   {entry.name}
                 </a>
