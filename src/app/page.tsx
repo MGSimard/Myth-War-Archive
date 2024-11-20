@@ -30,6 +30,17 @@ export default function Page() {
               This site is built to celebrate the creativity and spirit of the Myth War community. Start exploring and
               reconnect with the world of Myth War.
             </p>
+            <p className="attr">
+              You can contact the website creator on{" "}
+              <a href="https://github.com/MGSimard" target="_blank">
+                Github
+              </a>{" "}
+              or{" "}
+              <a href="https://x.com/MGSimard" target="_blank">
+                X
+              </a>
+              .
+            </p>
           </div>
         </section>
         <section>

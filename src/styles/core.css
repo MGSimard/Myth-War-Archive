@@ -126,6 +126,9 @@ button {
 .dolist:not(:last-child) {
   margin-bottom: 2rem;
 }
+.attr a:hover {
+  text-decoration: underline;
+}
 @keyframes logo-anim {
   from {
     background-position: 0px;
