@@ -22,7 +22,7 @@ export function TableRows({ tableData }: { tableData: TableDataTypes }) {
       <tr>
         <td style={{ textAlign: "center" }}>N/A</td>
         <td>No results. ({filter})</td>
-        <td className="preview" style={{ textAlign: "center" }}>
+        <td className="td-preview" style={{ textAlign: "center" }}>
           N/A
         </td>
       </tr>
@@ -53,7 +53,7 @@ export function TableRows({ tableData }: { tableData: TableDataTypes }) {
               ))}
             </ul>
           </td>
-          <td className="preview">
+          <td className="td-preview">
             {map.preview && (
               <img src={map.preview} alt={`${map.file} Preview`} loading={index > 9 ? "lazy" : "eager"} />
             )}

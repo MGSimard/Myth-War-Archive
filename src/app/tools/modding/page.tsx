@@ -9,15 +9,15 @@ export default function Page() {
       <table className="table">
         <thead>
           <tr>
-            <th className="static">Tool</th>
-            <th className="static">Author</th>
+            <th className="th-static">Tool</th>
+            <th className="th-static tborder">Author</th>
             <th>Description</th>
           </tr>
         </thead>
         <tbody>
           {toolsMod.map((tool) => (
             <tr key={tool.file}>
-              <td className="static">
+              <td>
                 <a
                   href={tool.link}
                   download={tool.file}
@@ -30,7 +30,7 @@ export default function Page() {
                   {tool.file}
                 </a>
               </td>
-              <td className="static">
+              <td className="tborder">
                 <ul>
                   {tool.authors.map((author) => (
                     <li key={author}>{author}</li>

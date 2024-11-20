@@ -488,13 +488,14 @@ figcaption span {
   color: var(--clr-gold);
 }
 
-/* ASSET PAGE */
+/* MAPS HEADER (Title + Search Bar) */
 .maps-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 2rem;
 }
+/* TABLE */
 .table-search {
   position: relative;
   padding: 1rem;
@@ -534,28 +535,45 @@ figcaption span {
 }
 .table {
   width: 100%;
+  table-layout: fixed;
   box-shadow: inset 0 0 1rem rgb(54, 39, 4);
-  /* table-layout: fixed; */
-  word-break: break-word;
 }
 .table th,
 .table td {
   padding: 1rem;
   text-align: left;
 }
-.table th.preview {
-  width: 40rem;
-  text-align: center;
+.table thead tr {
+  backdrop-filter: brightness(0.95) saturate(1.6);
 }
-.table td {
+.table tbody {
   vertical-align: top;
 }
-.table td.preview {
+.table tbody {
+  word-break: break-word;
+}
+.table tbody tr {
+  backdrop-filter: brightness(0.95) saturate(1.4);
+}
+.table tbody tr:nth-child(even) {
+  backdrop-filter: brightness(0.9) saturate(1.6);
+}
+.tborder {
+  border-right: 0.5rem solid rgba(81, 59, 21, 0.1);
+}
+.th-static {
+  width: 11rem;
+}
+/* TABLE MAPS IMAGE PREVIEW */
+.table th.th-preview {
+  text-align: center;
+}
+.td-preview {
   position: relative;
-  height: 10rem;
+  height: 5rem;
   vertical-align: center;
 }
-.table td.preview img {
+.td-preview img {
   position: absolute;
   top: 0;
   right: 0;
@@ -565,34 +583,26 @@ figcaption span {
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
-@media only screen and (min-width: 769px) {
-  .table tr:has(.preview:hover) {
-    position: relative;
-    z-index: 1;
-  }
-  .table td.preview:hover img {
-    position: fixed;
-    max-width: min(50%, 80rem);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    height: auto;
-    mask-image: unset;
-    -webkit-mask-image: unset;
-  }
-  .table td.preview img {
-    pointer-events: none;
-  }
+
+.table tr:has(.td-preview:hover) {
+  position: relative;
+  z-index: 1;
 }
-.table thead tr {
-  backdrop-filter: brightness(0.95) saturate(1.6);
+.td-preview:hover img {
+  position: fixed;
+  max-width: min(50%, 80rem);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: auto;
+  mask-image: unset;
+  -webkit-mask-image: unset;
 }
-.table tbody tr {
-  backdrop-filter: brightness(0.95) saturate(1.4);
+.td-preview img {
+  pointer-events: none;
 }
-.table tbody tr:nth-child(even) {
-  backdrop-filter: brightness(0.9) saturate(1.6);
-}
+
+/* FILE DOWNLOAD BUTTON (SVG & Filename as link "button")*/
 .btn-download {
   display: flex;
   align-items: center;
@@ -605,16 +615,6 @@ figcaption span {
 .btn-download svg {
   flex-shrink: 0;
   height: 1em;
-}
-.th-flex,
-.td-flex,
-.tborder {
-  border-right: 0.5rem solid rgba(81, 59, 21, 0.1);
-}
-.th-static {
-  width: 11rem;
-}
-.td-static {
 }
 /* CUSTOM AUDIO PLAYER */
 .th-audio {
@@ -762,7 +762,7 @@ input[type="range"]:hover {
     display: none;
   }
   /* MAP TABLE */
-  .table th.preview {
+  .th-preview {
     width: 20rem;
   }
 }
@@ -772,15 +772,49 @@ input[type="range"]:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+@media only screen and (max-width: 598px) {
+  /* Turn .table columns into full-width rows, make file "col" colored for visual split */
+  .tborder {
+    border-right: none;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tr {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .table tbody tr {
+    backdrop-filter: unset;
+  }
+  .table tbody tr:nth-child(even) {
+    backdrop-filter: unset;
+  }
+  .table tbody td {
+    backdrop-filter: brightness(0.95) saturate(1.4);
+  }
+  .table td:first-child {
+    backdrop-filter: brightness(0.9) saturate(1.6);
+  }
+  .table td:last-child {
+    border-bottom: 1rem solid rgba(81, 59, 21, 0.1);
+  } */
+  .table td:first-child {
+    font-weight: 700;
+  }
+  .td-preview:hover img {
+    max-width: min(80%, 80rem);
+  }
+}
 @media only screen and (max-width: 428px) {
   /* REGIONS GRID */
   .grid-maps {
     grid-template-columns: minmax(0, 1fr);
   }
-  .table th.preview {
+  .th-preview {
     display: none;
   }
-  .table td.preview {
+  .td-preview {
     display: none;
   }
   header,

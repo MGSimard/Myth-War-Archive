@@ -17,7 +17,7 @@ export default function Page() {
             <tr>
               <th className="th-static tborder">File</th>
               <th>Zone</th>
-              <th className="preview">Preview</th>
+              <th className="th-preview">Preview</th>
             </tr>
           </thead>
           <tbody>

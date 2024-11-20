@@ -10,14 +10,14 @@ export default function Page() {
             <tr>
               <th className="th-static tborder">File</th>
               <th>Description</th>
-              <th className="preview">Preview</th>
+              <th className="th-preview">Preview</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td className="tborder"></td>
               <td></td>
-              <td className="preview"></td>
+              <td></td>
             </tr>
           </tbody>
         </table>
@@ -29,14 +29,14 @@ export default function Page() {
             <tr>
               <th className="th-static tborder">File</th>
               <th>Description</th>
-              <th className="preview">Preview</th>
+              <th className="th-preview">Preview</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td className="tborder"></td>
               <td></td>
-              <td className="preview"></td>
+              <td></td>
             </tr>
           </tbody>
         </table>
