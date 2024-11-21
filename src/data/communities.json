@@ -20,7 +20,7 @@
     {
       "name": "Myth War Server",
       "link": "https://discord.gg/mceUzvF9zS",
-      "description": "Discord community for an ongoing effort in developing a compatible Myth War Online server from scratch. You can currently run your own local server, or log into a testing instance accessible by following instructions in the server. Very barebones for the time being, and unlikely to see meaningful progress in the near future."
+      "description": "Discord community for an ongoing effort in developing a compatible Myth War Online server from scratch. You can currently run your own local server, or log into a testing instance accessible by following instructions in the server. Very barebones for the time being, and unlikely to see meaningful progress in the near future. GitLab Repo: https://gitlab.com/wander-gr/mw-tools"
     }
   ],
   "subreddits": [
