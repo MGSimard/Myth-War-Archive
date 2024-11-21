@@ -11,16 +11,15 @@
 - [x] Prettify h4 section headings
 - [x] Fill out regions section
 - [x] Do something about maps table under 450px
-- [ ] Don't round audio other than showing timer, causes issues below 1s
-- [ ] Fix play button not reverting to paused state (play icon) when sound reaches end on noloop setting
-- [ ] Come up with some input range design that works on all browsers lol
-- [ ] Make a header style for the details "accordion" in assets
+- [x] Don't round audio other than showing timer, causes issues below 1s
+- [x] Fix play button not reverting to paused state (play icon) when sound reaches end on noloop setting
+- [x] Make a header style for the details "accordion" in assets
 - [x] Fix table across board for long words, use break that makes sense
 - [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
-- [ ] Decide if I want page footer or nav footer (icons etc)
+- [x] Decide if I want page footer or nav footer (icons etc)
 - [x] Do mobile nav shift at threshold
 - [ ] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
-- [ ] Change scrollbar style in nav
+- [x] Change scrollbar style in nav
 
 </details>
 

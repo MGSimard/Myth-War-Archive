@@ -1,7 +1,7 @@
 :root {
   --sidebar-width: 8rem;
   --clr-bg: hsl(193, 90%, 4%);
-  --clr-bg-popout: hsl(75, 7.41%, 10.59%);
+  --clr-bg-popout: hsl(194, 79%, 5%);
   --clr-gold: hsl(45, 44%, 46%);
   /* --clr-gradient-gold: linear-gradient(rgb(0, 255, 102), var(--clr-gold)); */
   --clr-gradient-tab: linear-gradient(hsl(199, 70%, 42%), hsl(191, 92%, 10%));
@@ -70,6 +70,8 @@ button {
   background: var(--clr-bg);
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(69, 16%, 15%) var(--clr-bg-popout);
   white-space: nowrap;
   transition: width 0.2s ease;
   box-shadow: 0 0 1rem black;
