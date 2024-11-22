@@ -51,7 +51,7 @@ export default function Page() {
           Once you have done so, return to Stonesmith in Woodlingor (162, 343) and turn the items in for 100-150% of
           your level in experience.
         </li>
-        <li>Rinse & repeat this process until you've reached level 30.</li>
+        <li>Rinse & repeat this process until you&apos;ve reached level 30.</li>
       </ol>
       <hr className="divider" />
       <h3>Level 30-50 (Howling Beast)</h3>
@@ -63,8 +63,8 @@ export default function Page() {
         <b>
           Finishing round ten will reset the XP accumulation - see steps below for the most efficient farming strategy.
         </b>{" "}
-        If possible, it is also advised that the party leader uses a consumable "Devil's Tears" which allows you to
-        ignore random monster encounters while traveling.
+        If possible, it is also advised that the party leader uses a consumable &quot;Devil&apos;s Tears&quot; which
+        allows you to ignore random monster encounters while traveling.
       </p>
       <ol>
         <li>Talk to Howling Beast in Revive Arena (136, 97) to begin the quest/round.</li>
@@ -81,14 +81,14 @@ export default function Page() {
             <li>Travel East to Snow Ridge and defeat Flower Witch (23, 167).</li>
             <li>Open your quest log and quit the Howling Beast quest.</li>
             <li>
-              Continue killing these three then reset the quest - their XP rewards will be locked to round 10's XP
+              Continue killing these three then reset the quest - their XP rewards will be locked to round 10&apos;s XP
               accumulation, successfully avoiding an XP reset.
             </li>
           </ol>
         </li>
       </ol>
       <p>
-        If you're unable to find a party, a good alternative depending on your level is Tumulus 2-5, which can be
+        If you&apos;re unable to find a party, a good alternative depending on your level is Tumulus 2-5, which can be
         entered both from the Blython Teleporter or by walking through Bone Desert from Desert City. There are also two
         leveling alternatives you can use from level 30 onwards, both of which are covered in the next section.
       </p>
@@ -98,11 +98,11 @@ export default function Page() {
       <p>
         Drowcrusher is a monster that can be fought with a party from level 30 onwards. It rewards 100k XP per kill. The
         limit used to be set to five per day, however it is currently unlimited. In order to fight Drowcrusher (also
-        referred to as "Drow"), you will need to give him a Tier 5 equipment corresponding to your class and gender.
-        Below is a table that shows exactly which class-specific piece of equipment you need to give him - those can be
-        obtained either through forging, buying from other players or using a Convenience Store item, the latter being
-        the most efficient. You can ask for help in World Chat by saying "Drow Lead looking for 1hit party" and inviting
-        the respondents to your party.
+        referred to as &quot;Drow&quot;), you will need to give him a Tier 5 equipment corresponding to your class and
+        gender. Below is a table that shows exactly which class-specific piece of equipment you need to give him - those
+        can be obtained either through forging, buying from other players or using a Convenience Store item, the latter
+        being the most efficient. You can ask for help in World Chat by saying &quot;Drow Lead looking for 1hit
+        party&quot; and inviting the respondents to your party.
       </p>
       <DrowTable />
       <ol>
@@ -118,7 +118,7 @@ export default function Page() {
         <li>
           Once ready, give Drowcrusher an equipment - the fight will begin and upon completion will grant you 100k XP.
         </li>
-        <li>Repeat until out of your "token" equipment pieces.</li>
+        <li>Repeat until out of your &quot;token&quot; equipment pieces.</li>
       </ol>
       <h4>Wednesday Event</h4>
       <p>
@@ -154,6 +154,53 @@ export default function Page() {
         </a>
         <WednesdayQuestionsTable data={questions} />
       </details>
+      <hr className="divider" />
+      <h3>Level 50-60 (Woodlingor Defense)</h3>
+      <p>Once you are level 50 you can now run through Woodlingor Defense with a level 50+ party.</p>
+      <ol>
+        <li>Talk to Defender in Blython (277, 311), take note of the three locations he gives you.</li>
+        <li>Visit the three given stores and interact with the NPCs.</li>
+        <li>Eventually one will trigger a fight - defeat them and return to Defender (277, 311).</li>
+      </ol>
+      <p>
+        Each round gives increasing XP, up to round 10. Unlike Howling Beast however, there is no way to
+        &quot;stall&quot; a round, so you&apos;ll start back at round 1 afterwards.
+      </p>
+      <hr className="divider" />
+      <h3>Level 60-70 (Blython Defense)</h3>
+      <p>
+        At level 60, you can move from Woodlingor to Blython Defense. It&apos;s virtually identical except with
+        increased XP rewards.
+      </p>
+      <ol>
+        <li>Talk to Defender in Blython (14, 80).</li>
+        <li>Visit the listed locations and interact with the NPCs.</li>
+        <li>Eventually one will trigger a fight - defeat them and return to Defender (14, 80).</li>
+      </ol>
+      <p>
+        Note that when Defender says &quot;Armory&quot;, the actual location is Weaponry. 2x Armory means both NPCs
+        inside are possible targets. Additionally, &quot;Accessories Shop&quot; means Stuff Shop.
+      </p>
+      <hr className="divider" />
+      <h3>Level 60-80 (Bloodreaper)</h3>
+      <hr className="divider" />
+      <h3>Level 70-90 (Seal)</h3>
+      <p>
+        At level 70 you unlock a new repeatable, 10 round quest with increasing XP rewards. It is advise that you use
+        both the Windseeker consumable for teleportation, and Devil&apos;s Tears to avoid random monster aggro.{" "}
+        <b>
+          At the bottom of this section is a Windseeker teleport coordinates cheatsheet to reach your target quickly.
+        </b>
+      </p>
+      <ol>
+        <li>Buy a Sealed scroll from Endelroth in Blython Bar.</li>
+        <li>Right click the scroll to receive coordinates, travel to those coordinates.</li>
+        <li>Upon arrival, right click the scroll again to initiate the fight.</li>
+        <li>When victorious, return to Endelroth in Blython Bar to receive a new target.</li>
+      </ol>
+      <WindseekerTable />
+      <hr className="divider" />
+      <h3>Level 90+ (Papa Drow & Worn Messenger)</h3>
     </>
   );
 }
@@ -310,4 +357,8 @@ function WednesdayQuestionsTable({ data }: { data: { q: string; a: string }[] })
       </tbody>
     </table>
   );
+}
+
+function WindseekerTable() {
+  return <table></table>;
 }
