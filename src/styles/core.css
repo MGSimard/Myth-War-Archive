@@ -346,11 +346,11 @@ figure {
   overflow: hidden;
   cursor: pointer;
 }
-.grid-maps:has(figure:hover) figure:not(:hover) img,
-.grid-maps:has(figure:focus-visible) figure:not(:focus-visible) img {
+.grid-maps:has(.mapfigure:hover) .mapfigure:not(:hover) img,
+.grid-maps:has(.mapfigure:focus-visible) .mapfigure:not(:focus-visible) img {
   filter: blur(0.2rem) saturate(0);
 }
-figure svg {
+.mapfigure svg {
   position: absolute;
   top: 0;
   right: 0;
@@ -361,11 +361,11 @@ figure svg {
   transition: color ease 0.2s;
   filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
 }
-figure:hover svg,
-figure:focus-visible svg {
+.mapfigure:hover svg,
+.mapfigure:focus-visible svg {
   color: rgba(255, 255, 255, 0.7);
 }
-figure img {
+.mapfigure img {
   aspect-ratio: 1/1;
   object-fit: cover;
   transition: filter ease 0.2s;
@@ -700,6 +700,14 @@ input[type="range"]:hover {
 }
 .details-header h3 {
   display: inline;
+}
+/**/
+.worldfigure {
+  width: fit-content;
+  margin: 0 auto;
+}
+.worldfigure:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 /* NOT FOUND PAGE */

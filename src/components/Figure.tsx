@@ -55,7 +55,8 @@ export function Figure({ src, fullSrc, caption, version }: FigureTypes) {
         aria-haspopup="dialog"
         role="button"
         tabIndex={0}
-        aria-label={caption}>
+        aria-label={caption}
+        className="mapfigure">
         <img src={`${src}`} alt="" />
         <figcaption>
           {caption}

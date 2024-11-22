@@ -20,6 +20,7 @@
 - [x] Do mobile nav shift at threshold
 - [ ] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
 - [x] Change scrollbar style in nav
+- [ ] Pause other audio sources when playing a new one
 
 </details>
 
