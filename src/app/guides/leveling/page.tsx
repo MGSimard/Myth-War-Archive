@@ -1,3 +1,5 @@
+import questions from "@/data/wednesday-event.json";
+
 export default function Page() {
   return (
     <>
@@ -118,7 +120,40 @@ export default function Page() {
         </li>
         <li>Repeat until out of your "token" equipment pieces.</li>
       </ol>
-      <h4></h4>
+      <h4>Wednesday Event</h4>
+      <p>
+        <em>
+          This is arguably one of the most profitable methods in both gold and XP as each round rewards you with ~100k
+          XP to both you and your pet with a chance of obtaining Dispel Potions, Talent Points, Pet Intimacy, Perfect
+          Carnelians and High-Graded Gems.
+        </em>
+      </p>
+      <p>
+        For the entire duration of Wednesday (server time), you can participate in a repeatable 100 round quest by going
+        to Woodlingor and talking to Charity Ambassador in Elder Zone. You will be asked to visit a certain NPC to
+        either answer a question, bring them an item or pass a message. Each NPC will give you a reward and another task
+        to complete all the way up to 100 tasks.
+      </p>
+      <p>
+        The general trick is to fill blank teleport scrolls and a few colored scrolls, leaving 1-2 free spaces for
+        rewards and registering one scroll for each of the NPC locations at the bottom of your inventory, once you use
+        one you can drag an empty scroll in the used slot and re-register that location for later.
+      </p>
+      <div className="wednesday-tables">
+        <WednesdayNPCTable />
+        <WednesdayItemTable />
+      </div>
+      <details>
+        <summary>Questions & Answers</summary>
+        Credit:{" "}
+        <a
+          className="link"
+          href="https://mythwar2.freeforums.net/thread/27/wednesday-event-answers-originally-venky"
+          target="_blank">
+          https://mythwar2.freeforums.net/thread/27/wednesday-event-answers-originally-venky
+        </a>
+        <WednesdayQuestionsTable data={questions} />
+      </details>
     </>
   );
 }
@@ -174,6 +209,104 @@ function DrowTable() {
           <td>Female</td>
           <td>+5 Helm</td>
         </tr>
+      </tbody>
+    </table>
+  );
+}
+
+function WednesdayNPCTable() {
+  return (
+    <table className="table">
+      <thead>
+        <tr>
+          <th>NPC</th>
+          <th>Map</th>
+          <th>Coordinates</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Adventurer</td>
+          <td>Revive Arena</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>Mine Overseer</td>
+          <td>Bone Desert</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>Peddler</td>
+          <td>Southern Rivage</td>
+          <td>?</td>
+        </tr>
+        <tr>
+          <td>Prophet</td>
+          <td>Desert City</td>
+          <td>(128, 74)</td>
+        </tr>
+        <tr>
+          <td>Teacher</td>
+          <td>Cursed Abyss</td>
+          <td>?</td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}
+
+function WednesdayItemTable() {
+  return (
+    <table className="table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Teleport Scroll (Blank)</td>
+          <td>800</td>
+          <td>Any</td>
+        </tr>
+        <tr>
+          <td>Teleport Scroll (Blue)</td>
+          <td>4000</td>
+          <td>Desert City & Demon Square</td>
+        </tr>
+        <tr>
+          <td>Teleport Scroll (Red)</td>
+          <td>4000</td>
+          <td>Desert City & Demon Square</td>
+        </tr>
+        <tr>
+          <td>Carving Knife</td>
+          <td>100</td>
+          <td>Woodlingor & Demon Square</td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}
+
+function WednesdayQuestionsTable({ data }: { data: { q: string; a: string }[] }) {
+  return (
+    <table className="table">
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th>Answer</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((entry) => (
+          <tr key={entry.q}>
+            <td>{entry.q}</td>
+            <td>{entry.a}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );

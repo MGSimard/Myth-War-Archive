@@ -278,7 +278,8 @@ section > *:not(:last-child) {
   margin-bottom: 2rem; /* Default */
 }
 /* Section margin-bottom overrides */
-section h3 {
+section h3:not(:last-child),
+section h4:not(:last-child) {
   margin-bottom: 1rem;
 }
 section p:not(:last-child) {
@@ -698,7 +699,7 @@ input[type="range"]:hover {
   content: "";
 }
 /* DETAILS HEADER */
-.details-header summary {
+details summary {
   cursor: pointer;
 }
 .details-header h3 {
@@ -720,6 +721,11 @@ ol {
 ol ol {
   text-indent: 2rem;
 }
+.wednesday-tables {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
 
 /* NOT FOUND PAGE */
 .notfound {
@@ -737,6 +743,11 @@ ol ol {
 .notfound h1 {
   font-size: 5rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 1000px) {
+  .wednesday-tables {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 @media only screen and (max-width: 768px) {
   /* CONTENT SHIFT */

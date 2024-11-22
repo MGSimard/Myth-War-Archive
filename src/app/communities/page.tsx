@@ -36,7 +36,7 @@ function Section({ title, data }: { title: string; data: DataTypes[] }) {
         <tbody>
           {data.map((entry) => (
             <tr key={entry.link}>
-              <td className="td-static tborder">
+              <td className="tborder">
                 <a href={entry.link} target="_blank" className="link">
                   {entry.name}
                 </a>
