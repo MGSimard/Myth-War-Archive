@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { NavLink } from "@/components/NavLink";
-import { IconMap, IconTools, IconCommunities, IconAssets } from "@/components/Icons";
+import { IconMap, IconTools, IconCommunities, IconAssets, IconGuides } from "@/components/Icons";
 
 const Links = [
   { path: "World", icon: <IconMap /> },
   { path: "Assets", icon: <IconAssets /> },
   { path: "Tools", icon: <IconTools /> },
   { path: "Communities", icon: <IconCommunities /> },
+  { path: "Guides", icon: <IconGuides /> },
 ];
 // Opted against sublinks, action count ended up being the same anyways
 
