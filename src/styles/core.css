@@ -746,21 +746,33 @@ input[type="range"]:hover {
     position: sticky;
     width: 100%;
     right: 0;
-    height: 7rem;
+    height: 5rem;
     transition: none;
     overflow: hidden;
+    padding: 0.5rem 1rem;
   }
   .sidenav:hover,
   .sidenav:has(a:focus-visible) {
     width: 100%;
   }
+  /* TODO FIX LOGO HEIGHT */
   .sidenav-logo-wrapper {
     flex-shrink: 0;
     margin-bottom: 0;
     margin-right: 3vw;
   }
+  @keyframes logo-anim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: -1000px;
+    }
+  }
   .sidenav-logo {
+    width: 4rem;
     height: 100%;
+    background-size: 1000px 40px;
   }
   .sidenav-logo-wrapper span {
     display: none;
@@ -780,7 +792,7 @@ input[type="range"]:hover {
     aspect-ratio: 1/1;
   }
   .sidenav .mainLink svg {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .sidenav .mainLink span {
     display: none;
