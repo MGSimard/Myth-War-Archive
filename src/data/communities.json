@@ -11,6 +11,13 @@
       "description": "Defunct Chinese Myth War II server which ran until 2018. They claimed to be reopening during 2019 and then later in 2021, which never ended up happening. No news since 2021."
     }
   ],
+  "forums": [
+    {
+      "name": "SpritWorld",
+      "link": "https://mythwar2.freeforums.net/",
+      "description": "Old Myth War forum where apparently nobody knows how to spell the word \"Spirit\". Contains a lot of useful guides & information."
+    }
+  ],
   "discord": [
     {
       "name": "Myth War",
