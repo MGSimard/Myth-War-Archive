@@ -7,9 +7,7 @@ export default function CommunitiesLayout({ children }: { children: React.ReactN
         <h1>Myth War Archive - Communities</h1>
       </header>
       <main className="panel">
-        <section>
-          <div className="section-content">{children}</div>
-        </section>
+        <section>{children}</section>
         <BtnScrollToTop />
       </main>
     </>

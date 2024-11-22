@@ -16,9 +16,7 @@ export default function WorldLayout({ children }: { children: React.ReactNode })
       </header>
       <main className="panel">
         <SubNav links={links} icon={<img src="/assets/icon-map.webp" alt="" />} />
-        <section>
-          <div className="section-content">{children}</div>
-        </section>
+        <section>{children}</section>
         <BtnScrollToTop />
       </main>
     </>

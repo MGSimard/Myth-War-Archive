@@ -14,9 +14,7 @@ export default function GuidesLayout({ children }: { children: React.ReactNode }
       </header>
       <main className="panel">
         <SubNav links={links} icon={<img alt="" />} />
-        <section>
-          <div className="section-content">{children}</div>
-        </section>
+        <section>{children}</section>
         <BtnScrollToTop />
       </main>
     </>

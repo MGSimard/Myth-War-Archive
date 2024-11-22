@@ -15,9 +15,7 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
       </header>
       <main className="panel">
         <SubNav links={links} icon={<img src="/assets/icon-tools.webp" alt="" />} />
-        <section>
-          <div className="section-content">{children}</div>
-        </section>
+        <section>{children}</section>
         <BtnScrollToTop />
       </main>
     </>

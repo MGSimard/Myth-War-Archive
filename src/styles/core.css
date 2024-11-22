@@ -269,25 +269,28 @@ input {
   border: 0.2rem solid var(--clr-gold);
   overflow: hidden;
 }
-.section-content {
+section {
   padding: 2rem;
   color: black;
   box-shadow: inset 0 0 2rem rgb(54, 39, 4);
 }
-.section-content p:not(:last-child) {
+section > *:not(:last-child) {
+  margin-bottom: 2rem; /* Default */
+}
+/* Section margin-bottom overrides */
+section h3 {
+  margin-bottom: 1rem;
+}
+section p:not(:last-child) {
   margin-bottom: 1.5em;
 }
+/**/
 .divider {
   height: 0.5rem;
   box-shadow: inset 0 0 0.4rem rgb(77, 56, 7);
   border: none;
   backdrop-filter: saturate(1.5);
-  margin: 2rem 0;
 }
-.section-content h3 {
-  margin-bottom: 1rem;
-}
-
 /* RACE/CLASSES */
 .race-wrapper {
   padding-bottom: 4rem;
@@ -709,6 +712,14 @@ input[type="range"]:hover {
 .worldfigure:not(:last-child) {
   margin-bottom: 2rem;
 }
+/* Guides page */
+ol {
+  list-style-position: inside;
+  text-indent: 1rem;
+}
+ol ol {
+  text-indent: 2rem;
+}
 
 /* NOT FOUND PAGE */
 .notfound {
@@ -839,7 +850,7 @@ input[type="range"]:hover {
   }
 }
 @media only screen and (max-width: 328px) {
-  .section-content {
+  section {
     padding: 1rem;
   }
 }
