@@ -104,7 +104,15 @@ button {
   width: calc(var(--sidebar-width) - 2rem);
   height: 6.8rem;
   background-image: url("/logo-idle-60x.webp");
-  animation: logo-anim 2.3s steps(25) infinite;
+  animation: loader-anim 2.3s steps(25) infinite;
+}
+@keyframes loader-anim {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -1500px;
+  }
 }
 .sidenav-logo-wrapper:hover .sidenav-logo,
 .sidenav-logo-wrapper:focus-visible .sidenav-logo {
