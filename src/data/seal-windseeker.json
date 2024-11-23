@@ -1,0 +1,156 @@
+[
+  {
+    "zone": "Sky Garden",
+    "coords": [
+      { "coord": "(70, 53)", "seeker": "H1-S2" },
+      { "coord": "(90, 57)", "seeker": "H1-S3" },
+      { "coord": "(17, 41)", "seeker": "H1-S7" }
+    ]
+  },
+  {
+    "zone": "Revive Arena",
+    "coords": [
+      { "coord": "(42, 42)", "seeker": "H2-S2" },
+      { "coord": "(31, 33)", "seeker": "H2-S3" },
+      { "coord": "(64, 120)", "seeker": "H2-S6" },
+      { "coord": "(100, 200)", "seeker": "H2-S6" },
+      { "coord": "(99, 117)", "seeker": "H2-S7" },
+      { "coord": "(108, 56)", "seeker": "H2-S7" },
+      { "coord": "(103, 92)", "seeker": "H2-S8" },
+      { "coord": "(136, 84)", "seeker": "H2-S9" },
+      { "coord": "(129, 129)", "seeker": "H2-S10" },
+      { "coord": "(121, 181)", "seeker": "H2-S10" }
+    ]
+  },
+  {
+    "zone": "Snow Ridge",
+    "coords": [
+      { "coord": "(24, 41)", "seeker": "H3-S1" },
+      { "coord": "(23, 73)", "seeker": "H3-S2" },
+      { "coord": "(18, 103)", "seeker": "H3-S3" },
+      { "coord": "(75, 141)", "seeker": "H3-S6" },
+      { "coord": "(158, 35)", "seeker": "H3-S6" },
+      { "coord": "(97, 54)", "seeker": "H3-S6" },
+      { "coord": "(54, 198)", "seeker": "H3-S7" },
+      { "coord": "(73, 204)", "seeker": "H3-S8" },
+      { "coord": "(105, 172)", "seeker": "H3-S9" },
+      { "coord": "(157, 173)", "seeker": "H3-S10" },
+      { "coord": "(178, 145)", "seeker": "H3-S10" },
+      { "coord": "(183, 92)", "seeker": "H3-S10" }
+    ]
+  },
+  {
+    "zone": "Dragon Cave",
+    "coords": [{ "coord": "All", "seeker": "H3-S6" }]
+  },
+  {
+    "zone": "Sunset Plains",
+    "coords": [
+      { "coord": "(59, 23)", "seeker": "Blython TP" },
+      { "coord": "(83, 30)", "seeker": "Blython TP" },
+      { "coord": "(47, 57)", "seeker": "Blython TP" },
+      { "coord": "(107, 26)", "seeker": "H4-S1" },
+      { "coord": "(130, 72)", "seeker": "H4-S3" },
+      { "coord": "(103, 101)", "seeker": "H4-S4" },
+      { "coord": "(138, 128)", "seeker": "H4-S5" },
+      { "coord": "(123, 175)", "seeker": "H4-S7" },
+      { "coord": "(107, 193)", "seeker": "H4-S8" },
+      { "coord": "(98, 129)", "seeker": "H4-S9" },
+      { "coord": "(76, 125)", "seeker": "H4-S9" },
+      { "coord": "(53, 114)", "seeker": "H4-S9" },
+      { "coord": "(67, 141)", "seeker": "H4-S10" }
+    ]
+  },
+  {
+    "zone": "Southern Rivage",
+    "coords": [
+      { "coord": "(92, 42)", "seeker": "H5-S1" },
+      { "coord": "(101, 68)", "seeker": "H5-S5" },
+      { "coord": "(62, 62)", "seeker": "H5-S7" },
+      { "coord": "(21, 186)", "seeker": "H5-S10" },
+      { "coord": "(41, 173)", "seeker": "H5-S10" },
+      { "coord": "(69, 112)", "seeker": "H5-S10" },
+      { "coord": "(17, 128)", "seeker": "H5-S10" },
+      { "coord": "(39, 139)", "seeker": "H5-S10" },
+      { "coord": "(30, 143)", "seeker": "H5-S10" },
+      { "coord": "(47, 159)", "seeker": "H5-S10" },
+      { "coord": "(55, 155)", "seeker": "H5-S10" }
+    ]
+  },
+  {
+    "zone": "Badlands",
+    "coords": [
+      { "coord": "(131, 187)", "seeker": "Desert City TP" },
+      { "coord": "(136, 212)", "seeker": "Desert City TP" },
+      { "coord": "(38, 134)", "seeker": "H6-S2" },
+      { "coord": "(45, 154)", "seeker": "H6-S3" },
+      { "coord": "(56, 185)", "seeker": "H6-S5" },
+      { "coord": "(78, 219)", "seeker": "H6-S9" },
+      { "coord": "(87, 230)", "seeker": "H6-S9" },
+      { "coord": "(51, 266)", "seeker": "H6-S9" },
+      { "coord": "(70, 259)", "seeker": "H6-S10" },
+      { "coord": "(127, 263)", "seeker": "H6-S10" },
+      { "coord": "(36, 265)", "seeker": "H6-S10" },
+      { "coord": "(63, 267)", "seeker": "H6-S10" }
+    ]
+  },
+  {
+    "zone": "Bone Desert",
+    "coords": [
+      { "coord": "(107, 126)", "seeker": "H7-S1" },
+      { "coord": "(103, 124)", "seeker": "H7-S1" },
+      { "coord": "(98, 109)", "seeker": "H7-S6" },
+      { "coord": "(74, 98)", "seeker": "H7-S6" },
+      { "coord": "(94, 128)", "seeker": "H7-S7" },
+      { "coord": "(105, 139)", "seeker": "H7-S9" },
+      { "coord": "(108, 164)", "seeker": "H7-S9" },
+      { "coord": "(111, 155)", "seeker": "H7-S10" },
+      { "coord": "(112, 115)", "seeker": "H7-S10" },
+      { "coord": "(120, 136)", "seeker": "H7-S10" },
+      { "coord": "(123, 171)", "seeker": "H7-S10" },
+      { "coord": "(131, 171)", "seeker": "H7-S10" }
+    ]
+  },
+  {
+    "zone": "Flamingor",
+    "coords": [
+      { "coord": "(53, 297)", "seeker": "H9-S1" },
+      { "coord": "(48, 329)", "seeker": "H9-S1" },
+      { "coord": "(25, 304)", "seeker": "H9-S2" },
+      { "coord": "(26, 258)", "seeker": "H9-S3" },
+      { "coord": "(33, 214)", "seeker": "H9-S4" },
+      { "coord": "(39, 149)", "seeker": "H9-S5" },
+      { "coord": "(107, 102)", "seeker": "H9-S6" },
+      { "coord": "(107, 141)", "seeker": "H9-S6" },
+      { "coord": "(151, 135)", "seeker": "H9-S7" },
+      { "coord": "(90, 287)", "seeker": "H9-S8" },
+      { "coord": "(124, 227)", "seeker": "H9-S8" },
+      { "coord": "(167, 179)", "seeker": "H9-S9" },
+      { "coord": "(185, 184)", "seeker": "H9-S9" },
+      { "coord": "(168, 89)", "seeker": "H9-S10" }
+    ]
+  },
+  {
+    "zone": "Flame Ruins",
+    "coords": [
+      { "coord": "(198, 53)", "seeker": "Demon Square TP" },
+      { "coord": "(239, 261)", "seeker": "Demon Square TP" },
+      { "coord": "(301, 240)", "seeker": "Demon Square TP" },
+      { "coord": "(64, 551)", "seeker": "H9-S10" },
+      { "coord": "(47, 166)", "seeker": "H10-S1" },
+      { "coord": "(33, 279)", "seeker": "H10-S2" },
+      { "coord": "(137, 437)", "seeker": "H10-S5" },
+      { "coord": "(242, 575)", "seeker": "H10-S6" },
+      { "coord": "(304, 462)", "seeker": "H10-S9" },
+      { "coord": "(223, 482)", "seeker": "H10-S10" }
+    ]
+  },
+  {
+    "zone": "Devil's Gate",
+    "coords": [
+      { "coord": "(157, 204)", "seeker": "H11-S1" },
+      { "coord": "(42, 121)", "seeker": "H11-S2" },
+      { "coord": "(219, 80)", "seeker": "H11-S5" }
+    ]
+  }
+]

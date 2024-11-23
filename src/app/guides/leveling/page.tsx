@@ -1,4 +1,6 @@
+import { Fragment } from "react";
 import questions from "@/data/wednesday-event.json";
+import coordinates from "@/data/seal-windseeker.json";
 
 export default function Page() {
   return (
@@ -198,7 +200,11 @@ export default function Page() {
         <li>Upon arrival, right click the scroll again to initiate the fight.</li>
         <li>When victorious, return to Endelroth in Blython Bar to receive a new target.</li>
       </ol>
-      <WindseekerTable />
+      <details>
+        <summary>Coordinates cheatsheet</summary>
+        <em>&quot;H&quot; stands for &quot;Hurricane&quot;, &quot;S&quot; stands for &quot;Spot&quot;.</em>
+        <WindseekerTable data={coordinates} />
+      </details>
       <hr className="divider" />
       <h3>Level 90+ (Papa Drow & Worn Messenger)</h3>
     </>
@@ -359,6 +365,38 @@ function WednesdayQuestionsTable({ data }: { data: { q: string; a: string }[] })
   );
 }
 
-function WindseekerTable() {
-  return <table></table>;
+interface WindseekerDataTypes {
+  zone: string;
+  coords: { coord: string; seeker: string }[];
+}
+
+function WindseekerTable({ data }: { data: WindseekerDataTypes[] }) {
+  return (
+    <table className="table-rowspan">
+      <thead>
+        <tr>
+          <th>Zone</th>
+          <th>Coords</th>
+          <th>Seeker</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((entry) => (
+          <Fragment key={entry.zone}>
+            <tr>
+              <th rowSpan={entry.coords.length}>{entry.zone}</th>
+              <td>{entry.coords[0]?.coord}</td>
+              <td>{entry.coords[0]?.seeker}</td>
+            </tr>
+            {entry.coords.slice(1).map((coord) => (
+              <tr key={`${coord.coord}-${coord.seeker}`}>
+                <td>{coord.coord}</td>
+                <td>{coord.seeker}</td>
+              </tr>
+            ))}
+          </Fragment>
+        ))}
+      </tbody>
+    </table>
+  );
 }

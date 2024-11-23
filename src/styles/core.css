@@ -554,8 +554,6 @@ figcaption span {
 }
 .table tbody {
   vertical-align: top;
-}
-.table tbody {
   word-break: break-word;
 }
 .table tbody tr {
@@ -725,6 +723,30 @@ ol ol {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
+}
+.table-rowspan {
+  width: 100%;
+  table-layout: fixed;
+  text-align: left;
+  box-shadow: inset 0 0 1rem rgb(54, 39, 4);
+}
+.table-rowspan th,
+.table-rowspan td {
+  padding: 1rem;
+}
+.table-rowspan thead tr {
+  backdrop-filter: brightness(0.95) saturate(1.6);
+}
+.table-rowspan tbody {
+  vertical-align: top;
+  word-break: break-word;
+}
+.table-rowspan tbody th {
+  backdrop-filter: brightness(0.95) saturate(1.4);
+}
+.table-rowspan tbody th,
+.table-rowspan tbody th ~ td {
+  border-top: 0.5rem solid rgba(81, 59, 21, 0.1);
 }
 
 /* NOT FOUND PAGE */
