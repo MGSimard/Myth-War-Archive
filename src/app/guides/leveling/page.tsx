@@ -160,7 +160,7 @@ export default function Page() {
       <h3>Level 50-60 (Woodlingor Defense)</h3>
       <p>Once you are level 50 you can now run through Woodlingor Defense with a level 50+ party.</p>
       <ol>
-        <li>Talk to Defender in Blython (277, 311), take note of the three locations he gives you.</li>
+        <li>Talk to Defender in Woodlingor (277, 311), take note of the three locations he gives you.</li>
         <li>Visit the three given stores and interact with the NPCs.</li>
         <li>Eventually one will trigger a fight - defeat them and return to Defender (277, 311).</li>
       </ol>
