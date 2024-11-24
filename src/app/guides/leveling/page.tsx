@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import questions from "@/data/wednesday-event.json";
 import coordinates from "@/data/seal-windseeker.json";
+import { IconLink } from "@/components/Icons";
 
 export default function Page() {
   return (
@@ -152,7 +153,7 @@ export default function Page() {
           className="link"
           href="https://mythwar2.freeforums.net/thread/27/wednesday-event-answers-originally-venky"
           target="_blank">
-          https://mythwar2.freeforums.net/thread/27/wednesday-event-answers-originally-venky
+          https://mythwar2.freeforums.net/thread/27/wednesday-event-answers-originally-venky <IconLink />
         </a>
         <WednesdayQuestionsTable data={questions} />
       </details>

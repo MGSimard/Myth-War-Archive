@@ -1,5 +1,6 @@
 :root {
   --sidebar-width: 8rem;
+  --clr-primary: hsl(218, 83%, 55%);
   --clr-bg: hsl(193, 90%, 4%);
   --clr-bg-popout: hsl(194, 79%, 5%);
   --clr-gold: hsl(45, 44%, 46%);
@@ -135,9 +136,6 @@ button {
 }
 .dolist:not(:last-child) {
   margin-bottom: 2rem;
-}
-.attr a:hover {
-  text-decoration: underline;
 }
 @keyframes logo-anim {
   from {
@@ -624,8 +622,14 @@ figcaption span {
 .td-preview img {
   pointer-events: none;
 }
-.link:hover {
+.link {
   text-decoration: underline;
+}
+.link svg {
+  height: 1em;
+}
+.link:hover {
+  color: var(--clr-primary);
 }
 /* FILE DOWNLOAD BUTTON (SVG & Filename as link "button")*/
 .btn-download {

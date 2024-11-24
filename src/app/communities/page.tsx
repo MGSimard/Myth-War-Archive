@@ -1,4 +1,5 @@
 import communities from "@/data/communities.json";
+import { IconLink } from "@/components/Icons";
 
 export default function Page() {
   return (
@@ -40,7 +41,7 @@ function Section({ title, data }: { title: string; data: DataTypes[] }) {
             <tr key={entry.link}>
               <td className="tborder">
                 <a href={entry.link} target="_blank" className="link">
-                  {entry.name}
+                  {entry.name} <IconLink />
                 </a>
               </td>
               <td>{entry.description}</td>

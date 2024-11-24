@@ -41,7 +41,12 @@
     {
       "name": "mythol.com",
       "link": "https://web.archive.org/web/20050511011841/http://www.mythol.com/index.php",
-      "description": "Chinese website."
+      "description": "Website for the Chinese Closed Beta of Myth War Online."
+    },
+    {
+      "name": "sj.gyyx.cn",
+      "link": "http://web.archive.org/web/20061121114305/http://sj.gyyx.cn/",
+      "description": "Chinese website, secondary platform for Myth War Online distribution."
     },
     {
       "name": "mythwaronline.com",
