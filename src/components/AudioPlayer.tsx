@@ -90,6 +90,19 @@ export function AudioPlayer({ src, loop }: { src: string; loop?: boolean }) {
           playSvg.classList.add("hidden");
           pauseSvg.classList.remove("hidden");
         })
+        .then(() => {
+          document.querySelectorAll("audio").forEach((audio) => {
+            if (audio !== audioEle && !audio.paused) {
+              audio.pause();
+              audio.currentTime = 0;
+              const playerDiv = audio.closest(".audio-player");
+              if (playerDiv) {
+                playerDiv.querySelector(".play-button svg:first-child")?.classList.remove("hidden");
+                playerDiv.querySelector(".play-button svg:last-child")?.classList.add("hidden");
+              }
+            }
+          });
+        })
         .catch(() => console.error("ERROR PLAYING AUDIO"));
     } else {
       audioEle.pause();
