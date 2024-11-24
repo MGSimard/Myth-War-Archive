@@ -4,7 +4,9 @@ export default function Page() {
       <h2>Images</h2>
       <hr className="divider" />
       <details>
-        <summary>Characters</summary>
+        <summary>
+          <h3>Characters</h3>
+        </summary>
         <table className="table">
           <thead>
             <tr>
@@ -23,7 +25,9 @@ export default function Page() {
         </table>
       </details>
       <details>
-        <summary>Wallpapers</summary>
+        <summary>
+          <h3>Wallpapers</h3>
+        </summary>
         <table className="table">
           <thead>
             <tr>

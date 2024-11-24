@@ -46,12 +46,12 @@ export default function Page() {
           <hr className="divider" />
           <h3>The Development and Evolution of Myth War Online</h3>
           <p>
-            Myth War Online, developed by Unigium and published by IGG, was a free-to-play 2.5D MMORPG that brought
-            players into a vibrant, mythological world filled with unique creatures and classic RPG gameplay elements.
-            Released in 2005, the game became known for its turn-based Active Time Battle system, inspired by iconic
-            RPGs like Final Fantasy. Players could explore the game&apos;s rich fantasy setting through four character
-            races—Humans, Centaurs, Mages, and Borgs—and a robust pet system allowing pets to fight alongside their
-            masters.
+            Myth War Online, developed by Unigium and published by Sing-Gium International, then IGG, was a free-to-play
+            2.5D MMORPG that brought players into a vibrant, mythological world filled with unique creatures and classic
+            RPG gameplay elements. Released in 2005, the game became known for its turn-based Active Time Battle system,
+            inspired by iconic RPGs like Final Fantasy. Players could explore the game&apos;s rich fantasy setting
+            through four character races—Humans, Centaurs, Mages, and Borgs—and a robust pet system allowing pets to
+            fight alongside their masters.
           </p>
           <h3>A Unique Game Design</h3>
           <b>The game distinguished itself with features such as:</b>
@@ -74,7 +74,7 @@ export default function Page() {
             Unigium, bringing with them years of expertise.
           </p>
           <p>
-            The collaborative effort between Unigium and its Singapore counterpart, Sing Gium International, under the
+            The collaborative effort between Unigium and its Singapore counterpart, Sing-Gium International, under the
             umbrella of Gium International, allowed the team to launch Myth War Online successfully. The game&apos;s
             distinct musical score, produced by Li Dongjun (李东军) and performed by the Singapore National Symphony
             Orchestra, further highlighted their dedication to quality.

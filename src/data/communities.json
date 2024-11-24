@@ -39,18 +39,23 @@
   ],
   "official": [
     {
+      "name": "mythol.com",
+      "link": "https://web.archive.org/web/20050511011841/http://www.mythol.com/index.php",
+      "description": "Chinese website."
+    },
+    {
       "name": "mythwaronline.com",
-      "link": "https://web.archive.org/web/20240000000000*/mythwaronline.com",
-      "description": "Initial Website."
+      "link": "https://web.archive.org/web/20051024014455/http://www.mythwaronline.com/",
+      "description": "Initial website for western release."
     },
     {
       "name": "mw.igg.com",
-      "link": "https://web.archive.org/web/20240000000000*/mw.igg.com",
+      "link": "https://web.archive.org/web/20070601160650/http://mw.igg.com/",
       "description": "Second website iteration under IGG (SkyUnion, Ltd.) publishing."
     },
     {
       "name": "mw2.igg.com",
-      "link": "https://web.archive.org/web/20240000000000*/mw2.igg.com",
+      "link": "https://web.archive.org/web/20090714100826/http://mw2.igg.com/",
       "description": "Third website iteration during Myth War II."
     }
   ]

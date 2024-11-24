@@ -15,12 +15,16 @@
 - [x] Fix play button not reverting to paused state (play icon) when sound reaches end on noloop setting
 - [x] Make a header style for the details "accordion" in assets
 - [x] Fix table across board for long words, use break that makes sense
-- [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
 - [x] Decide if I want page footer or nav footer (icons etc)
 - [x] Do mobile nav shift at threshold
-- [ ] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
+- [x] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
 - [x] Change scrollbar style in nav
 - [x] Pause other audio sources when playing a new one
+- [ ] Add tile stitcher tool
+- [ ] Create introductory page texts
+- [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
+- [ ] Caching
+- [ ] Metadata
 
 </details>
 
