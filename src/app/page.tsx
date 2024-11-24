@@ -118,7 +118,7 @@ export default function Page() {
             Cai Chengrui(个名叫蔡呈瑞的) withdraws most of his funds without the knowledge of the company's employees,
             which paralyzed the company's development plan and eventually led to their collapse.
           </p>
-          <h4>2003 - December 14th</h4>
+          <h4>2003-12-14</h4>
           <p>
             Without funding and late wages, the company is unable to continue operating. Assets are sold, office
             vacated.{" "}
@@ -150,17 +150,19 @@ export default function Page() {
           </p>
           <hr className="divider" />
           <h3>Myth War Online</h3>
-          <h4>2005 - May 10th</h4>
+          <h4>2005-05-10</h4>
           <p>Myth War Online's Chinese Closed Beta, published by Sing-Gium International.</p>
-          <h4>?? - ?? ??</h4>
+          <h4>????-??-??</h4>
           <p>Myth War Online officially releases in China.</p>
-          <h4>2006 - July 7th</h4>
+          <h4>2006-07-07</h4>
           <p>Myth War Online is released in North America, published by IGG.</p>
           <hr className="divider" />
           <h3>Myth War II</h3>
-          <h4>2015 - January 15th</h4>
-          <p></p>
-          <h4>2015 - February 16th</h4>
+          <h4>2009-05-20</h4>
+          <p>Myth War II is officially released.</p>
+          <h4>2015-01-15</h4>
+          <p>The announcement regarding Myth War II's closure is made.</p>
+          <h4>2015-02-16</h4>
           <p>Myth War II servers are permanently taken down.</p>
           <hr className="divider" />
           <h3>Myth War 3 Legends of the Dark</h3>
