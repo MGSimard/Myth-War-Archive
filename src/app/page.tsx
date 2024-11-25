@@ -115,8 +115,8 @@ export default function Page() {
           <p>Main Taiwanese investor named Cai Chengrui(个名叫蔡呈瑞的) joins in.</p>
           <h4>2003-??-??</h4>
           <p>
-            Cai Chengrui(个名叫蔡呈瑞的) withdraws most of his funds without the knowledge of the company&quot;s
-            employees, which paralyzed the company&quot;s development plan and eventually led to their collapse.
+            Cai Chengrui(个名叫蔡呈瑞的) withdraws most of his funds without the knowledge of the company&apos;s
+            employees, which paralyzed the company&apos;s development plan and eventually led to their collapse.
           </p>
           <h4>2003-12-14</h4>
           <p>
@@ -133,13 +133,13 @@ export default function Page() {
           </p>
           <h4>2004-??-??</h4>
           <p>
-            Zhuang Jinlong(庄锦隆) elected as &apos;Top Ten Chinese IT Person of the Year&apos; & &apos;Top Ten Leaders
-            of the Year&apos;.
+            Zhuang Jinlong(庄锦隆) elected as &quot;Top Ten Chinese IT Person of the Year&quot; & &quot;Top Ten Leaders
+            of the Year&quot;.
           </p>
           <h4>2006-??-??</h4>
           <p>
             Zhuang Jinlong(庄锦隆) joins Unigium(联竣信息科技（上海）有限公司) and becomes the Director & General
-            Manager of the &apos;God World/Myth War&apos;(神界) project. A large portion of the employees, development
+            Manager of the &quot;God World/Myth War&quot;(神界) project. A large portion of the employees, development
             tooling and assets come directly from Xinruishi.{" "}
             <Link
               className="link"
@@ -148,24 +148,24 @@ export default function Page() {
               More information
               <IconLink />
             </Link>{" "}
-            about the core team behind Myth War Online&quot;s development.
+            about the core team behind Myth War Online&apos;s development.
           </p>
           <hr className="divider" />
           <h3>Myth War Online</h3>
           <h4>2005-05-10</h4>
-          <p>Myth War Online&quot;s Chinese Closed Beta, published by Sing-Gium International.</p>
+          <p>Myth War Online&apos;s Chinese Closed Beta, published by Sing-Gium International.</p>
           <h4>????-??-??</h4>
           <p>Myth War Online officially releases in China.</p>
           <h4>2006-07-07</h4>
           <p>Myth War Online is released in North America, published by IGG.</p>
           <h4>2009-??-??</h4>
-          <p>Myth War Online servers are shut down in order to make way for Myth War II&quot;s release.</p>
+          <p>Myth War Online servers are shut down in order to make way for Myth War II&apos;s release.</p>
           <hr className="divider" />
           <h3>Myth War II</h3>
           <h4>2009-05-20</h4>
           <p>Myth War II is officially released.</p>
           <h4>2015-01-15</h4>
-          <p>The announcement regarding Myth War II&quot;s closure is made.</p>
+          <p>The announcement regarding Myth War II&apos;s closure is made.</p>
           <h4>2015-02-16</h4>
           <p>Myth War II servers are shut down permanently.</p>
           <hr className="divider" />
@@ -183,7 +183,7 @@ export default function Page() {
           </p>
           <h4>2009-06-28</h4>
           <p>
-            Trademark for Myth War 3 Legends of the Dark&quot;s logo is{" "}
+            Trademark for Myth War 3 Legends of the Dark&apos;s logo is{" "}
             <Link
               className="link"
               href="https://trademarks.justia.com/777/69/myth-war-legends-of-the-dark-77769734.html">
