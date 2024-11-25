@@ -153,17 +153,48 @@ export default function Page() {
           <hr className="divider" />
           <h3>Myth War Online</h3>
           <h4>2005-05-10</h4>
-          <p>Myth War Online&apos;s Chinese Closed Beta, published by Sing-Gium International.</p>
+          <p>
+            China server for Closed Beta is opened. Hosted on mythol.com and proxied to mainland China through
+            mythonline.com.cn.
+          </p>
+          <h4>2005-07-15</h4>
+          <p>
+            While the China Open Beta release got stuck in limbo, the Taiwan server launches, which most Chinese players
+            migrated to during the wait.
+          </p>
+          <h4>2006-01-18</h4>
+          <p>Japanese Open Beta launches, published under DIGIWORLD.</p>
+          <h4>2006-??-??</h4>
+          <p>
+            Release of the China server migrated to sj.gyyx.cn, mythonline.com.cn was adjusted to point to this new
+            version.
+          </p>
           <h4>????-??-??</h4>
           <p>Myth War Online officially releases in China.</p>
           <h4>2006-07-07</h4>
           <p>Myth War Online is released in North America, published by IGG.</p>
-          <h4>2009-??-??</h4>
+          <h4>2009-05-??</h4>
           <p>Myth War Online servers are shut down in order to make way for Myth War II&apos;s release.</p>
           <hr className="divider" />
           <h3>Myth War II</h3>
+          <h4>2007-03-29</h4>
+          <p>
+            Myth War II Beta{" "}
+            <Link
+              href="https://web.archive.org/web/20241125145821/http://www.edmontonchina.ca/archiver/?tid-84638.html"
+              target="_blank"
+              className="link">
+              begins in China
+              <IconLink />
+            </Link>
+            .
+          </p>
+          <h4>2008-06-13</h4>
+          <p>Myth War II Closed Beta launches in North America.</p>
+          <h4>2008-06-26</h4>
+          <p>Myth War II Open Beta launches in North America.</p>
           <h4>2009-05-20</h4>
-          <p>Myth War II is officially released.</p>
+          <p>Myth War II is officially released in North America.</p>
           <h4>2015-01-15</h4>
           <p>The announcement regarding Myth War II&apos;s closure is made.</p>
           <h4>2015-02-16</h4>
