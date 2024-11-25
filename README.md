@@ -22,6 +22,7 @@
 - [x] Pause other audio sources when playing a new one
 - [x] Establish roles between both chinese websites in timeline
 - [ ] Finish timeline in homepage
+- [ ] Find an image to use for guides header
 - [ ] Create introductory page texts
 - [ ] Add tile stitcher tool
 - [ ] Fix input delay in audio section due to getting held up by all metadata loads
