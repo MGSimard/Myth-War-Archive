@@ -6,8 +6,8 @@ const Links = [
   { path: "World", icon: <IconMap /> },
   { path: "Assets", icon: <IconAssets /> },
   { path: "Tools", icon: <IconTools /> },
-  { path: "Communities", icon: <IconCommunities /> },
   { path: "Guides", icon: <IconGuides /> },
+  { path: "Communities", icon: <IconCommunities /> },
 ];
 // Opted against sublinks, action count ended up being the same anyways
 

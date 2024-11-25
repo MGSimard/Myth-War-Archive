@@ -13,7 +13,7 @@ export default function GuidesLayout({ children }: { children: React.ReactNode }
         <h1>Myth War Archive - Guides</h1>
       </header>
       <main className="panel">
-        <SubNav links={links} icon={<img alt="" />} />
+        <SubNav links={links} icon={<img src="/assets/icon-guides.webp" alt="" />} />
         <section>{children}</section>
         <BtnScrollToTop />
       </main>
