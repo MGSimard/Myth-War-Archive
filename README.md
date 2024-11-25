@@ -20,10 +20,11 @@
 - [x] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
 - [x] Change scrollbar style in nav
 - [x] Pause other audio sources when playing a new one
-- [ ] Establish roles between both chinese websites in timeline
+- [x] Establish roles between both chinese websites in timeline
 - [ ] Finish timeline in homepage
 - [ ] Create introductory page texts
 - [ ] Add tile stitcher tool
+- [ ] Fix input delay in audio section due to getting held up by all metadata loads
 - [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
 - [ ] Caching
 - [ ] Metadata
