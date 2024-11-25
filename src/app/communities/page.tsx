@@ -7,11 +7,8 @@ export default function Page() {
       <h2>Communities</h2>
       <hr className="divider" />
       <Section title="Servers" data={communities.servers} />
-      <hr className="divider" />
       <Section title="Discord" data={communities.discord} />
-      <hr className="divider" />
       <Section title="Subreddits" data={communities.subreddits} />
-      <hr className="divider" />
       <Section title="Forums" data={communities.forums} />
       <hr className="divider" />
       <Section title="Official (Defunct)" data={communities.official} />
