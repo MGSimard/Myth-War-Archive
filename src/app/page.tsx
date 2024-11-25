@@ -166,7 +166,7 @@ export default function Page() {
           <p>Japanese Open Beta launches, published under DIGIWORLD.</p>
           <h4>2006-??-??</h4>
           <p>
-            Release of the China server migrated to sj.gyyx.cn, mythonline.com.cn was adjusted to point to this new
+            Release of the China server migrates to sj.gyyx.cn, mythonline.com.cn was adjusted to point to this new
             version.
           </p>
           <h4>????-??-??</h4>
