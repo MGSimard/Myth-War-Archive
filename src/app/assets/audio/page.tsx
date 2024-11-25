@@ -8,9 +8,7 @@ export default function Page() {
       <h2>Audio</h2>
       <hr className="divider" />
       <Section title="Music" data={audio.music} />
-      <hr className="divider" />
       <Section title="Ambient" data={audio.ambient} />
-      <hr className="divider" />
       <Section title="Sound Effects" data={audio.effects} />
     </>
   );
