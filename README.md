@@ -25,6 +25,7 @@
 - [ ] Find an image to use for guides header
 - [ ] Create introductory page texts
 - [ ] Add tile stitcher tool
+- [ ] Build a better MDA extractor tool that can handle all filetypes within container
 - [ ] Fix input delay in audio section due to getting held up by all metadata loads
 - [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
 - [ ] Caching
