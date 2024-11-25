@@ -9,7 +9,7 @@ export default function Page() {
         <h1>Myth War Archive - Home</h1>
       </header>
       <main className="panel">
-        <section>
+        <section id="welcome">
           <h2>Welcome to Myth War Archive</h2>
           <hr className="divider" />
           <p>
@@ -43,7 +43,7 @@ export default function Page() {
             .
           </p>
         </section>
-        <section>
+        <section id="about">
           <h2>About Myth War</h2>
           <hr className="divider" />
           <h3>The Development and Evolution of Myth War Online</h3>
@@ -105,7 +105,7 @@ export default function Page() {
             continue to celebrate the creativity and passion that went into this ambitious MMORPG.
           </p>
         </section>
-        <section>
+        <section id="timeline">
           <h2>Timeline</h2>
           <hr className="divider" />
           <h3>Pre</h3>
@@ -115,8 +115,8 @@ export default function Page() {
           <p>Main Taiwanese investor named Cai Chengrui(个名叫蔡呈瑞的) joins in.</p>
           <h4>2003-??-??</h4>
           <p>
-            Cai Chengrui(个名叫蔡呈瑞的) withdraws most of his funds without the knowledge of the company's employees,
-            which paralyzed the company's development plan and eventually led to their collapse.
+            Cai Chengrui(个名叫蔡呈瑞的) withdraws most of his funds without the knowledge of the company&quot;s
+            employees, which paralyzed the company&quot;s development plan and eventually led to their collapse.
           </p>
           <h4>2003-12-14</h4>
           <p>
@@ -126,18 +126,20 @@ export default function Page() {
               className="link"
               href="https://web.archive.org/web/20241124183150/https://forum.gamer.com.tw/C.php?bsn=3987&snA=25"
               target="_blank">
-              Full collapse of Xinruishi.
+              Full collapse of Xinruishi
               <IconLink />
             </Link>
+            .
           </p>
           <h4>2004-??-??</h4>
           <p>
-            Zhuang Jinlong(庄锦隆) elected as "Top Ten Chinese IT Person of the Year" & "Top Ten Leaders of the Year".
+            Zhuang Jinlong(庄锦隆) elected as &apos;Top Ten Chinese IT Person of the Year&apos; & &apos;Top Ten Leaders
+            of the Year&apos;.
           </p>
           <h4>2006-??-??</h4>
           <p>
             Zhuang Jinlong(庄锦隆) joins Unigium(联竣信息科技（上海）有限公司) and becomes the Director & General
-            Manager of the "God World/Myth War"(神界) project team. A large portion of the employees, development
+            Manager of the &apos;God World/Myth War&apos;(神界) project. A large portion of the employees, development
             tooling and assets come directly from Xinruishi.{" "}
             <Link
               className="link"
@@ -146,24 +148,26 @@ export default function Page() {
               More information
               <IconLink />
             </Link>{" "}
-            about the core team behind Myth War Online's development.
+            about the core team behind Myth War Online&quot;s development.
           </p>
           <hr className="divider" />
           <h3>Myth War Online</h3>
           <h4>2005-05-10</h4>
-          <p>Myth War Online's Chinese Closed Beta, published by Sing-Gium International.</p>
+          <p>Myth War Online&quot;s Chinese Closed Beta, published by Sing-Gium International.</p>
           <h4>????-??-??</h4>
           <p>Myth War Online officially releases in China.</p>
           <h4>2006-07-07</h4>
           <p>Myth War Online is released in North America, published by IGG.</p>
+          <h4>2009-??-??</h4>
+          <p>Myth War Online servers are shut down in order to make way for Myth War II&quot;s release.</p>
           <hr className="divider" />
           <h3>Myth War II</h3>
           <h4>2009-05-20</h4>
           <p>Myth War II is officially released.</p>
           <h4>2015-01-15</h4>
-          <p>The announcement regarding Myth War II's closure is made.</p>
+          <p>The announcement regarding Myth War II&quot;s closure is made.</p>
           <h4>2015-02-16</h4>
-          <p>Myth War II servers are permanently taken down.</p>
+          <p>Myth War II servers are shut down permanently.</p>
           <hr className="divider" />
           <h3>Myth War 3 Legends of the Dark</h3>
           <h4>2009-01-15</h4>
@@ -175,11 +179,11 @@ export default function Page() {
               Development is publicly announced
               <IconLink />
             </Link>
-            . Planned release date during Christmas 2009.{" "}
+            . Planned release date during Christmas 2009.
           </p>
           <h4>2009-06-28</h4>
           <p>
-            Trademark for Myth War 3 Legends of the Dark's logo is{" "}
+            Trademark for Myth War 3 Legends of the Dark&quot;s logo is{" "}
             <Link
               className="link"
               href="https://trademarks.justia.com/777/69/myth-war-legends-of-the-dark-77769734.html">
