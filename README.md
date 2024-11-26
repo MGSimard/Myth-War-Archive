@@ -22,8 +22,8 @@
 - [x] Pause other audio sources when playing a new one
 - [x] Establish roles between both chinese websites in timeline
 - [ ] Finish timeline in homepage
-- [ ] Find an image to use for guides header
-- [ ] Create introductory page texts
+- [x] Find an image to use for guides header
+- [x] Create introductory page texts
 - [ ] Add tile stitcher tool
 - [ ] Build a better MDA extractor tool that can handle all filetypes within container
 - [ ] Fix input delay in audio section due to getting held up by all metadata loads
