@@ -14,7 +14,8 @@ const playfairDisplaySC = Playfair_Display_SC({
 
 export const metadata: Metadata = {
   title: "Myth War Archive",
-  description: "Desc",
+  description:
+    "Myth War Archive | A resource meant to preserve the history of the Myth War series, and act as a hub for ease of research and development access.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

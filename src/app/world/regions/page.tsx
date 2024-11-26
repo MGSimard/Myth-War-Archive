@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { Figure } from "@/components/Figure";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Regions",
+  description: "Myth War Archive | Core region directory making up the world of Myth War.",
+};
 
 export default function Page() {
   return (

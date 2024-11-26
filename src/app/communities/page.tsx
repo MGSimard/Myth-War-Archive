@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import communities from "@/data/communities.json";
 import { IconLink } from "@/components/Icons";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Communities",
+  description: "Myth War Archive | A directory of all main active and defunct communities for the Myth War games.",
+};
 
 export default function Page() {
   return (

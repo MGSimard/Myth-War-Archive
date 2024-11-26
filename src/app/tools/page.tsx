@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Tools",
+  description:
+    "Myth War Archive | Directory for useful tools and resources relating to Myth War research & development.",
+};
+
 export default function Page() {
   return (
     <>

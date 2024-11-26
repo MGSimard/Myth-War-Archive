@@ -1,5 +1,11 @@
 import toolsRE from "@/data/tools-re.json";
 import { IconDownload } from "@/components/Icons";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Reverse-Engineering",
+  description: "Myth War Archive | Tools & resources for the Reverse-Engineering of Myth War.",
+};
 
 export default function Page() {
   return (

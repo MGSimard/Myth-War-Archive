@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Assets",
+  description: "Myth War Archive | Myth War material pulled from official sources, for easy access and reference.",
+};
 
 export default function Page() {
   return (

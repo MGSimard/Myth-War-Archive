@@ -1,13 +1,8 @@
-const ClassBanner = ({ src, alt, title }: { src: string; alt: string; title: string }) => {
-  return (
-    <div className="class-banner">
-      <img src={src} alt={alt} />
-      <h4>
-        {title}
-        <span>(subclass)</span>
-      </h4>
-    </div>
-  );
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Races",
+  description: "Myth War Archive | Myth War's unique character races.",
 };
 
 export default function Page() {
@@ -159,3 +154,15 @@ export default function Page() {
     </>
   );
 }
+
+const ClassBanner = ({ src, alt, title }: { src: string; alt: string; title: string }) => {
+  return (
+    <div className="class-banner">
+      <img src={src} alt={alt} />
+      <h4>
+        {title}
+        <span>(subclass)</span>
+      </h4>
+    </div>
+  );
+};

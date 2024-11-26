@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import maps from "@/data/maps.json";
 import { FilterProvider } from "@/components/FilterProvider";
 import { TableRows } from "@/components/TableRows";
 import { FilterInput } from "@/components/FilterInput";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Maps",
+  description: "Myth War Archive | A list of all Myth War maps, previewable and directly downloadable tilsets.",
+};
 
 export default function Page() {
   return (

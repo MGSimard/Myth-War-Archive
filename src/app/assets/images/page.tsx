@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Images",
+  description: "Myth War Archive | Image directory of assets from Myth War.",
+};
+
 export default function Page() {
   return (
     <>

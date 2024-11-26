@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { IconDownload } from "@/components/Icons";
 import audio from "@/data/assets-audio.json";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Audio",
+  description: "Myth War Archive | Audio directory of assets from Myth War.",
+};
 
 export default function Page() {
   return (

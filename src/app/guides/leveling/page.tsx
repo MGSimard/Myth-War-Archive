@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import { Fragment } from "react";
 import questions from "@/data/wednesday-event.json";
 import coordinates from "@/data/seal-windseeker.json";
 import { IconLink } from "@/components/Icons";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Leveling",
+  description: "Myth War Archive | Comprehensive leveling guide for Myth War, from start to finish.",
+};
 
 export default function Page() {
   return (
@@ -11,7 +17,6 @@ export default function Page() {
       </div>
       <hr className="divider" />
       <h3>Level 1-6 (Tutorial)</h3>
-      {/* TODO: ACTUALLY REWRITE THIS */}
       <ol>
         <li>Create a new character</li>
         <li>Talk to Skill Mentor in Woodlingor (259, 57).</li>

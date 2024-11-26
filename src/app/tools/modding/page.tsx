@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import toolsMod from "@/data/tools-mod.json";
 import { IconDownload } from "@/components/Icons";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Modding",
+  description: "Myth War Archive | Tools & resources for client modification of Myth War.",
+};
 
 export default function Page() {
   return (

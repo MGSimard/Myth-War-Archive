@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Myth War Archive - Storyline",
+  description: "Myth War Archive | Discover more about the story of Myth War.",
+};
+
 export default function Page() {
   return (
     <>
