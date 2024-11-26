@@ -112,11 +112,11 @@ export default function Page() {
           <h4>1999-??-??</h4>
           <p>Zhuang Jinlong(庄锦隆) founds & leads Xiamen Xinruishi Multimedia Co., Ltd.(厦门新瑞狮多媒体有限公司).</p>
           <h4>????-??-??</h4>
-          <p>Main Taiwanese investor named Cai Chengrui(个名叫蔡呈瑞的) joins in.</p>
+          <p>Main Taiwanese investor named Cai Chengrui(蔡呈瑞) joins in.</p>
           <h4>2003-??-??</h4>
           <p>
-            Cai Chengrui(个名叫蔡呈瑞的) withdraws most of his funds without the knowledge of the company&apos;s
-            employees, which paralyzed the company&apos;s development plan and eventually led to their collapse.
+            Cai Chengrui(蔡呈瑞) withdraws most of his funds without the knowledge of the company&apos;s employees,
+            which paralyzed the company&apos;s development plan and eventually led to their collapse.
           </p>
           <h4>2003-12-14</h4>
           <p>
