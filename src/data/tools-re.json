@@ -7,9 +7,9 @@
   },
   {
     "file": "MDAExtractor",
-    "authors": ["Nazaroff", "MGSimard"],
+    "authors": ["Wander", "MGSimard"],
     "desc": "Extracts assets from RAYS MEDIA FILE '*.mda' file containers.",
-    "link": "https://utfs.io/f/e0BHXYWYpV1NW4BoX2bWAFCPxQiv7YOXs6Tug2VtZyIdnwH1"
+    "link": "https://utfs.io/f/e0BHXYWYpV1NIz8mlFvXPJ3CktFqy9AHai6V2jzSrf7h5L8p"
   },
   {
     "file": "GetMapTiles",
