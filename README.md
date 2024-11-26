@@ -47,7 +47,7 @@ Next.js App (FE)
 
 ## About The Project
 
-![Screenshot](#)
+![Screenshot](https://i.imgur.com/EU6K40A.png)
 
 Preservation & utility project for the Myth War community. Myth War Archive is your go-to resource for everything related to Myth War Online and Myth War II. Whether you're a long-time fan or just discovering the games, this site is dedicated to preserving their legacy and supporting the communities that keep them alive.
 
