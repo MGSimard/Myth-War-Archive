@@ -22,5 +22,11 @@
     "authors": ["MGSimard"],
     "desc": "Extracts filename reference strings to view linked files - primarily used for viewing connected maps in '*.map' files.",
     "link": "https://utfs.io/f/e0BHXYWYpV1NvUIn1FKwjQM0IfTDPJYum2ihyFXEaCKqn7xN"
+  },
+  {
+    "file": "Stitcher",
+    "authors": ["MGSimard"],
+    "desc": "Stitches image tiles into a single output.",
+    "link": "https://utfs.io/f/e0BHXYWYpV1No5EEHqAe5gS8zQOR0bHhKlr2FUjv3Esd4ZxG"
   }
 ]
