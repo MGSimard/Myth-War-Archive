@@ -16,6 +16,8 @@ export default function Page() {
         their alternatives. Within you&apos;ll also find information regarding events which coincide with the leveling
         process, such as the Wednesday Event.
       </p>
+      <h3>Rebirth</h3>
+      <p>-</p>
     </>
   );
 }

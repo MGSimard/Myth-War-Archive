@@ -5,6 +5,7 @@ export default function GuidesLayout({ children }: { children: React.ReactNode }
   const links = [
     { href: "/guides", title: "Guides" },
     { href: "/guides/leveling", title: "Leveling" },
+    { href: "/guides/rebirth", title: "Rebirth" },
   ];
 
   return (

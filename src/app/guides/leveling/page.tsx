@@ -5,16 +5,14 @@ import coordinates from "@/data/seal-windseeker.json";
 import { IconLink } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Myth War Archive - Leveling",
+  title: "Myth War Archive - Leveling Guide",
   description: "Myth War Archive | Comprehensive leveling guide for Myth War, from start to finish.",
 };
 
 export default function Page() {
   return (
     <>
-      <div className="maps-header">
-        <h2>Leveling</h2>
-      </div>
+      <h2>Leveling</h2>
       <hr className="divider" />
       <h3>Level 1-6 (Tutorial)</h3>
       <ol>
@@ -213,6 +211,8 @@ export default function Page() {
       </details>
       <hr className="divider" />
       <h3>Level 90+ (Papa Drow & Worn Messenger)</h3>
+      <h4>Papa Drow</h4>
+      <h4>Worn Messenger</h4>
     </>
   );
 }
