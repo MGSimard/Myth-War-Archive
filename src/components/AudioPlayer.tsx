@@ -171,8 +171,8 @@ function PlaySvgs({
   playSvgRef,
   pauseSvgRef,
 }: {
-  playSvgRef: React.RefObject<SVGSVGElement>;
-  pauseSvgRef: React.RefObject<SVGSVGElement>;
+  playSvgRef: React.RefObject<SVGSVGElement | null>;
+  pauseSvgRef: React.RefObject<SVGSVGElement | null>;
 }) {
   return (
     <>
@@ -203,8 +203,8 @@ function MuteSvgs({
   muteSvgRef,
   unmuteSvgRef,
 }: {
-  muteSvgRef: React.RefObject<SVGSVGElement>;
-  unmuteSvgRef: React.RefObject<SVGSVGElement>;
+  muteSvgRef: React.RefObject<SVGSVGElement | null>;
+  unmuteSvgRef: React.RefObject<SVGSVGElement | null>;
 }) {
   return (
     <>
