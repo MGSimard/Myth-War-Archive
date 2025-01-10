@@ -24,12 +24,12 @@
 - [x] Find an image to use for guides header
 - [x] Create introductory page texts
 - [x] Add tile stitcher tool
-- [ ] Finish timeline in homepage
-- [ ] Consider table index for larger asset and guide pages
+- [x] Finish timeline in homepage
+- [x] Consider table index for larger asset and guide pages
 - [ ] Build a better MDA extractor tool that can handle all filetypes within container
-- [ ] Fix input delay in audio section due to getting held up by all metadata loads
+- [x] Fix input delay in audio section due to getting held up by all metadata loads
 - [ ] Fix starting position of lightbox ppz lightbox images on mobile (vertical centering)
-- [ ] Figure out if I want gold gradient lettering for nav icons & text (at least core ones)
+- [x] Figure out if I want gold gradient lettering for nav icons & text (at least core ones) - no
 - [ ] Caching
 - [x] Metadata
 - [ ] Icon formats
