@@ -147,7 +147,7 @@ export function AudioPlayer({ src, loop }: { src: string; loop?: boolean }) {
 
   return (
     <div className="audio-player">
-      <audio ref={audioRef} src={src} preload="metadata" loop={loop} />
+      <audio ref={audioRef} src={src} preload="none" loop={loop} />
       <div className="time-displays">
         <span ref={currTimeRef}>0:00</span>/<span ref={durationRef}>0:00</span>
       </div>
