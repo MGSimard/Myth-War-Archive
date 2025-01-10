@@ -33,6 +33,7 @@
 - [ ] Caching
 - [x] Metadata
 - [ ] Icon formats
+- [ ] Re-upload new versions of all zip files that contained a comma in the name, submitted issue on github regarding uploadthing's content disposition issue that was breaking filenames on download on chrome if they had a comma in name. The fix however didn't apply to existing files, so I have to reupload new ones.
 
 </details>
 
