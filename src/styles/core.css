@@ -281,7 +281,7 @@ section {
   box-shadow: inset 0 0 2rem rgb(54, 39, 4);
 }
 section > *:not(:last-child) {
-  margin-bottom: 2rem; /* Default */
+  margin-bottom: 2rem;
 }
 /* Section margin-bottom overrides */
 section h3:not(:last-child),
