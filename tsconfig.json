@@ -30,7 +30,7 @@
     }
   },
   "include": [
-    // "eslint.config.mjs", TODO FIX THIS SHIT
+    "eslint.config.mjs",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
