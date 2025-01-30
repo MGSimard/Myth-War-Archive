@@ -103,7 +103,9 @@ Preservation & utility project for the Myth War community. Myth War Archive is y
 
 ## Contact
 
-MGSimard - mgsimard.dev@gmail.com
-[@MGSimard on X](https://x.com/MGSimard)
+MGSimard  
+X: [@MGSimard](https://x.com/MGSimard)  
+GitHub: [@MGSimard](https://github.com/MGSimard)  
+Mail: [mgsimard.dev@gmail.com](mailto:mgsimard.dev@gmail.com)
 
-For more info, view my portfolio at [mgsimard.dev](https://mgsimard.dev). Resume attached.
+For more info, view my portfolio at [mgsimard.dev](https://mgsimard.dev).
