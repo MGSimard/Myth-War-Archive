@@ -6,7 +6,7 @@ import { FilterInput } from "@/components/FilterInput";
 
 export const metadata: Metadata = {
   title: "Myth War Archive - Maps",
-  description: "Myth War Archive | A list of all Myth War maps, previewable and directly downloadable tilsets.",
+  description: "Myth War Archive | A list of all Myth War maps, previewable and directly downloadable tilesets.",
 };
 
 export default function Page() {
