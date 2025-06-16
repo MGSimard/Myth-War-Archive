@@ -1,40 +1,6 @@
-## THIS APP IS IN ACTIVE DEVELOPMENT
-
-<details>
-<summary><h2>TASK LIST<h2></summary>
-
-- [x] Decide on a threshold for 3rd party image hosting (50kb)
-- [x] For map assets, show a compressed webp of fullmap and offer a zipped download of all jpg tiles
-- [x] Decide on page subnav icons - bland svgs vs in-game UI icons
-- [x] Prettify h3 section headers
-- [x] Add class icons to races section, or full character images
-- [x] Prettify h4 section headings
-- [x] Fill out regions section
-- [x] Do something about maps table under 450px
-- [x] Don't round audio other than showing timer, causes issues below 1s
-- [x] Fix play button not reverting to paused state (play icon) when sound reaches end on noloop setting
-- [x] Make a header style for the details "accordion" in assets
-- [x] Fix table across board for long words, use break that makes sense
-- [x] Decide if I want page footer or nav footer (icons etc)
-- [x] Do mobile nav shift at threshold
-- [x] Think about adding a Guides page with more in-depth info for classes, guides etc rather than lore.
-- [x] Change scrollbar style in nav
-- [x] Pause other audio sources when playing a new one
-- [x] Establish roles between both chinese websites in timeline
-- [x] Find an image to use for guides header
-- [x] Create introductory page texts
-- [x] Add tile stitcher tool
-- [x] Finish timeline in homepage
-- [x] Consider table index for larger asset and guide pages
-- [ ] Build a better MDA extractor tool that can handle all filetypes within container
-- [x] Fix input delay in audio section due to getting held up by all metadata loads
-- [ ] Fix starting position of lightbox ppz lightbox images on mobile (vertical centering)
-- [x] Figure out if I want gold gradient lettering for nav icons & text (at least core ones) - no
-- [x] Metadata
-- [ ] Icon formats
-- [x] Re-upload new versions of all zip files that contained a comma in the name, submitted issue on github regarding uploadthing's content disposition issue that was breaking filenames on download on chrome if they had a comma in name. The fix however didn't apply to existing files, so I have to reupload new ones.
-
-</details>
+A NEW VERSION IS AVAILABLE:
+- https://github.com/MGSimard/myth-war-archive-v2
+- https://mwarchive.pages.dev/
 
 <br/>
 <div align="center">
