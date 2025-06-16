@@ -3,6 +3,7 @@ import { Geist, Playfair, Playfair_Display_SC } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import "@/styles/core.css";
+import { Banner } from "@/components/Banner";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist", fallback: ["sans-serif"] });
 const playfair = Playfair({ subsets: ["latin"], variable: "--font-playfair" });
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body className={`${geist.className} ${playfairDisplaySC.variable} ${playfair.variable}`}>
         <div className="content">
+          <Banner />
           <Nav />
           {children}
           <Footer />

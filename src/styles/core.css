@@ -899,3 +899,52 @@ ol ol {
     padding: 1rem;
   }
 }
+
+/* ANNOUNCEMENT BANNER */
+#announcement-banner {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--clr-gradient-tab);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid var(--clr-gold);
+  gap: 1rem;
+  z-index: 99999;
+  text-overflow: balance;
+}
+#announcement-banner h2 {
+  font-size: clamp(1.6rem, 2vw, 3rem);
+  margin-bottom: 0;
+}
+
+.banner-close-button {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+.banner-close-button svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.banner-close-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
